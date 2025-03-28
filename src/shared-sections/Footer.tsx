@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
                             <p>東京都渋谷区恵比寿４丁目２０－３</p>
                             <p>恵比寿ガーデンプレイスタワー27F COEBI内</p>
                         </div>
-                        <a href="https://instagram.com" className="inline-block">
+                        <a href="https://www.instagram.com/bonzuttner/" className="inline-block" target='_blank'>
                             <Image src={'/images/insta.svg'} width={24} height={24} alt='' />
                         </a>
                     </div>
@@ -36,13 +36,13 @@ const Footer: React.FC = () => {
                                 <Link href={'/#service'} className="font-medium block mb-2">SERVICE</Link>
                                 <ul className="text-sm text-white space-y-1 ml-1">
                                     <li>
-                                        <Link href={"/creative"}>-CREATIVE</Link>
+                                        <Link href={"#"}>-Product Development</Link>
                                     </li>
                                     <li>
-                                        <Link href={"/creative"}>-CREATIVE</Link>
+                                        <Link href={"#"}>-Hands-on Support</Link>
                                     </li>
                                     <li>
-                                        <Link href={"/creative"}>-CREATIVE</Link>
+                                        <Link href={"/creative"}>-Creative</Link>
                                     </li>
                                 </ul>
                             </div>
