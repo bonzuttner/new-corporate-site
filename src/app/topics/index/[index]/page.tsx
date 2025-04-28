@@ -113,7 +113,12 @@ const ArticleDetailsByIndex: React.FC = () => {
 
           <div
             className="article-content"
-            dangerouslySetInnerHTML={{ __html: article.Body }}
+            dangerouslySetInnerHTML={{
+              __html: article.Body.replaceAll(
+                'http://213.165.93.245/',
+                '/api/proxy?url=213.165.93.245/'
+              )
+            }}
           />
         </div>
       </div>
