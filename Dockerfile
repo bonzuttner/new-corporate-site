@@ -16,6 +16,5 @@ RUN npm run build
 
 # Tell Cloud Run which port to listen on
 ENV PORT 8080
-
 # Start Next.js server
 CMD ["npm", "run", "start"]
