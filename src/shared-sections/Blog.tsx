@@ -42,7 +42,7 @@ const Blog: React.FC<IBlog> = ({ articles }) => {
                                     </div>
 
                                     <div className="px-6">
-                                        <Link href={`/topics/index/${index}`}>
+                                        <Link href={`/topics/article/${encodeURIComponent(article.Title)}`}>
                                             <Image
                                                 src="/images/creative/arrow-right.svg"
                                                 alt="arrow-right"
