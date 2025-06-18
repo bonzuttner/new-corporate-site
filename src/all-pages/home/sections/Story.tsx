@@ -19,7 +19,7 @@ const Story = () => {
             title: "STORY",
             imageSrc: "/images/story01.png",
             describtion: "BonZuttnerは2019年に誕生し、難民問題や社会問題の解決を目指してきました。これからもそれらの問題を解決していくためにどのような未来を描いているのか。BonZuttnerの全てを知ることができます。",
-            href: "/story"
+            href: "/topics"
         },
         {
             id: "02",
@@ -31,9 +31,10 @@ const Story = () => {
         },
         {
             id: "03",
-            title: "COMING SOON!!",
+            title: "Projects",
             imageSrc: "/images/story03.png",
             describtion: "現在BonZuttnerではお客様に喜んでいただける新サービスを開発しております。BonZuttnerらしいユニークなサービスとなっておりますので、乞うご期待！！",
+            href: "/topics"
         }
     ]
 

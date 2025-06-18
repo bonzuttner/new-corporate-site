@@ -82,7 +82,7 @@ const Header: React.FC = () => {
                                         ))}
                                         {/* Footer Links */}
                                         <div className="py-8 grid grid-cols-2 gap-8">
-                                            <Link onClick={toggleMenu} href="/" className="text-sm">プライバシーポリシー</Link>
+                                            <Link onClick={toggleMenu} href="/privacy-policy" className="text-sm">プライバシーポリシー</Link>
                                             <Link onClick={toggleMenu} href="/" className="text-sm">個人情報の取り扱いについて</Link>
                                             <Link onClick={toggleMenu} href="https://www.instagram.com/bonzuttner/" target="_blank">
                                                 <Image src={"/images/insta.svg"} alt="insta" width={24} height={24} />

@@ -31,3 +31,14 @@ type Article = {
     };
     Body: string
 }
+
+
+type Category = {
+    id: number,
+    documentId: string,
+    Name: string,
+    createdAt: string,
+    updatedAt: string,
+    publishedAt: string
+}
+

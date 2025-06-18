@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const ArticleDetails: React.FC = () => {
-    const {  slug } = useParams();
+    const { slug } = useParams();
     const [article, setArticle] = useState<{
         Title: string;
         Body: string;
@@ -106,7 +106,12 @@ const ArticleDetails: React.FC = () => {
 
                     <div
                         className="article-content"
-                        dangerouslySetInnerHTML={{ __html: article.Body }}
+                        dangerouslySetInnerHTML={{
+                            __html: article.Body.replaceAll(
+                                "http://213.165.93.245",
+                                `https://bonzuttner.jp/api/proxy?url=213.165.93.245`
+                            )
+                        }}
                     />
                 </div>
             </div>
