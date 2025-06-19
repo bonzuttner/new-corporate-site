@@ -34,7 +34,7 @@ type Article = {
 
 
 type Category = {
-    id: number,
+    id: string,
     documentId: string,
     Name: string,
     createdAt: string,

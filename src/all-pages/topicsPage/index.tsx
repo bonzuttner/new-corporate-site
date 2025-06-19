@@ -6,8 +6,15 @@ import Blog from "@/shared-sections/Blog";
 import Loading from "@/shared-components/Loading";
 
 const Index: React.FC = () => {
-  const [selectedTopic, setSelectedTopic] = useState<string>("all");
-  const [selectedTopicId, setSelectedTopicId] = useState<number>(0);
+  const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
+  const [selectedTopicId, setSelectedTopicId] = useState<string | null>(null);
+
+  useEffect(() => {
+    const storedTopic = localStorage.getItem("selectedTopic") || "all";
+    const storedId = localStorage.getItem("selectedTopicId") || "0";
+    setSelectedTopic(storedTopic);
+    setSelectedTopicId(storedId);
+  }, []);
 
   const [articles, setArticles] = useState<Article[] | null>(null);
   const [categories, setCategories] = useState<Category[] | null>(null);
@@ -38,16 +45,21 @@ const Index: React.FC = () => {
       }
     }
 
-    fetchArticles();
+    if (selectedTopicId) {
+      fetchArticles();
+    }
   }, [selectedTopic, selectedTopicId]);
 
-  const handleChangeTap = (name: string, id: number) => {
+  const handleChangeTap = (name: string, id: string) => {
     setArticles(null)
     setSelectedTopicId(id)
     setSelectedTopic(name)
+
+    localStorage.setItem("selectedTopicId", id);
+    localStorage.setItem("selectedTopic", name);
   }
 
-  const renderTab = (selected: string, id: number) => (
+  const renderTab = (selected: string, id: string) => (
     <div className="inline-flex items-center justify-center mr-4">
       {selected === selectedTopic ? (
         <div className="w-[7px] h-[7px] rounded-full bg-[#00A1E9]" />
@@ -78,7 +90,7 @@ const Index: React.FC = () => {
           </div>
           <div className="px-8 lg:px-24 py-10 xl:max-w-[1200px] mx-auto">
             <div className="flex mb-6 flex-wrap">
-              {renderTab("all", 0)}
+              {renderTab("all", "0")}
               {
                 categories?.map(item =>
                   <div key={item.id}>

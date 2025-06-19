@@ -9,7 +9,7 @@ const Header: React.FC = () => {
     const toggleMenu = () => setIsMenuOpen(prev => !prev);
 
     return (
-        <header className="bg-[#00A1E9] h-24 px-[50px] w-full flex items-center justify-between sticky z-50 top-0">
+        <header className="bg-[#00A1E9] h-24 px-[20px] lg:px-[50px] w-full flex items-center justify-between sticky z-50 top-0">
             {/* Logo Centered */}
             <div className="flex justify-center" onClick={() => setIsMenuOpen(false)}>
                 <Link href="/" className="flex items-center">

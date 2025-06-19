@@ -6,10 +6,12 @@ import { Pagination, Autoplay } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
-import ReadMoreBtn from "@/shared-components/ReadMoreBtn";
 import Image from "next/image";
+import { Button } from "@nextui-org/react";
+import { useRouter } from "next/navigation";
 
 const Story = () => {
+    const router = useRouter()
 
     const p1 = "ここで会社の全てがわかる！？\n なぜBonZuttnerが誕生したのか？、BonZuttnerの理念・未来へのビジョン、私たちの歴史や社会課題解決への取り組みを深く知ることができます。\n スライドして是非他のページもご覧ください。"
 
@@ -19,14 +21,18 @@ const Story = () => {
             title: "STORY",
             imageSrc: "/images/story01.png",
             describtion: "BonZuttnerは2019年に誕生し、難民問題や社会問題の解決を目指してきました。これからもそれらの問題を解決していくためにどのような未来を描いているのか。BonZuttnerの全てを知ることができます。",
-            href: "/topics"
+            href: "/topics",
+            categoryId: "11",
+            name: "Story"
         },
         {
             id: "02",
             title: "TOPICS",
             imageSrc: "/images/story02.png",
             describtion: "BonZuttnerの最新情報はこちらで発信しております。イベントやメディア情報の他にもニュースやコラム等、様々な情報を発信しております。",
-            href: "/topics"
+            href: "/topics",
+            categoryId: "9",
+            name: "Articles"
 
         },
         {
@@ -34,9 +40,17 @@ const Story = () => {
             title: "Projects",
             imageSrc: "/images/story03.png",
             describtion: "現在BonZuttnerではお客様に喜んでいただける新サービスを開発しております。BonZuttnerらしいユニークなサービスとなっておりますので、乞うご期待！！",
-            href: "/topics"
+            href: "/topics",
+            categoryId: "7",
+            name: "Projects"
         }
     ]
+
+    const handleGoTopic = (item: any) => {
+        localStorage.setItem("selectedTopicId", item.categoryId);
+        localStorage.setItem("selectedTopic", item.name);
+        router.push(item.href)
+    }
 
     return (
         <section className="min-h-screen bg-gradient-to-b-from-transparent relative" id="story">
@@ -83,7 +97,11 @@ const Story = () => {
                                                 </div>
                                                 <h2 className="font-bold text-lg lg:text-2xl mt-8">{item.title}</h2>
                                                 <p className="text-start mt-2 font-normal text-xs lg:text-base lg:max-w-[366px] w-full">{item.describtion}</p>
-                                                {item.href ? <ReadMoreBtn href={item.href} /> : <span className="pt-16 block"></span>}
+                                                {item.href ?
+                                                    <Button onClick={() => handleGoTopic(item)} className={`mt-10 bg-[#00A1E9] text-white font-medium text-sm p-3 rounded-lg`}>
+                                                        READ MORE
+                                                    </Button>
+                                                    : <span className="pt-16 block"></span>}
                                             </div>
 
                                         </div>
