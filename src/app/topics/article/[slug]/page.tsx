@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 import Loading from "@/shared-components/Loading";
 
 const ArticleDetails: React.FC = () => {
@@ -34,21 +34,21 @@ const ArticleDetails: React.FC = () => {
         }
     }, [slug]);
 
-    const renderHeader = () => (
-        <div className="w-full bg-gray-100 pt-14 px-6 md:px-10 lg:px-24 lg:h-[300px] flex items-center">
-            <div>
-                <h1 className="text-3xl md:text-4xl font-semibold mb-2">ARTICLE</h1>
-                <p className="text-base text-gray-600">記事</p>
-            </div>
-        </div>
-    );
+    // const renderHeader = () => (
+    //     <div className="w-full bg-gray-100 pt-14 px-6 md:px-10 lg:px-24 h-[200px] lg:h-[300px] flex items-start">
+    //         <div>
+    //             <h1 className="text-3xl md:text-4xl font-semibold mb-2">ARTICLE</h1>
+    //             <p className="text-base text-gray-600">記事</p>
+    //         </div>
+    //     </div>
+    // );
 
     if (loading) {
         return (
             <section className="w-full">
-                {renderHeader()}
+                {/* {renderHeader()} */}
                 <div className="px-6 md:px-10 lg:px-24 py-10 text-center">
-                    <Loading className="max-h-48" />
+                    <Loading className="" />
                 </div>
             </section>
         );
@@ -57,7 +57,7 @@ const ArticleDetails: React.FC = () => {
     if (!article) {
         return (
             <section className="w-full">
-                {renderHeader()}
+                {/* {renderHeader()} */}
                 <div className="px-6 md:px-10 lg:px-24 py-10 text-center">
                     <p className="mb-4">Article not found</p>
                     <Link href="/topics" className="text-blue-500 hover:underline">
@@ -70,32 +70,21 @@ const ArticleDetails: React.FC = () => {
 
     return (
         <section className="w-full">
-            {renderHeader()}
+            {/* {renderHeader()} */}
 
             <div className="px-6 md:px-10 lg:px-24 py-10">
-                <div className="mb-8">
-                    <Link href="/topics" className="flex items-center text-blue-500 hover:underline">
-                        <Image
-                            src="/images/creative/arrow-left.svg"
-                            alt="Back"
-                            width={23}
-                            height={23}
-                            className="mr-2 rotate-180"
-                        />
-                        Back to Topics
-                    </Link>
-                </div>
 
-                <div className="max-w-3xl mx-auto">
-                    <div className="mb-4 flex justify-between items-center flex-wrap gap-2">
-                        <span className="text-xs font-medium border border-blue-500 rounded-full px-4 py-1 text-blue-500">
-                            {article.category?.Name || "BZ News"}
-                        </span>
+                <div className="max-w-[1000px] mx-auto">
+                    <div className="mb-10 flex justify-start items-center flex-wrap gap-10">
                         <span className="text-sm text-gray-600">
                             {article.publishedAt
                                 ? new Date(article.publishedAt).toLocaleDateString()
                                 : "N/A"}
                         </span>
+                        <span className="text-xs font-medium border border-blue-500 rounded-full px-4 py-1 text-blue-500">
+                            {article.category?.Name || "BZ News"}
+                        </span>
+
                     </div>
 
                     <h2 className="text-2xl font-semibold mb-6">{article.Title}</h2>
@@ -109,6 +98,19 @@ const ArticleDetails: React.FC = () => {
                             ),
                         }}
                     />
+                </div>
+
+                <div className="my-10  w-full flex items-center">
+                    <Link href="/topics" className="mx-auto bg-blue-500 px-[25px] py-[10px]  rounded-lg text-white hover:bg-blue-300">
+                        {/* <Image
+                            src="/images/creative/arrow-left.svg"
+                            alt="Back"
+                            width={23}
+                            height={23}
+                            className="mr-2 rotate-180"
+                        /> */}
+                        一覧へ戻る
+                    </Link>
                 </div>
             </div>
         </section>

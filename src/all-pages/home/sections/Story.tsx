@@ -21,9 +21,9 @@ const Story = () => {
             title: "STORY",
             imageSrc: "/images/story01.png",
             describtion: "BonZuttnerは2019年に誕生し、難民問題や社会問題の解決を目指してきました。これからもそれらの問題を解決していくためにどのような未来を描いているのか。BonZuttnerの全てを知ることができます。",
-            href: "/topics",
-            categoryId: "11",
-            name: "Story"
+            href: "/story",
+            categoryId: "",
+            name: ""
         },
         {
             id: "02",
@@ -31,8 +31,8 @@ const Story = () => {
             imageSrc: "/images/story02.png",
             describtion: "BonZuttnerの最新情報はこちらで発信しております。イベントやメディア情報の他にもニュースやコラム等、様々な情報を発信しております。",
             href: "/topics",
-            categoryId: "9",
-            name: "Articles"
+            categoryId: "",
+            name: ""
 
         },
         {
@@ -41,14 +41,20 @@ const Story = () => {
             imageSrc: "/images/story03.png",
             describtion: "現在BonZuttnerではお客様に喜んでいただける新サービスを開発しております。BonZuttnerらしいユニークなサービスとなっておりますので、乞うご期待！！",
             href: "/topics",
-            categoryId: "7",
-            name: "Projects"
+            categoryId: "",
+            name: ""
         }
     ]
 
     const handleGoTopic = (item: any) => {
-        localStorage.setItem("selectedTopicId", item.categoryId);
-        localStorage.setItem("selectedTopic", item.name);
+        if (item.categoryId) {
+            localStorage.setItem("selectedTopicId", item.categoryId)
+        }
+
+        if (item.name) {
+            localStorage.setItem("selectedTopic", item.name);
+        }
+
         router.push(item.href)
     }
 
