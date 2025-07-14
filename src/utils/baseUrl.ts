@@ -1,1 +1,1 @@
-export const baseUrl: string = process.env.BASE_URL!
+export const baseUrl: string = process.env.BASE_URL || "https://bonzuttner.jp"
