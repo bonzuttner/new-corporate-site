@@ -12,7 +12,7 @@ type GenerateMetadataProps = {
 // Type for layout component props (only children)
 type LayoutProps = {
     children: ReactNode;
-    params: { slug: string }; // Layouts can access params too ( next + 13 ).
+    params: Promise<{ slug: string }>; // Layouts can access params too ( next + 13 ).
 };
 
 export async function generateMetadata(
@@ -65,8 +65,9 @@ export async function generateMetadata(
     };
 }
 
-export default function ArticleLayout(
-    { children,
-    }: LayoutProps) {
+export default async function ArticleLayout(
+    { children, params }: LayoutProps) {
+    const { slug } = await params;
+    
     return <>{children}</>;
 }
