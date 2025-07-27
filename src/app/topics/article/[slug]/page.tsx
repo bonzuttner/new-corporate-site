@@ -6,6 +6,8 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 // import Image from "next/image";
 import Loading from "@/shared-components/Loading";
+import {SeoInfo} from "@/types/SeoInfo";
+
 
 const ArticleDetails: React.FC = () => {
     const { slug } = useParams();
@@ -14,6 +16,7 @@ const ArticleDetails: React.FC = () => {
         Body: string;
         publishedAt: string;
         category: { Name: string };
+        seo_info: SeoInfo | null ;
     } | null>(null);
     const [loading, setLoading] = useState(true);
 
@@ -33,6 +36,8 @@ const ArticleDetails: React.FC = () => {
             fetchArticleDetails();
         }
     }, [slug]);
+    // console.log(article?.seo_info ,'seo outside the function');
+    // console.log(article?.seo_info);
 
     // const renderHeader = () => (
     //     <div className="w-full bg-gray-100 pt-14 px-6 md:px-10 lg:px-24 h-[200px] lg:h-[300px] flex items-start">
