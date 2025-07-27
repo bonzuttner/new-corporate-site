@@ -19,7 +19,6 @@ interface Article {
   } | null;
 }
 
-
 async function fetchArticle(slug: string): Promise<Article | null> {
   try {
     const res = await fetch(`/api/articles/${slug}`, {
@@ -29,15 +28,24 @@ async function fetchArticle(slug: string): Promise<Article | null> {
 
     console.log("🔍 SEO Info:", article.seo_info);
     if (!res.ok) return null;
-    return res.json();
+    return article;
   } catch (err) {
     console.error("Fetch article failed:", err);
     return null;
   }
 }
 
-export default async function ArticlePage({ params }: { params: { slug: string } }) {
-  const article = await fetchArticle(params.slug);
+// MAIN CHANGE: Update the params type to Promise
+export default async function ArticlePage({ 
+  params 
+}: { 
+  params: Promise<{ slug: string }> // Changed to Promise
+}) {
+  // Await the params
+  const { slug } = await params;
+  
+  const article = await fetchArticle(slug);
+  
   if (!article) {
     return (
         <section className="w-full px-6 md:px-10 lg:px-24 py-10 text-center">
@@ -51,7 +59,6 @@ export default async function ArticlePage({ params }: { params: { slug: string }
 
   return (
       <section className="w-full px-6 md:px-10 lg:px-24 py-10">
-        <meta/>
         <div className="max-w-[1000px] mx-auto">
           <div className="mb-10 flex justify-start items-center flex-wrap gap-10">
           <span className="text-sm text-gray-600">
