@@ -461,5 +461,29 @@
       "buttonText": "フォームでのお問い合わせ",
       "arrowAlt": "左矢印"
     }
+  },
+  "workHistory": {
+    "Header": {
+      "title": "ボン・ズットナーの職歴",
+      "subtitle": "最新技術で生み出された革新的なソリューション",
+      "stats": {
+        "projects": 
+           "完了したプロジェクト",
+        
+        "clients": 
+           "満足したクライアント",
+        
+        "technologies": 
+           "使用した技術"
+
+      }
+    },
+    "Filter": {
+      "label": "絞り込み:",
+      "searchPlaceholder": "プロジェクトを検索..."
+    },
+    "Card": {
+      "visitProject": "プロジェクトを見る"
+    }
   }
 }
