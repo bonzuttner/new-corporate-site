@@ -1,11 +1,13 @@
 'use client'
 
 import { NextUIProvider } from '@nextui-org/react'
-
+import { FilterProvider } from '@/Store/FilterContext'
 export function Providers({ children }: { children: React.ReactNode }) {
     return (
         <NextUIProvider>
-            {children}
+            <FilterProvider>
+                {children}
+            </FilterProvider>
         </NextUIProvider>
     )
 }
