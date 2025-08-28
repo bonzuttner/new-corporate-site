@@ -464,23 +464,5 @@
       "buttonText": "Contact via form",
       "arrowAlt": "Arrow left"
     }
-},
- "workHistory": {
-    "Header": {
-      "title": "BonZuttner Work History",
-      "subtitle": "Innovative solutions crafted with modern technologies",
-      "stats": {
-        "projects":"Projects Completed",
-        "clients":  "Happy Clients",
-        "technologies":"Technologies Used"
-      }
-    },
-    "Filter": {
-      "label": "Filter by:",
-      "searchPlaceholder": "Search projects..."
-    },
-    "Card": {
-      "visitProject": "Visit Project"
-    }
   }
 }
