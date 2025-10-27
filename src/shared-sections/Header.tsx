@@ -69,6 +69,11 @@ const Header: React.FC = () => {
             title: t('contact'),
             subtitle: t('contactSub'),
             href: `/${locale}/contact`
+        },
+        {
+            title: t('support'),
+            subtitle: t('supportSub'),
+            href: `/${locale}/support`
         }
     ]
     return (

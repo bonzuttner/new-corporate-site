@@ -24,6 +24,8 @@
     "recruitSub": "Recruitment Information",
     "contact": "CONTACT",
     "contactSub": "Contact Us",
+    "support": "SUPPORT",
+    "supportSub": "Support",
     "productDev": "Product Development",
     "handsOnSupport": "Hands-on Support",
     "creative": "Creative"
@@ -464,15 +466,15 @@
       "buttonText": "Contact via form",
       "arrowAlt": "Arrow left"
     }
-},
- "workHistory": {
+  },
+  "workHistory": {
     "Header": {
       "title": "BonZuttner Work History",
       "subtitle": "Innovative solutions crafted with modern technologies",
       "stats": {
-        "projects":"Projects Completed",
-        "clients":  "Happy Clients",
-        "technologies":"Technologies Used"
+        "projects": "Projects Completed",
+        "clients": "Happy Clients",
+        "technologies": "Technologies Used"
       }
     },
     "Filter": {
@@ -481,6 +483,145 @@
     },
     "Card": {
       "visitProject": "Visit Project"
+    }
+  },
+  "support": {
+    "hero": {
+      "title": "Practical Support",
+      "subtitle": "Accompaniment-Type Assistance",
+      "tags": "#DX, #AI Utilization, #On-site Improvement, #Automation",
+      "images": {
+        "leftAlt": "Creative Left Image",
+        "rightAlt": "Creative Right Image"
+      }
+    },
+    "about": {
+      "title": "Our service creates the <highlight>AI</highlight> and <bold>Human</bold> “just right relationship.”",
+      "description": "AI is already working in every aspect of our society: from banking, logistics, and café ordering to creating sales documents and supporting investment activities. The speed of AI and digital tool evolution is astonishingly fast, with new tools and acronyms appearing one after another—making it challenging to explore and use them properly. Many people still say: “AI and digital tools seem convenient, but I don’t know how to use them.” For such companies and organizations, we act as 'interpreters' of AI, making difficult technology easy to understand and usable in practice, supporting adoption until it takes root. By walking alongside managers and frontline staff until they can use AI and digital tools without hesitation, we don’t just deliver deliverables—we help employees build the capability to run operations themselves.",
+      "imageAlt": "Creative Overview Image"
+    },
+
+    "flow": {
+      "title": "FLOW",
+      "steps": {
+        "step1": {
+          "step": "STEP01",
+          "title": "Hearing",
+          "content": "To visualize the current situation and issues in a short period, we align goals, KPIs, target tasks, and constraints (Non-Goals), and decide where to start."
+        },
+        "step2": {
+          "step": "STEP02",
+          "title": "Creating the Accompaniment Plan",
+          "content": "We design the To-Be state, define exit criteria numerically through trials, and put them into a roadmap. Then we reach mutual agreement on the goals and the approach."
+        },
+        "step3": {
+          "step": "STEP03",
+          "title": "Execution Phase",
+          "content": "We prioritize existing tools and repeat short cycles of introduction, trial, and improvement. By reviewing KPIs, we visualize the effects, and develop standard templates, operation rules, dashboards, etc."
+        },
+        "step4": {
+          "step": "STEP04",
+          "title": "Self-sustaining Operation",
+          "content": "We review the status of operations, prepare operation methods and transfer checklists required for expansion. After handing over to internal staff and confirming that the site can continue improving independently, our accompaniment ends."
+        }
+      }
+    },
+    "section2": {
+      "title": "We are a “bridge team” between AI and humans",
+      "content1": "Our job is not simply to “introduce AI,” but to firmly embed it into everyday life and business activities in a truly valuable way.",
+      "content2": "We don’t just showcase the latest trends and technologies; we digest them and shape them into practical steps companies can take. We run alongside you as partners.",
+      "content3": "Perhaps we may spend more time thinking together about “what really matters” than writing code. But that is the future we choose."
+    },
+    "caseStudies": {
+      "title": "3 Cases Where Companies Struggle With AI Introduction",
+      "case1": {
+        "title": "AI was introduced, but we don’t know how to operate it.",
+        "content": "Most failures are due to choosing the wrong application areas. At BonZuttner, we visualize business processes and limit AI to processes where it excels. Together with clients, we identify current As-Is processes, select applicable areas, and define operation rules. We accompany you through capability → KPI → deliverables until operations run smoothly."
+      },
+      "case2": {
+        "title": "We are worried because of resistance from frontline staff.",
+        "content": "Resistance often comes from changes in work style, evaluation, and authority. At BonZuttner, we define Non-Goals and clarify roles and responsibilities, improving productivity and quality. We prioritize frontline workers, creating systems with templates, rules, and reviews that can be continuously used."
+      },
+      "case3": {
+        "title": "We don’t know how to choose AI tools.",
+        "content": "Companies often fall into this when they start with functions instead of purpose, or try to solve current issues without changing workflows. At BonZuttner, we first clarify the purpose and then select tools with the client to fulfill the To-Be state. Since we also develop systems, we can propose solutions that match the client’s budget."
+      }
+    },
+
+    "relationship": {
+      "title1": "Bringing the “just right relationship” with AI to the workplace.",
+      "title2": "We act as 'interpreters' to build systems that leave results behind.",
+      "content1": "It’s extremely difficult for every company to keep up with the speed of AI evolution: new tools, cryptic acronyms, and endless updates.",
+      "content2": "To those saying “I’m tired of chasing it all…” we become the 'interpreter.' We break down the latest AI tools and transform them into forms truly usable in practice. Sometimes we worry together, sometimes we say with a grin “this is how you should do it.” We fill the gap between companies and AI, building systems that create lasting results."
+    },
+    "services": {
+      "title": "What BonZuttner Can Solve",
+      "subtitle": "At BonZuttner, we focus on accompaniment-style AX/DX support, helping companies solve problems with a wide range of services. AX means 'AI Transformation'—the implementation and embedding of automation using AI. We provide a system that ensures even companies without AI or DX literacy can use our services with confidence.",
+      "service1": {
+        "title": "AI Utilization Accompaniment Support",
+        "description1": "Support for incorporating generative AI (e.g., ChatGPT) into operations",
+        "description2": "Automation support for document creation, meeting minutes, data organization, etc.",
+        "description3": "Employee training and workshops to improve AI utilization skills"
+      },
+      "service2": {
+        "title": "Business Digitalization (DX) Accompaniment Support",
+        "description1": "Planning the digitalization of analog tasks",
+        "description2": "Tool introduction, setup, and usage training tailored to your site",
+        "description3": "Support for creating internal rules and operation manuals for tool adoption"
+      },
+      "service3": {
+        "title": "Data Utilization & Analysis Support",
+        "description1": "Organizing and visualizing existing data",
+        "description2": "Proposals and execution support for business improvement using analysis results",
+        "description3": "System development support for dashboards and tools to manage and utilize data"
+      },
+      "service4": {
+        "title": "IoT & On-site Improvement Support",
+        "description1": "Connecting sensors and equipment to networks to improve efficiency",
+        "description2": "Building systems for remote monitoring and automated alerts",
+        "description3": "Operational support in close partnership with on-site staff"
+      }
+    },
+    "section5": {
+      "title1": "Even if you are at the stage of “AI seems necessary, but where to start?”, it’s okay.",
+      "title2": "Feel free to consult us!",
+      "content": "Let’s review the current situation together and decide on the best first step for your company. We offer free consultations.",
+      "btn-content": "Contact via Form"
+    },
+    "faq": {
+      "q1": {
+        "question": "Q1: Which tasks are suited for AI?",
+        "answer": "Tasks that are 'high frequency,' 'rule-based,' and have 'clear completion definitions' are ideal for AI. To achieve both effectiveness and reproducibility, it’s best to start with standardized knowledge and easily evaluated tasks."
+      },
+      "q2": {
+        "question": "Q2: How do you ensure the handling of confidential information?",
+        "answer": "By defining data classification, minimum access rights, and operation logs beforehand, safe operation is possible. Without rules, later governance becomes very difficult."
+      },
+      "q3": {
+        "question": "Q3: Can we start operations even if our data is incomplete?",
+        "answer": "Yes. You can start with text-based tasks while structuring progresses in parallel. You don’t need to wait for a DWH setup. For many companies, initial results can be achieved just from existing manuals and text data."
+      },
+      "q4": {
+        "question": "Q4: What are the typical timelines and costs?",
+        "answer": "Since optimal scale differs per project, we propose the shortest path to adoption when creating the accompaniment plan. Costs vary depending on scope and whether new development is required. Please feel free to contact us."
+      },
+      "q5": {
+        "question": "Q5: Is in-house development necessary?",
+        "answer": "To avoid excessive costs, we may perform minimal development when there are gaps with existing tools. We also compare third-party tools to propose solutions that clients can be satisfied with."
+      }
+    },
+
+    "otherContents": {
+      "title": "OTHER CONTENTS",
+      "link1": "Product Development",
+      "link2": "Creative",
+      "arrowAlt": "Right Arrow"
+    },
+    "contact": {
+      "title": "CONTACT",
+      "subtitle": "Feel free to contact us",
+      "buttonText": "Contact via Form",
+      "arrowAlt": "Left Arrow"
     }
   }
 }
