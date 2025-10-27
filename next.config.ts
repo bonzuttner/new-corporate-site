@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
   },
   images: {
     unoptimized: true,
-  },
+  }
 };
 const withNextIntl = createNextIntlPlugin();
 export default withNextIntl(nextConfig);

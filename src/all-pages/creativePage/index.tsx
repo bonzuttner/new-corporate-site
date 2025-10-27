@@ -299,7 +299,7 @@ const Index = () => {
                 <hr className="w-[10%] border-[#00A1E9] mr-4"></hr>
                 <hr className="w-[85%] border-[#666666]"></hr>
               </div>
-              <Link href="/hands-on-support" className="flex mt-4 justify-between sm:justify-end">
+              <Link href="/support" className="flex mt-4 justify-between sm:justify-end">
                 <span className="w-full text-left text-[20px] font-medium leading-7 ml-[15%]">
                   {t('otherContents.link2')}
                 </span>
