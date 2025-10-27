@@ -31,12 +31,9 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
         onClick={() => setIsModalOpen(true)}
       >
         {/* Header */}
-        <div className="bg-gradient-to-r from-sky-500 to-sky-700 p-6 relative">
-          <span className="absolute top-3 right-4 text-5xl font-extrabold text-white/20">
-            {id}
-          </span>
-          <h3 className="text-xl font-bold text-white relative z-10">{title}</h3>
-          <p className="text-white/80 text-sm relative z-10">{client}</p>
+        <div className="bg-gradient-to-r from-sky-500 to-sky-700 p-6">
+          <h3 className="text-xl font-bold text-white">{title}</h3>
+          <p className="text-white/80 text-sm">{client}</p>
         </div>
 
         {/* Body */}
