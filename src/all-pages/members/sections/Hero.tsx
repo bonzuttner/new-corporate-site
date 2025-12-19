@@ -15,7 +15,7 @@ const Hero = () => {
                     </div>
                     <div className="text-xs font-normal">
                         <span className="text-[#ADADAD]">TOP - </span>
-                        <span>MEMBER</span>
+                        <span>MEMBERS</span>
                     </div>
                 </div>
             </Container>
