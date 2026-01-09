@@ -98,8 +98,8 @@ const ArticleDetails: React.FC = () => {
                         className="prose prose-blue max-w-none"
                         dangerouslySetInnerHTML={{
                             __html: article.Body.replaceAll(
-                                "http://213.165.93.245",
-                                `https://bonzuttner.jp/api/proxy?url=213.165.93.245`
+                                process.env.NEXT_PUBLIC_API_URL || "http://67.217.241.29",
+                                `https://bonzuttner.jp/api/proxy?url=${process.env.NEXT_PUBLIC_API_URL}`
                             ),
                         }}
                     />

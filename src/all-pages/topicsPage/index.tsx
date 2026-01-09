@@ -124,7 +124,7 @@ const Index: React.FC = () => {
   useEffect(() => {
     const fetchCategory = async () => {
       try {
-        const response = await axios.get('/api/category');
+        const response = await axios.get('/api/categories');
         console.log("API Response:", response.data);
         setCategories(response.data.data);
       } catch (error) {

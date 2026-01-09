@@ -24,7 +24,7 @@ export async function generateMetadata(
      const {slug} = await  params;
     const decodedSlug = decodeURIComponent(slug);
     const response = await axios.get(
-        `http://213.165.93.245/api/articles?filters[Title][$eq]=${decodedSlug}&populate=category`,
+        `${process.env.API_URL}/api/articles?filters[Title][$eq]=${decodedSlug}&populate=category`,
         {
             headers: {
                 Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
@@ -68,6 +68,6 @@ export async function generateMetadata(
 export default async function ArticleLayout(
     { children, params }: LayoutProps) {
     const { slug } = await params;
-    
+
     return <>{children}</>;
 }
