@@ -11,7 +11,7 @@ export async function GET(
         // decode the slug to handle Next.js automatic encoding
         const decodedSlug = decodeURIComponent(slug);
         const response = await axios.get(
-            `http://213.165.93.245/api/articles?filters[Title][$eq]=${decodedSlug}&populate=category`,
+            `${process.env.API_URL}/api/articles?filters[Title][$eq]=${decodedSlug}&populate=category`,
             {
                 headers: {
                     Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,

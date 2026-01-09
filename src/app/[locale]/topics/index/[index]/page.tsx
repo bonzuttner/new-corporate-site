@@ -77,8 +77,8 @@ export default async function ArticlePage({
           className="article-content"
           dangerouslySetInnerHTML={{
             __html: article.Body.replaceAll(
-              'http://213.165.93.245/',
-              '/api/proxy?url=213.165.93.245/'
+              process.env.API_URL ? `${process.env.API_URL}/` : 'http://67.217.241.29/',
+              `/api/proxy?url=${process.env.API_URL}/`
             )
           }}
         />
