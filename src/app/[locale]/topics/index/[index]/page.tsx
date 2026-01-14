@@ -21,7 +21,7 @@ interface Article {
 
 async function fetchArticle(slug: string): Promise<Article | null> {
   try {
-    const res = await fetch(`/api/articles/${slug}`, {
+    const res = await fetch(`${process.env.API_URL}/api/articles/${slug}`, {
       cache: "no-store",
     });
     const article = await res.json();

@@ -23,7 +23,7 @@ const ArticleDetails: React.FC = () => {
     useEffect(() => {
         const fetchArticleDetails = async () => {
             try {
-                const response = await axios.get(`/api/articles/${slug}`);
+                const response = await axios.get(`${process.env.API_URL}/api/articles/${slug}`);
                 setArticle(response.data);
             } catch (error) {
                 console.error("Error fetching article details:", error);
