@@ -55,8 +55,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
         // Generate article URLs for each locale
         routing.locales.forEach((locale) => {
+
             blogsData.forEach((blog: { slug: string; updatedAt?: string }) => {
-                const url = `${baseUrl}/${locale}/topics/article/${blog.slug}`;
+                console.log(blog);
+                const url = `https://67.217.241.29/api/articles?filters[slug][$eq]=${blog.slug}&populate=category`;
 
                 dynamicBlogUrls.push({
                     url,

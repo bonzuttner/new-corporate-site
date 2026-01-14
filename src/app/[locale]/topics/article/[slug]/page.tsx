@@ -23,8 +23,9 @@ const ArticleDetails: React.FC = () => {
     useEffect(() => {
         const fetchArticleDetails = async () => {
             try {
-                const response = await axios.get(`${process.env.API_URL}/api/articles/${slug}`);
-                setArticle(response.data);
+                const response = await axios.get(`https://67.217.241.29/api/articles?filters[slug][$eq]=${slug}&populate=category`);
+                console.log(response.data)
+                setArticle(response.data.data[0]);
             } catch (error) {
                 console.error("Error fetching article details:", error);
             } finally {

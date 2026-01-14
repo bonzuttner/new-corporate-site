@@ -139,18 +139,27 @@ const Index: React.FC = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await axios.get(`https://67.217.241.29/api/articles?filters[category][id][$eq]=${selectedTopicId}&populate=category&sort[0]=id:desc`);
+        let url = `https://67.217.241.29/api/articles?populate=category&sort[0]=id:desc`;
+
+        if (selectedTopicId !== null && selectedTopicId !== '0') {
+          url += `&filters[category][id][$eq]=${selectedTopicId}`;
+        }
+
+        const response = await axios.get(url);
+
         console.log("API Response:", response.data);
         setArticles(response.data.data);
         setPage(response.data.meta.pagination.pageCount);
-        setTotal(Math.ceil(response.data.meta.pagination.total / response.data.meta.pagination.pageSize));
-
-
+        setTotal(
+            Math.ceil(
+                response.data.meta.pagination.total /
+                response.data.meta.pagination.pageSize
+            )
+        );
       } catch (error) {
         console.error("Error fetching articles:", error);
       }
-    }
-
+    };
     if (selectedTopicId) {
       fetchArticles();
     }

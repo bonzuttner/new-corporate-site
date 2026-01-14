@@ -24,7 +24,7 @@ export async function generateMetadata(
      const {slug} = await  params;
     const decodedSlug = decodeURIComponent(slug);
     const response = await axios.get(
-        `${process.env.API_URL}/api/articles?filters[Title][$eq]=${decodedSlug}&populate=category`,
+        `https://67.217.241.29/api/articles?filters[slug][$eq]=${decodedSlug}&populate=category`,
         {
             headers: {
                 Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
