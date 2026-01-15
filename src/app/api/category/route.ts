@@ -5,7 +5,7 @@ export async function GET() {
   try {
     //use this in case it didn't work: testing purposes only
     //    const response = await axios.get('http://213.165.93.245'+'/api/articles?populate=category&sort[0]=id:desc', {
-    const response = await axios.get(`https://67.217.241.29/api/categories`, {
+    const response = await axios.get(`https://bonz.ddns.net/api/categories`, {
       headers: {
         Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
         "X-TENANT-ID": process.env.TENANT_ID,

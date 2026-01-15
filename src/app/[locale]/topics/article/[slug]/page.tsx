@@ -23,7 +23,7 @@ const ArticleDetails: React.FC = () => {
     useEffect(() => {
         const fetchArticleDetails = async () => {
             try {
-                const response = await axios.get(`https://67.217.241.29/api/articles?filters[slug][$eq]=${slug}&populate=category`);
+                const response = await axios.get(`https://bonz.ddns.net/api/articles?filters[slug][$eq]=${slug}&populate=category`);
                 console.log(response.data)
                 setArticle(response.data.data[0]);
             } catch (error) {
@@ -99,7 +99,7 @@ const ArticleDetails: React.FC = () => {
                         className="prose prose-blue max-w-none"
                         dangerouslySetInnerHTML={{
                             __html: article.Body.replaceAll(
-                                process.env.NEXT_PUBLIC_API_URL || "https://67.217.241.29",
+                                process.env.NEXT_PUBLIC_API_URL || "https://bonz.ddns.net",
                                 `https://bonzuttner.jp/api/proxy?url=${process.env.NEXT_PUBLIC_API_URL}`
                             ),
                         }}
