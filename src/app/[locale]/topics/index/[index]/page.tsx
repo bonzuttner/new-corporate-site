@@ -76,10 +76,7 @@ export default async function ArticlePage({
         <div
           className="article-content"
           dangerouslySetInnerHTML={{
-            __html: article.Body.replaceAll(
-              process.env.API_URL ? `${process.env.API_URL}/` : 'https://bonz.ddns.net/',
-              `/api/proxy?url=${process.env.API_URL}/`
-            )
+            __html: article.Body
           }}
         />
       </div>
