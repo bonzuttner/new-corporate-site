@@ -98,7 +98,10 @@ const ArticleDetails: React.FC = () => {
                     <div
                         className="prose prose-blue max-w-none"
                         dangerouslySetInnerHTML={{
-                            __html: article.Body,
+                            __html: article.Body.replace(
+                                /http:\/\/67\.217\.241\.29/g,
+                                'https://bonz.ddns.net'
+                            ),
                         }}
                     />
                 </div>
