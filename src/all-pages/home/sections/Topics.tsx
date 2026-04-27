@@ -19,7 +19,7 @@ const Topics = () => {
     useEffect(() => {
         const fetchArticles = async () => {
             try {
-                const response = await axios.get(`https://bonz.ddns.net/api/articles`);
+                const response = await axios.get(`https://corp.bonzuttner.online/api/articles`);
                 console.log("API Response:", response.data);
                 setArticles(response.data.data);
             } catch (error) {

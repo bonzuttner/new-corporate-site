@@ -24,7 +24,7 @@ export async function generateMetadata(
      const {slug} = await  params;
     const decodedSlug = decodeURIComponent(slug);
     const response = await axios.get(
-        `https://bonz.ddns.net/api/articles?filters[slug][$eq]=${decodedSlug}&populate=category`,
+        `https://corp.bonzuttner.online'/api/articles?filters[slug][$eq]=${decodedSlug}&populate=category`,
         {
             headers: {
                 Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,

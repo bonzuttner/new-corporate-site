@@ -124,7 +124,7 @@ const Index: React.FC = () => {
   useEffect(() => {
     const fetchCategory = async () => {
       try {
-        const response = await axios.get(`https://bonz.ddns.net/api/categories`);
+        const response = await axios.get(`https://corp.bonzuttner.online'/api/categories`);
         console.log("API Response:", response.data);
         setCategories(response.data.data);
       } catch (error) {
@@ -139,7 +139,7 @@ const Index: React.FC = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        let url = `https://bonz.ddns.net/api/articles?populate=category&sort[0]=id:desc`;
+        let url = `https://corp.bonzuttner.online/api/articles?populate=category&sort[0]=id:desc`;
 
         if (selectedTopicId !== null && selectedTopicId !== '0') {
           url += `&filters[category][id][$eq]=${selectedTopicId}`;

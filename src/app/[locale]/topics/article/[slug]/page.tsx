@@ -23,7 +23,7 @@ const ArticleDetails: React.FC = () => {
     useEffect(() => {
         const fetchArticleDetails = async () => {
             try {
-                const response = await axios.get(`https://bonz.ddns.net/api/articles?filters[slug][$eq]=${slug}&populate=category`);
+                const response = await axios.get(`https://corp.bonzuttner.online/api/articles?filters[slug][$eq]=${slug}&populate=category`);
                 console.log(response.data)
                 setArticle(response.data.data[0]);
             } catch (error) {
@@ -100,7 +100,7 @@ const ArticleDetails: React.FC = () => {
                         dangerouslySetInnerHTML={{
                             __html: article.Body.replace(
                                 /http:\/\/67\.217\.241\.29/g,
-                                'https://bonz.ddns.net'
+                                'https://corp.bonzuttner.online'
                             ),
                         }}
                     />

@@ -78,7 +78,7 @@ export default async function ArticlePage({
           dangerouslySetInnerHTML={{
             __html: article.Body.replace(
                 /http:\/\/67\.217\.241\.29/g,
-                'https://bonz.ddns.net'
+                'https://corp.bonzuttner.online'
             )
           }}
         />
