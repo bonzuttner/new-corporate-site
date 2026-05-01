@@ -58,8 +58,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
             blogsData.forEach((blog: { slug: string; updatedAt?: string }) => {
                 console.log(blog);
-                const url = `https://corp.bonzuttner.online/api/articles?filters[slug][$eq]=${blog.slug}&populate=category`;
-
+                
+                //const url = `https://corp.bonzuttner.online/api/articles?filters[slug][$eq]=${blog.slug}&populate=category`;
+                // updated  by Iskandar
+                const encodedSlug = encodeURIComponent(blog.slug);    
+                const url = `https://corp.bonzuttner.online/api/articles?filters[slug][$eq]=${encodedSlug}&amp;populate=category`;
+                
                 dynamicBlogUrls.push({
                     url,
                     lastModified: blog.updatedAt || currentDate,
