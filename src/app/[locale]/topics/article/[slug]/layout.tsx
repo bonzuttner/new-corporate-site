@@ -1,73 +1,78 @@
+import { Metadata, ResolvingMetadata } from "next";
+import { ReactNode } from "react";
+import { getCachedArticleByRouteSlug } from "@/server/cache/sqlite";
 
-import { Metadata, ResolvingMetadata  } from 'next';
-import axios from "axios";
-import {ReactNode} from "react";
-
+export const runtime = "nodejs";
 
 // Type for generateMetadata params only
 type GenerateMetadataProps = {
-    params: Promise<{ slug: string }>
-}
+    params: Promise<{ slug: string }>;
+};
 
 // Type for layout component props (only children)
 type LayoutProps = {
     children: ReactNode;
-    params: Promise<{ slug: string }>; // Layouts can access params too ( next + 13 ).
+    params: Promise<{ slug: string }>;
 };
 
+type MetadataArticle = {
+    seo_info?: {
+        title?: string;
+        description?: string;
+        keywords?: string[] | string;
+        og_image?: string;
+        og_title?: string;
+        canonical_url?: string;
+        twitter_title?: string;
+        og_description?: string;
+        twitter_description?: string;
+    } | null;
+};
+
+async function getMetadataArticle(routeSlug: string): Promise<MetadataArticle | null> {
+    const localArticle = getCachedArticleByRouteSlug(routeSlug);
+    if (localArticle) {
+        return { seo_info: (localArticle.seo_info as MetadataArticle["seo_info"]) || null };
+    }
+    return null;
+}
+
 export async function generateMetadata(
-    { params }: GenerateMetadataProps ,
+    { params }: GenerateMetadataProps,
     parent: ResolvingMetadata
-):
-    Promise<Metadata> {
+): Promise<Metadata> {
+    const { slug } = await params;
+    const article = await getMetadataArticle(slug);
+    const seo = article?.seo_info;
 
-     const {slug} = await  params;
-    const decodedSlug = decodeURIComponent(slug);
-    const response = await axios.get(
-        `https://corp.bonzuttner.online/api/articles?filters[slug][$eq]=${decodedSlug}&populate=category`,
-        {
-            headers: {
-                Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
-                "X-TENANT-ID": process.env.TENANT_ID,
-            },
-        }
-    );
+    if (!seo) {
+        return {};
+    }
 
-  const  article = response.data.data[0];
-
-  // console.info(article);
-    // Optionally access parent metadata
     const previousImages = (await parent).openGraph?.images || [];
-
-
-    if (!article || !article.seo_info) return {};
-
-    const { title, description, keywords , og_image , og_title ,canonical_url , twitter_title , og_description , twitter_description  } = article.seo_info;
+    const keywords = Array.isArray(seo.keywords) ? seo.keywords.join(", ") : seo.keywords;
 
     return {
-        title: title || og_title || twitter_title || undefined,
-        description: description || og_description || twitter_description || undefined,
+        title: seo.title || seo.og_title || seo.twitter_title || undefined,
+        description: seo.description || seo.og_description || seo.twitter_description || undefined,
         keywords: keywords || undefined,
         alternates: {
-            canonical: canonical_url || undefined,
+            canonical: seo.canonical_url || undefined,
         },
         openGraph: {
-            title: og_title || title || undefined,
-            description: og_description || description || undefined,
-            images: og_image ? [og_image ,...previousImages] : [...previousImages],
+            title: seo.og_title || seo.title || undefined,
+            description: seo.og_description || seo.description || undefined,
+            images: seo.og_image ? [seo.og_image, ...previousImages] : [...previousImages],
         },
         twitter: {
-            title: twitter_title || title || undefined,
-            description: twitter_description || description || undefined,
-            images: og_image ? [og_image] : undefined,
-            card: og_image ? 'summary_large_image' : 'summary',
+            title: seo.twitter_title || seo.title || undefined,
+            description: seo.twitter_description || seo.description || undefined,
+            images: seo.og_image ? [seo.og_image] : undefined,
+            card: seo.og_image ? "summary_large_image" : "summary",
         },
     };
 }
 
-export default async function ArticleLayout(
-    { children, params }: LayoutProps) {
-    const { slug } = await params;
-
+export default async function ArticleLayout({ children }: LayoutProps) {
     return <>{children}</>;
 }

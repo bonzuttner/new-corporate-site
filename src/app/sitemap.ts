@@ -5,8 +5,29 @@ import axios from 'axios';
 import { baseUrl } from '@/utils/baseUrl';
 import { routing } from '@/i18n/routing';
 
+type ApiArticle = {
+    slug?: string;
+    Title?: string;
+    updatedAt?: string;
+    attributes?: {
+        slug?: string;
+        Title?: string;
+        updatedAt?: string;
+    };
+};
+
+function getArticleSlug(article: ApiArticle): string {
+    return article.slug || article.attributes?.slug || article.Title || article.attributes?.Title || '';
+}
+
+function getArticleUpdatedAt(article: ApiArticle): string | undefined {
+    return article.updatedAt || article.attributes?.updatedAt;
+}
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const currentDate = new Date().toISOString();
+    const normalizedBaseUrl = baseUrl.replace(/\/+$/, '');
+    const apiBaseUrl = (process.env.API_URL || 'https://corp.bonzuttner.online').replace(/\/+$/, '');
 
     // Define static pages that exist for all locales
     const staticPages = [
@@ -28,8 +49,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         staticPages.forEach((page) => {
             const isHomePage = page === '';
             const url = isHomePage
-                ? (`${baseUrl}/${locale}`)
-                : (`${baseUrl}/${locale}${page}`);
+                ? (`${normalizedBaseUrl}/${locale}`)
+                : (`${normalizedBaseUrl}/${locale}${page}`);
 
             staticUrls.push({
                 url,
@@ -43,30 +64,27 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     // Generate dynamic blog URLs for all locales
     const dynamicBlogUrls: MetadataRoute.Sitemap = [];
 
+
     try {
-        const response = await axios.get(`${process.env.API_URL}/api/articles?populate=category&sort[0]=id:desc`, {
+        const response = await axios.get(`${apiBaseUrl}/api/articles?populate=category&sort[0]=id:desc`, {
             headers: {
                 Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
                 "X-TENANT-ID": process.env.TENANT_ID,
             },
         });
 
-        const blogsData = response.data.data;
+        const blogsData = (response.data?.data ?? []) as ApiArticle[];
 
-        // Generate article URLs for each locale
+        // Generate public article page URLs for each locale
         routing.locales.forEach((locale) => {
-
-            blogsData.forEach((blog: { slug: string; updatedAt?: string }) => {
-                console.log(blog);
-                
-                //const url = `https://corp.bonzuttner.online/api/articles?filters[slug][$eq]=${blog.slug}&populate=category`;
-                // updated  by Iskandar
-                const encodedSlug = encodeURIComponent(blog.slug);    
-                const url = `https://corp.bonzuttner.online/api/articles?filters[slug][$eq]=${encodedSlug}&amp;populate=category`;
-                
+            blogsData.forEach((blog) => {
+                const slug = getArticleSlug(blog).trim();
+                if (!slug) return;
+                const encodedSlug = encodeURIComponent(slug);
+                const url = `${normalizedBaseUrl}/${locale}/topics/article/${encodedSlug}`;
                 dynamicBlogUrls.push({
                     url,
-                    lastModified: blog.updatedAt || currentDate,
+                    lastModified: getArticleUpdatedAt(blog) || currentDate,
                     changeFrequency: "weekly",
                     priority: 0.7,
                 });
@@ -75,6 +93,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     } catch (error) {
         console.error("Error fetching articles:", error);
     }
+
 
     return [
         ...staticUrls,

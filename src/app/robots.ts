@@ -4,14 +4,17 @@ import { MetadataRoute } from 'next';
 import { baseUrl } from '@/utils/baseUrl';
 
 export default function robots(): MetadataRoute.Robots {
+    const normalizedBaseUrl = baseUrl.replace(/\/+$/, '');
+
     return {
         rules: [
             {
                 userAgent: '*',
                 allow: '/',
+                disallow: ['/api/'],
             },
         ],
-        sitemap: `${baseUrl}/sitemap.xml`,
-        host: baseUrl,
+        sitemap: `${normalizedBaseUrl}/sitemap.xml`,
+        host: normalizedBaseUrl,
     };
 }

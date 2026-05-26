@@ -1,126 +1,86 @@
-"use client";
-
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { useParams } from "next/navigation";
 import Link from "next/link";
-// import Image from "next/image";
-import Loading from "@/shared-components/Loading";
-import {SeoInfo} from "@/types/SeoInfo";
+import { notFound } from "next/navigation";
+import { getCachedArticleByRouteSlug, type CachedArticle } from "@/server/cache/sqlite";
 
+export const runtime = "nodejs";
 
-const ArticleDetails: React.FC = () => {
-    const { slug } = useParams();
-    const [article, setArticle] = useState<{
-        Title: string;
-        Body: string;
-        publishedAt: string;
-        category: { Name: string };
-        seo_info: SeoInfo | null ;
-    } | null>(null);
-    const [loading, setLoading] = useState(true);
+type ArticleViewModel = {
+    id: number;
+    Title: string;
+    Body: string;
+    slug: string;
+    publishedAt: string | null;
+    category?: { Name: string } | null;
+    seo_info?: Record<string, unknown> | null;
+};
 
-    useEffect(() => {
-        const fetchArticleDetails = async () => {
-            try {
-                const response = await axios.get(`https://corp.bonzuttner.online/api/articles?filters[slug][$eq]=${slug}&populate=category`);
-                console.log(response.data)
-                setArticle(response.data.data[0]);
-            } catch (error) {
-                console.error("Error fetching article details:", error);
-            } finally {
-                setLoading(false);
-            }
-        };
+function normalizeCachedArticle(article: CachedArticle): ArticleViewModel {
+    return {
+        id: article.id,
+        Title: article.Title,
+        Body: article.Body,
+        slug: article.slug,
+        publishedAt: article.publishedAt,
+        category: article.category,
+        seo_info: article.seo_info,
+    };
+}
 
-        if (slug) {
-            fetchArticleDetails();
-        }
-    }, [slug]);
-    // console.log(article?.seo_info ,'seo outside the function');
-    // console.log(article?.seo_info);
-
-    // const renderHeader = () => (
-    //     <div className="w-full bg-gray-100 pt-14 px-6 md:px-10 lg:px-24 h-[200px] lg:h-[300px] flex items-start">
-    //         <div>
-    //             <h1 className="text-3xl md:text-4xl font-semibold mb-2">ARTICLE</h1>
-    //             <p className="text-base text-gray-600">記事</p>
-    //         </div>
-    //     </div>
-    // );
-
-    if (loading) {
-        return (
-            <section className="w-full">
-                {/* {renderHeader()} */}
-                <div className="px-6 md:px-10 lg:px-24 py-10 text-center">
-                    <Loading className="" />
-                </div>
-            </section>
-        );
+async function getArticleLocalFirst(routeSlug: string): Promise<ArticleViewModel | null> {
+    const localArticle = getCachedArticleByRouteSlug(routeSlug);
+    if (localArticle) {
+        return normalizeCachedArticle(localArticle);
     }
+    return null;
+}
+
+export default async function ArticlePage({
+    params,
+}: {
+    params: Promise<{ slug: string; locale: string }>;
+}) {
+    const { slug, locale } = await params;
+    const article = await getArticleLocalFirst(slug);
 
     if (!article) {
-        return (
-            <section className="w-full">
-                {/* {renderHeader()} */}
-                <div className="px-6 md:px-10 lg:px-24 py-10 text-center">
-                    <p className="mb-4">Article not found</p>
-                    <Link href="/topics" className="text-blue-500 hover:underline">
-                        Back to Topics
-                    </Link>
-                </div>
-            </section>
-        );
+        notFound();
     }
 
     return (
         <section className="w-full">
-            {/* {renderHeader()} */}
-
             <div className="px-6 md:px-10 lg:px-24 py-10">
-
                 <div className="max-w-[1000px] mx-auto">
                     <div className="mb-10 flex justify-start items-center flex-wrap gap-10">
                         <span className="text-sm text-gray-600">
-                            {article.publishedAt
-                                ? new Date(article.publishedAt).toLocaleDateString()
-                                : "N/A"}
+                            {article.publishedAt ? new Date(article.publishedAt).toLocaleDateString() : "N/A"}
                         </span>
                         <span className="text-xs font-medium border border-blue-500 rounded-full px-4 py-1 text-blue-500">
                             {article.category?.Name || "BZ News"}
                         </span>
-
                     </div>
 
-                    <h2 className="text-2xl font-semibold mb-6">{article.Title}</h2>
+                    <h1 className="text-2xl font-semibold mb-6">{article.Title}</h1>
 
                     <div
                         className="prose prose-blue max-w-none"
                         dangerouslySetInnerHTML={{
-                            __html: article.Body.replace(
+                            __html: (article.Body || "").replace(
                                 /http:\/\/67\.217\.241\.29/g,
-                                'https://corp.bonzuttner.online'
+                                "https://corp.bonzuttner.online"
                             ),
                         }}
                     />
                 </div>
 
-                <div className="my-10  w-full flex items-center">
-                    <Link href="/topics" className="mx-auto bg-blue-500 px-[25px] py-[10px]  rounded-lg text-white hover:bg-blue-300">
-                        {/* <Image
-                            src="/images/creative/arrow-left.svg"
-                            alt="Back"
-                            width={23}
-                            height={23}
-                            className="mr-2 rotate-180"
-                        /> */}
+                <div className="my-10 w-full flex items-center">
+                    <Link
+                        href={`/${locale}/topics`}
+                        className="mx-auto bg-blue-500 px-[25px] py-[10px] rounded-lg text-white hover:bg-blue-300"
+                    >
                         一覧へ戻る
                     </Link>
                 </div>
             </div>
         </section>
     );
-};
-
-export default ArticleDetails;
+}
