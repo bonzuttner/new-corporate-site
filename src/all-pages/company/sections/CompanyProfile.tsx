@@ -28,7 +28,7 @@ const CompanyProfile = () => {
                             <div key={item.id} className="space-y-5">
                                 <div className="flex items-center justify-center">
                                     <h3 className="w-1/3 text-xs lg:text-base">{item.title}</h3>
-                                    <p className="w-2/3 text-xs lg:text-base">{item.content}</p>
+                                    <p className="w-2/3 text-xs lg:text-base whitespace-pre-line">{item.content}</p>
                                 </div>
                                 <hr className="w-full border-[#C4C4C4]"></hr>
                             </div>
