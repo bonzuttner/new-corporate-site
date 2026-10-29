@@ -1,0 +1,2483 @@
+{
+  "source": "BonZuttner_Wording_Review_All_Pages_Including_Careers.xlsx",
+  "applied": [
+    {
+      "sheet": "Top Page Review",
+      "row": "A2",
+      "old": "From the field to space, with BonZuttner.",
+      "new": "From the ground to space, with BonZuttner.",
+      "matches": [],
+      "resolution": "hero"
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A3",
+      "old": "Read the land. From space.",
+      "new": "Understand the land from space.",
+      "matches": [],
+      "resolution": "hero"
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A4",
+      "old": "Scroll into the adventure",
+      "new": "Scroll to explore",
+      "matches": [],
+      "resolution": "hero"
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A5",
+      "old": "Updates are being prepared.",
+      "new": "News and updates are coming soon.",
+      "matches": [
+        {
+          "path": [
+            "top-news.0",
+            "preparing"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "top-news.0",
+          "preparing"
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A6",
+      "old": "Challenges do not arrive neatly labeled as services.",
+      "new": "Real-world challenges don't fit neatly into service categories.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "section"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "section"
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A7",
+      "old": "We understand management and the work first, then choose the right way to engage. Hands-on business support and the ability to build reliable technology work together to move operations forward.",
+      "new": "We start by understanding both business priorities and day-to-day operations, then tailor our approach accordingly. By combining hands-on business support with technology development, we help businesses move forward.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "intro"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "intro"
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A8",
+      "old": "Change, together",
+      "new": "Making change happen, together",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "groups",
+            0,
+            "label"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "groups",
+          0,
+          "label"
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A9",
+      "old": "We work between the frontline and management to improve the work itself, and build lasting systems when technology is truly needed.",
+      "new": "We bridge the gap between frontline teams and management to improve daily operations, building sustainable systems where technology adds real value.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "groups",
+            0,
+            "summary"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "groups",
+          0,
+          "summary"
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A10",
+      "old": "Improve business and operational outcomes",
+      "new": "Drive meaningful improvements in business performance and operations.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "groups",
+            0,
+            "items",
+            0,
+            1
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "groups",
+          0,
+          "items",
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A11",
+      "old": "From requirements through operations",
+      "new": "From planning and development to launch and ongoing support.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "groups",
+            0,
+            "items",
+            1,
+            1
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "groups",
+          0,
+          "items",
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A12",
+      "old": "We turn field knowledge into our own products and data services, bringing product, technology and operations into one team.",
+      "new": "We turn firsthand operational knowledge into innovative products and data services, combining product expertise, technology, and operations within one team.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "groups",
+            1,
+            "summary"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "groups",
+          1,
+          "summary"
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A13",
+      "old": "Organizational knowledge and task-specific AI agents",
+      "new": "AI agents powered by organizational knowledge and designed for specific tasks.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "groups",
+            1,
+            "items",
+            0,
+            1
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "groups",
+          1,
+          "items",
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A14",
+      "old": "Location intelligence that protects valued vehicles",
+      "new": "Location intelligence to help protect your valuable vehicles.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "groups",
+            1,
+            "items",
+            1,
+            1
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "groups",
+          1,
+          "items",
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A15",
+      "old": "Satellite data and AI for agricultural decisions",
+      "new": "Smarter agricultural decisions powered by satellite data and AI.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "groups",
+            1,
+            "items",
+            2,
+            1
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "groups",
+          1,
+          "items",
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A16",
+      "old": "Instead of handing over an answer designed in a meeting room, we step into the work and find the answer together.",
+      "new": "Rather than delivering solutions developed behind a desk, we work alongside your team to find practical answers together.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "difference",
+            "desc"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "difference",
+          "desc"
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A17",
+      "old": "We observe the actual tasks, conversations and uncertainty—the issues that documents alone cannot reveal.",
+      "new": "We observe how work really gets done, listen to the people involved, and uncover challenges that documents alone cannot reveal.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "difference",
+            "points",
+            0,
+            2
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "difference",
+          "points",
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A18",
+      "old": "Choose not to build",
+      "new": "Build only when needed",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "difference",
+            "points",
+            1,
+            1
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "difference",
+          "points",
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A19",
+      "old": "Development is not the default. If existing tools or operating rules can solve the problem, we start there.",
+      "new": "We don't develop new systems by default. If existing tools or improved processes can solve the problem, we start there.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "difference",
+            "points",
+            1,
+            2
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "difference",
+          "points",
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A20",
+      "old": "The goal is not a proposal or launch. We stay close until the change takes root in day-to-day work.",
+      "new": "Our commitment doesn't end with a proposal or launch. We continue supporting your team until the changes become part of everyday operations.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "difference",
+            "points",
+            2,
+            2
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "difference",
+          "points",
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A21",
+      "old": "Build the future. Through the work.",
+      "new": "Build the future through what we do.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "story",
+            "title"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "story",
+          "title"
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A22",
+      "old": "We believe that every person’s knowledge and aspirations should connect fairly to meaningful work, and that daily dialogue and collaboration can bring us closer to peace. BonZuttner began in 2019 to make that belief real through business.",
+      "new": "We believe everyone deserves a fair opportunity to turn their knowledge and aspirations into meaningful work, and that everyday dialogue and collaboration can help create a more peaceful world. BonZuttner was founded in 2019 to bring this vision to life through business.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "story",
+            "body"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "story",
+          "body"
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A23",
+      "old": "The people who move the work.",
+      "new": "The people who make things happen.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "members",
+            "title"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "members",
+          "title"
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A24",
+      "old": "We listen, plan, work in the field and carry ideas through to a solution. Different expertise and backgrounds, moving as one team.",
+      "new": "We listen, plan, work alongside our clients, and turn ideas into practical solutions. Our team brings together diverse expertise and backgrounds to achieve shared goals.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "members",
+            "body"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "members",
+          "body"
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A25",
+      "old": "Start with the challenge that is still taking shape.",
+      "new": "Start with a challenge, even if it's not fully defined.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "contact",
+            "title"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "contact",
+          "title"
+        ]
+      ]
+    },
+    {
+      "sheet": "Top Page Review",
+      "row": "A26",
+      "old": "It is fine if you are not yet sure where to begin. We work between the frontline and management to clarify the way forward together.",
+      "new": "It's okay if you're not sure where to start. We work with both frontline teams and management to identify challenges and find the best way forward together.",
+      "matches": [
+        {
+          "path": [
+            "site.0",
+            "contact",
+            "body"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "site.0",
+          "contact",
+          "body"
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A2",
+      "old": "We work between the frontline and management to identify what needs to change, then combine hands-on support, development, products and data in the way that fits.",
+      "new": "We work with frontline teams and management to identify what needs to change, then bring together hands-on support, technology development, products, and data to meet each challenge.",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "lead"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "lead"
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A3",
+      "old": "Change, together.",
+      "new": "Making change happen, together.",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            0,
+            "title"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          0,
+          "title"
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A4",
+      "old": "Services that turn the reality of work into better business and operational outcomes.",
+      "new": "Practical services grounded in real-world operations that deliver meaningful business improvements.",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            0,
+            "desc"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          0,
+          "desc"
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A5",
+      "old": "We do not make systems for their own sake. We work closely with the frontline to improve business and operational outcomes—from process discovery and AI use through to lasting change.",
+      "new": "We don't build systems just for the sake of it. We work closely with frontline teams to improve processes and performance—from understanding current workflows and applying AI to making improvements that last.",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            0,
+            "items",
+            0,
+            "text"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          0,
+          "items",
+          0,
+          "text"
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A6",
+      "old": "Process discovery",
+      "new": "Process analysis",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            0,
+            "items",
+            0,
+            "tags",
+            0
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          0,
+          "items",
+          0,
+          "tags",
+          0
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A7",
+      "old": "AI enablement",
+      "new": "AI adoption and integration",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            0,
+            "items",
+            0,
+            "tags",
+            1
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          0,
+          "items",
+          0,
+          "tags",
+          1
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A8",
+      "old": "We turn unclear needs into a shared understanding of the work, then support design, development and operations. AI can accelerate delivery, while quality, security and sustained use remain essential.",
+      "new": "We clarify business needs, align stakeholders, and support every stage from design and development to ongoing operations. We use AI to speed up delivery without compromising quality, security, or long-term usability.",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            0,
+            "items",
+            1,
+            "text"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          0,
+          "items",
+          1,
+          "text"
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A9",
+      "old": "Requirements",
+      "new": "Requirements planning",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            0,
+            "items",
+            1,
+            "tags",
+            0
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          0,
+          "items",
+          1,
+          "tags",
+          0
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A10",
+      "old": "Build",
+      "new": "Development",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            0,
+            "items",
+            1,
+            "tags",
+            1
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          0,
+          "items",
+          1,
+          "tags",
+          1
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A11",
+      "old": "Operations",
+      "new": "Ongoing support",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            0,
+            "items",
+            1,
+            "tags",
+            2
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          0,
+          "items",
+          1,
+          "tags",
+          2
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A12",
+      "old": "OWN PRODUCTS & DATA",
+      "new": "OUR PRODUCTS & DATA",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            1,
+            "kind"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          1,
+          "kind"
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A13",
+      "old": "We turn field knowledge into products and data services that we develop ourselves.",
+      "new": "We transform firsthand operational insights into products and data services built by our team.",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            1,
+            "desc"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          1,
+          "desc"
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A14",
+      "old": "From organizational knowledge to task-specific AI agents. Beyond RAG, we tailor workflows, permissions and security standards to each organization.",
+      "new": "We turn organizational knowledge into AI agents designed for specific tasks. Beyond retrieval-augmented generation (RAG), we tailor workflows, access controls, and security measures to each organization's needs.",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            1,
+            "items",
+            0,
+            "text"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          1,
+          "items",
+          0,
+          "text"
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A15",
+      "old": "Security design",
+      "new": "Security and access controls",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            1,
+            "items",
+            0,
+            "tags",
+            2
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          1,
+          "items",
+          0,
+          "tags",
+          2
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A16",
+      "old": "Connected Asset Care",
+      "new": "Vehicle Tracking & Protection",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            1,
+            "items",
+            1,
+            "sub"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          1,
+          "items",
+          1,
+          "sub"
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A17",
+      "old": "Our location intelligence service combines tracking, mutual monitoring and weather-risk alerts to protect valued vehicles before risks become damage.",
+      "new": "Our location intelligence service combines vehicle tracking, collaborative monitoring, and weather-related alerts to help protect valuable vehicles before potential threats cause damage.",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            1,
+            "items",
+            1,
+            "text"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          1,
+          "items",
+          1,
+          "text"
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A18",
+      "old": "Mutual monitoring",
+      "new": "Collaborative monitoring",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            1,
+            "items",
+            1,
+            "tags",
+            1
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          1,
+          "items",
+          1,
+          "tags",
+          1
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A19",
+      "old": "Weather risk",
+      "new": "Weather alerts",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            1,
+            "items",
+            1,
+            "tags",
+            2
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          1,
+          "items",
+          1,
+          "tags",
+          2
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A20",
+      "old": "Satellite data and AI for agricultural decisions. We combine climate, soil and field information to support crop suitability, farmland insight and planning.",
+      "new": "We use satellite data and AI to support smarter agricultural decisions. By combining climate, soil, and field information, we help assess crop suitability, understand farmland conditions, and improve planning.",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "groups",
+            1,
+            "items",
+            2,
+            "text"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "groups",
+          1,
+          "items",
+          2,
+          "text"
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A21",
+      "old": "Start with the challenge still taking shape.",
+      "new": "Start with a challenge, even if it's not fully defined.",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "cta",
+            "title"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "cta",
+          "title"
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A22",
+      "old": "You do not need to know what to ask for yet. Tell us about the work and the business situation first.",
+      "new": "You don't need to have a solution in mind. Start by telling us about your business and the challenges you're facing.",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "cta",
+            "body"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "cta",
+          "body"
+        ]
+      ]
+    },
+    {
+      "sheet": "Services Page Review",
+      "row": "A23",
+      "old": "Explore service",
+      "new": "Learn more",
+      "matches": [
+        {
+          "path": [
+            "services.0",
+            "details"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "services.0",
+          "details"
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A2",
+      "old": "Through work,towards peace.",
+      "new": "Through work, toward peace.",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "hero",
+            "title"
+          ],
+          "type": "array"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "hero",
+          "title"
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A3",
+      "old": "Connect each person’s skills, experience and aspirations to work and society. Talk, understand and create value together. We believe these everyday acts can bring us closer to peace.",
+      "new": "We connect people’s skills, experience, and aspirations with meaningful work and opportunities to contribute to society. Through dialogue, understanding, and creating value together, we believe we can move closer to peace.",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "hero",
+            "body"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "hero",
+          "body"
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A4",
+      "old": "Between talentand opportunity.",
+      "new": "Bridging talent and opportunity.",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "beginning",
+            "title"
+          ],
+          "type": "array"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "beginning",
+          "title"
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A5",
+      "old": "Our starting point was meeting skilled Syrian IT professionals whose displacement or place of residence kept them from work and fair compensation.",
+      "new": "Our journey began when we met skilled Syrian IT professionals who faced barriers to employment and fair compensation because of displacement or where they lived.",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "beginning",
+            "body",
+            0
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "beginning",
+          "body",
+          0
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A6",
+      "old": "At the same time, workplaces in Japan and elsewhere needed specialist technology skills. We wanted to connect those people and needs through work that creates value for customers. In 2019, BonZuttner began as a system development company.",
+      "new": "At the same time, businesses in Japan and beyond needed specialized technology expertise. We saw an opportunity to connect skilled professionals with those needs while delivering value to customers. BonZuttner was founded in 2019 as a systems development company.",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "beginning",
+            "body",
+            1
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "beginning",
+          "body",
+          1
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A7",
+      "old": "Read the feature about our founding",
+      "new": "Read the story behind our founding",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "beginning",
+            "source"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "beginning",
+          "source"
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A8",
+      "old": "Keep tryingto do good.",
+      "new": "Keep striving to do good.",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "name",
+            "title"
+          ],
+          "type": "array"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "name",
+          "title"
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A9",
+      "old": "Our name pays respect to Bertha von Suttner, a peace activist and Nobel Peace Prize laureate. We want a wish for peace to shape everyday conduct. We also bring three words together in the name.",
+      "new": "Our name honors Bertha von Suttner, a peace activist and Nobel Peace Prize laureate. Her commitment to peace inspires how we act every day. Our name also draws on three linguistic elements.",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "name",
+            "body"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "name",
+          "body"
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A10",
+      "old": "A person who acts",
+      "new": "Someone who takes action",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "name",
+            "parts",
+            2,
+            1
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "name",
+          "parts",
+          2,
+          1
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A11",
+      "old": "Someone who keeps striving to be good, and acts on that intention.",
+      "new": "Someone who continually strives to do good—and follows through with action.",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "name",
+            "meaning"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "name",
+          "meaning"
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A12",
+      "old": "Across borders,working together.",
+      "new": "Working together across borders.",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "technology",
+            "title"
+          ],
+          "type": "array"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "technology",
+          "title"
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A13",
+      "old": "Who is this technology for, and how will we use it?",
+      "new": "Who does this technology serve, and how can we use it responsibly?",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "technology",
+            "note"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "technology",
+          "note"
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A14",
+      "old": "IT enables people in different places to combine their expertise and produce useful results. We chose this field to connect the skills of people we met with work that society needs.",
+      "new": "Technology enables people in different places to bring their expertise together and deliver meaningful results. We chose this field to connect the skills of the people we met with work that addresses real needs in society.",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "technology",
+            "body",
+            0
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "technology",
+          "body",
+          0
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A15",
+      "old": "AI can accelerate work and development. Understanding a business, designing systems, and taking responsibility for quality, security and operation remain essential professional skills. We believe their value will continue.",
+      "new": "AI can accelerate work and software development. But understanding business needs, designing reliable systems, and taking responsibility for quality, security, and ongoing operations still require professional expertise. We believe these skills will remain essential.",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "technology",
+            "body",
+            1
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "technology",
+          "body",
+          1
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A16",
+      "old": "OUR THREE “RE.”",
+      "new": "OUR THREE “RE” PRINCIPLES",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "re",
+            "label"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "re",
+          "label"
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A17",
+      "old": "A next beginning.For each person.",
+      "new": "A new beginning for each person.",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "re",
+            "title"
+          ],
+          "type": "array"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "re",
+          "title"
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A18",
+      "old": "Displacement and nationality do not describe a whole person. Each has a name, skills, character and aspirations. Through work, we want to create more opportunities for people to choose their future.",
+      "new": "No one should be defined solely by displacement or nationality. Every person has a name, skills, character, and aspirations. Through meaningful work, we aim to create more opportunities for people to shape their own futures.",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "re",
+            "body"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "re",
+          "body"
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A19",
+      "old": "RebuildRecreateRestart",
+      "new": "Rebuild · Recreate · Restart",
+      "matches": [],
+      "resolution": "accessible tab separators"
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A20",
+      "old": "Build a new life and environment, and renew the bonds between people.",
+      "new": "Build a new life in a new environment and reconnect with others.",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "re",
+            "items",
+            0,
+            2
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "re",
+          "items",
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A21",
+      "old": "A sincere attitude,with a spoonful of humor.",
+      "new": "A sincere approach, with a dash of humor.",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "future",
+            "value"
+          ],
+          "type": "array"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "future",
+          "value"
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A22",
+      "old": "Put these beliefsto work.",
+      "new": "Putting our beliefs into action.",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "next",
+            "title"
+          ],
+          "type": "array"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "next",
+          "title"
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A23",
+      "old": "What could we do together? Who would you work with? Meet today’s BonZuttner through our services and team.",
+      "new": "What could we achieve together, and who would you work alongside? Explore our services and meet the people behind BonZuttner.",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "next",
+            "body"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "next",
+          "body"
+        ]
+      ]
+    },
+    {
+      "sheet": "Our Story Page Review",
+      "row": "A24",
+      "old": "Meet the members",
+      "new": "Meet our team",
+      "matches": [
+        {
+          "path": [
+            "story.0",
+            "next",
+            "members"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "story.0",
+          "next",
+          "members"
+        ]
+      ]
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A2",
+      "old": "Members",
+      "new": "Our Team",
+      "matches": [
+        {
+          "path": [
+            "members.0",
+            "nav",
+            3
+          ],
+          "type": "string"
+        },
+        {
+          "path": [
+            "site-shell.0",
+            "links",
+            2
+          ],
+          "type": "string"
+        },
+        {
+          "path": [
+            "site.0",
+            "nav",
+            2
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "members.0",
+          "nav",
+          3
+        ],
+        [
+          "site-shell.0",
+          "links",
+          2
+        ],
+        [
+          "site.0",
+          "nav",
+          2
+        ]
+      ]
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A3",
+      "old": "★ Welcome to the BonZuttner team page ★",
+      "new": "★ Welcome to the BonZuttner team! ★",
+      "matches": [
+        {
+          "path": [
+            "members.12",
+            "welcome"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "members.12",
+          "welcome"
+        ]
+      ]
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A4",
+      "old": "A little break. Tap a face and say hello.",
+      "new": "Take a little break—select a face to meet a team member.",
+      "matches": [
+        {
+          "path": [
+            "members.12",
+            "hint"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "members.12",
+          "hint"
+        ]
+      ]
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A5",
+      "old": "Listening, thinking and building.",
+      "new": "We listen, think, and build.",
+      "matches": [],
+      "resolution": "intro substring"
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A6",
+      "old": "We bring different skills and backgrounds to our customers’ work.",
+      "new": "We bring a wide range of skills and perspectives to the challenges our clients face.",
+      "matches": [],
+      "resolution": "intro substring"
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A7",
+      "old": "We work hard together, and make room for a laugh along the way.",
+      "new": "We work hard as a team, but always make room for a little laughter.",
+      "matches": [],
+      "resolution": "intro substring"
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A8",
+      "old": "Meet BonZuttner.",
+      "new": "Meet the BonZuttner team.",
+      "matches": [],
+      "resolution": "intro substring"
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A9",
+      "old": "Meet the members ↓",
+      "new": "Meet the team ↓",
+      "matches": [],
+      "resolution": "roster link"
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A10",
+      "old": "Pause motion",
+      "new": "Pause animation",
+      "matches": [
+        {
+          "path": [
+            "members.12",
+            "pause"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "members.12",
+          "pause"
+        ]
+      ]
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A11",
+      "old": "Different people. A shared effort.",
+      "new": "Different people. One shared purpose.",
+      "matches": [
+        {
+          "path": [
+            "members.0",
+            "roster"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "members.0",
+          "roster"
+        ]
+      ]
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A12",
+      "old": "Different backgrounds, strengths and personalities. Together, we can do more.",
+      "new": "We each bring different backgrounds, strengths, and perspectives. Together, we achieve more.",
+      "matches": [
+        {
+          "path": [
+            "members.0",
+            "rosterBody"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "members.0",
+          "rosterBody"
+        ]
+      ]
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A13",
+      "old": "Profile +",
+      "new": "View profile +",
+      "matches": [
+        {
+          "path": [
+            "members.11",
+            "open"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "members.11",
+          "open"
+        ]
+      ]
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A14",
+      "old": "CIODevelopment ManagerFrontend Engineer",
+      "new": "CIO · Development Manager · Frontend Engineer",
+      "matches": [],
+      "resolution": "role separators"
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A15",
+      "old": "CTOAI Specialist",
+      "new": "CTO · AI Specialist",
+      "matches": [],
+      "resolution": "role separators"
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A16",
+      "old": "Strategy ConsultantDirector",
+      "new": "Strategy Consultant · Director",
+      "matches": [],
+      "resolution": "role separators"
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A17",
+      "old": "WORK WITH US",
+      "new": "LET'S WORK TOGETHER",
+      "matches": [],
+      "resolution": "section label"
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A18",
+      "old": "What could wedo together?",
+      "new": "What could we do together?",
+      "matches": [
+        {
+          "path": [
+            "members.0",
+            "closing"
+          ],
+          "type": "array"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "members.0",
+          "closing"
+        ]
+      ]
+    },
+    {
+      "sheet": "Members Page Review",
+      "row": "A19",
+      "old": "From understanding the workplace to building useful systems. Explore how our team can work with you.",
+      "new": "From understanding your day-to-day challenges to building practical solutions, discover how our team can support your business.",
+      "matches": [
+        {
+          "path": [
+            "members.0",
+            "closingBody"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "members.0",
+          "closingBody"
+        ]
+      ]
+    },
+    {
+      "sheet": "Company Page Review",
+      "row": "A2",
+      "old": "Different perspectives.Moving work forward.",
+      "new": "Different perspectives. Moving forward together.",
+      "matches": [
+        {
+          "path": [
+            "company.0",
+            "title"
+          ],
+          "type": "array"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "company.0",
+          "title"
+        ]
+      ]
+    },
+    {
+      "sheet": "Company Page Review",
+      "row": "A3",
+      "old": "We understand management and frontline work, then bring together the technology it needs.",
+      "new": "We understand both business priorities and day-to-day operations, then bring in the right technology to support them.",
+      "matches": [],
+      "resolution": "intro substring"
+    },
+    {
+      "sheet": "Company Page Review",
+      "row": "A4",
+      "old": "Our team combines different expertise and backgrounds to work alongside our customers.",
+      "new": "Our team brings together people with diverse expertise and backgrounds to work closely with our clients.",
+      "matches": [],
+      "resolution": "intro substring"
+    },
+    {
+      "sheet": "Company Page Review",
+      "row": "A5",
+      "old": "Sincerity, with a spoonful of humor.",
+      "new": "Sincerity, with a dash of humor.",
+      "matches": [
+        {
+          "path": [
+            "company.0",
+            "attitude"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "company.0",
+          "attitude"
+        ]
+      ]
+    },
+    {
+      "sheet": "Company Page Review",
+      "row": "A6",
+      "old": "Why we began, and what we work towards.",
+      "new": "Why we started and what we're working toward.",
+      "matches": [
+        {
+          "path": [
+            "company.0",
+            "destinations",
+            0,
+            2
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "company.0",
+          "destinations",
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "sheet": "Company Page Review",
+      "row": "A7",
+      "old": "The people moving the work forward together.",
+      "new": "Meet the people who make things happen.",
+      "matches": [
+        {
+          "path": [
+            "company.0",
+            "destinations",
+            1,
+            2
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "company.0",
+          "destinations",
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "sheet": "Company Page Review",
+      "row": "A8",
+      "old": "The challenges we can help you address.",
+      "new": "How we can help you tackle your business challenges.",
+      "matches": [
+        {
+          "path": [
+            "company.0",
+            "destinations",
+            2,
+            2
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "company.0",
+          "destinations",
+          2,
+          2
+        ]
+      ]
+    },
+    {
+      "sheet": "Careers Page Review",
+      "row": "A2",
+      "old": "Different strengths.Shared work.",
+      "new": "Different strengths. One shared purpose.",
+      "matches": [
+        {
+          "path": [
+            "recruit.0",
+            "title"
+          ],
+          "type": "array"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "recruit.0",
+          "title"
+        ]
+      ]
+    },
+    {
+      "sheet": "Careers Page Review",
+      "row": "A3",
+      "old": "People who understand the field. People who deepen their technical expertise. People who connect others. We bring our strengths together to move real work forward.",
+      "new": "People who understand day-to-day operations. People with deep technical expertise. People who bring others together. We combine our strengths to make meaningful progress.",
+      "matches": [
+        {
+          "path": [
+            "recruit.0",
+            "intro"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "recruit.0",
+          "intro"
+        ]
+      ]
+    },
+    {
+      "sheet": "Careers Page Review",
+      "row": "A4",
+      "old": "Explore openings",
+      "new": "Explore career opportunities",
+      "matches": [
+        {
+          "path": [
+            "recruit.0",
+            "positions"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "recruit.0",
+          "positions"
+        ]
+      ]
+    },
+    {
+      "sheet": "Careers Page Review",
+      "row": "A5",
+      "old": "Take the work seriously.Keep a sense of humor.",
+      "new": "Take our work seriously. Keep our sense of humor.",
+      "matches": [
+        {
+          "path": [
+            "recruit.0",
+            "way"
+          ],
+          "type": "array"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "recruit.0",
+          "way"
+        ]
+      ]
+    },
+    {
+      "sheet": "Careers Page Review",
+      "row": "A6",
+      "old": "See the work and listen first. Choose the technology it needs and stay involved until it is used. We care about being sincere in the work in front of us.",
+      "new": "We start by observing how people work and listening to their needs. We use technology where it adds value and stay involved until the solution works in practice. We approach each challenge with sincerity and care.",
+      "matches": [
+        {
+          "path": [
+            "recruit.0",
+            "wayBody",
+            0
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "recruit.0",
+          "wayBody",
+          0
+        ]
+      ]
+    },
+    {
+      "sheet": "Careers Page Review",
+      "row": "A7",
+      "old": "Our strengths and backgrounds do not have to be the same. We value the steady work of talking, thinking and doing, together as one team.",
+      "new": "Our backgrounds and strengths may differ, but we value open communication, thoughtful collaboration, and taking action together as one team.",
+      "matches": [
+        {
+          "path": [
+            "recruit.0",
+            "wayBody",
+            1
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "recruit.0",
+          "wayBody",
+          1
+        ]
+      ]
+    },
+    {
+      "sheet": "Careers Page Review",
+      "row": "A8",
+      "old": "Each opening describes the role and its conditions.",
+      "new": "Each job listing provides details about the role and working conditions.",
+      "matches": [
+        {
+          "path": [
+            "recruit.0",
+            "jobsBody"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "recruit.0",
+          "jobsBody"
+        ]
+      ]
+    },
+    {
+      "sheet": "Careers Page Review",
+      "row": "A9",
+      "old": "We are preparing the openings.",
+      "new": "We're currently preparing our job postings.",
+      "matches": [
+        {
+          "path": [
+            "recruit.0",
+            "preparing"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "recruit.0",
+          "preparing"
+        ]
+      ]
+    },
+    {
+      "sheet": "Careers Page Review",
+      "row": "A10",
+      "old": "Please check back once they are published.",
+      "new": "Please check back soon for updates.",
+      "matches": [
+        {
+          "path": [
+            "recruit.0",
+            "preparingBody"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "recruit.0",
+          "preparingBody"
+        ]
+      ]
+    },
+    {
+      "sheet": "Careers Page Review",
+      "row": "A11",
+      "old": "If you have questions about joining BonZuttner, get in touch.",
+      "new": "Have questions about working at BonZuttner? We'd love to hear from you.",
+      "matches": [
+        {
+          "path": [
+            "recruit.0",
+            "talkBody"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "recruit.0",
+          "talkBody"
+        ]
+      ]
+    },
+    {
+      "sheet": "Careers Page Review",
+      "row": "A12",
+      "old": "Ask about careers",
+      "new": "Contact us about careers",
+      "matches": [
+        {
+          "path": [
+            "recruit.0",
+            "talkAction"
+          ],
+          "type": "string"
+        }
+      ],
+      "resolution": "locale",
+      "paths": [
+        [
+          "recruit.0",
+          "talkAction"
+        ]
+      ]
+    }
+  ],
+  "pending": [
+    {
+      "sheet": "Members Page Review",
+      "row": "A20",
+      "old": "Member names shown in Japanese script (e.g., イスマイル, ゆーか, ムニール, マヘル).",
+      "new": "Use each member's preferred Romanized name on the English page, after confirming the spelling with them.",
+      "matches": [],
+      "reason": "Awaiting confirmation of preferred Romanized spellings by the members."
+    }
+  ],
+  "unchanged_locale_hashes": {
+    "ja": "3a215c8fb5023cde8edd54d680bb81db167a5abdf455d83d66b6324aab27c014",
+    "ar": "bcdc35d9488e33a8190c272607133a10156fc42e09dda4d5d4edb28681483928"
+  }
+}
