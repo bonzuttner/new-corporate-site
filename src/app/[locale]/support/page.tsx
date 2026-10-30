@@ -1,8 +1,10 @@
-import Support from '@/all-pages/support';
-export default function Creative() {
-  return (
-    <main>
-      <Support />
-    </main>
-  );
+import { redirect } from 'next/navigation';
+
+export default async function SupportRedirect({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  redirect(`/${locale}/contact`);
 }

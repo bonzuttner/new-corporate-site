@@ -1,9 +1,14 @@
-import Contact from '@/all-pages/contact';
+import { Render2026Page, get2026PageMetadata } from '@/components/Render2026Page';
+import type { Metadata } from 'next';
 
-export default function ContactPage() {
-  return (
-    <main>
-      <Contact />
-    </main>
-  );
+type Params = { locale: string };
+
+export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
+  const { locale } = await params;
+  return get2026PageMetadata(locale, 'contact');
+}
+
+export default async function ContactPage({ params }: { params: Promise<Params> }) {
+  const { locale } = await params;
+  return <Render2026Page locale={locale} routeKey="contact" />;
 }

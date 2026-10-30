@@ -1,0 +1,4 @@
+.modern-language{font:inherit;font-size:.78rem;padding:.35rem .5rem;color:inherit;background:transparent;border:1px solid #bbb;border-radius:3px;cursor:pointer;white-space:nowrap}
+.languages{flex-wrap:wrap;align-items:center}
+.header{height:auto;min-height:86px;flex-wrap:wrap;padding-block:12px}
+html[data-theme="retro"] .modern-language{font-size:12px;padding:0;border:0;border-radius:0;color:#0000ee;text-decoration:underline}

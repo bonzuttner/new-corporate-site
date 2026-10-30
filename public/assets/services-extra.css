@@ -1,0 +1,22 @@
+.service-actions{display:flex;align-items:center;gap:16px}
+.service-languages{display:flex;gap:5px;direction:ltr}
+.service-languages a{padding:4px 6px;color:#64747b;font-size:12px;text-decoration:none}
+.service-languages a[aria-current]{background:var(--ink);color:#fff;font-weight:800}
+@media(max-width:620px){.service-languages{display:none}.service-actions{gap:0}}
+@media(min-width:901px){.service-group-head>p:last-child{grid-row:2;align-self:start;margin:.22em 0 0}html[lang="ja"] .service-group-head>p:last-child{white-space:nowrap}}
+@media(max-width:900px){.service-group-head>p:last-child{white-space:normal}}
+.sweat-line{display:inline-block;padding-inline-start:0}
+.sweat-kanji{position:relative;display:inline-block;color:#176b9f}
+.sweat-kanji::before,.sweat-kanji::after{content:'';position:absolute;width:.13em;height:.19em;background:#3ba1e8;border-radius:70% 70% 70% 0;transform:rotate(-45deg)}
+.sweat-kanji::before{left:-.14em;top:.32em}
+.sweat-kanji::after{left:-.14em;top:.7em;transform:rotate(-45deg) scale(.72)}
+.service-group-head--own-products{grid-template-columns:70px 1fr}
+.service-group-head--own-products>p:first-of-type,.service-group-head--own-products h2,.service-group-head--own-products>p:last-child{grid-column:2}
+.service-group-head--own-products h2{grid-row:2;white-space:nowrap}
+.service-group-head--own-products>p:last-child{grid-row:3;white-space:nowrap;margin:0}
+.product-logo{display:block;max-width:100%;height:auto}
+.product-logo--akarel{width:clamp(138px,13vw,205px)}
+.product-logo--polariss{width:clamp(170px,16vw,255px)}
+.product-logo--satellite{width:clamp(185px,18vw,278px)}
+.card-detail-link{display:inline-flex;align-items:center;gap:10px;align-self:end;margin-top:-4px;padding-top:10px;border-top:1px solid #bdd3df;color:#176b9f;font-size:14px;font-weight:800;text-decoration:none}.card-detail-link span{font-size:17px;line-height:1}
+@media(max-width:900px){.sweat-line{padding-inline-start:0}.service-group-head--own-products{grid-template-columns:45px 1fr}.service-group-head--own-products h2{font-size:clamp(24px,8.3vw,42px);letter-spacing:-.07em}.service-group-head--own-products>p:last-child{white-space:normal}.product-logo--akarel{width:170px}.product-logo--polariss{width:210px}.product-logo--satellite{width:245px}}

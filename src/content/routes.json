@@ -1,0 +1,324 @@
+[
+  {
+    "locale": "ar",
+    "slug": [
+      "akarel"
+    ],
+    "document": "ar__akarel.html"
+  },
+  {
+    "locale": "ar",
+    "slug": [
+      "company"
+    ],
+    "document": "ar__company.html"
+  },
+  {
+    "locale": "ar",
+    "slug": [
+      "contact"
+    ],
+    "document": "ar__contact.html"
+  },
+  {
+    "locale": "ar",
+    "slug": [
+      "development"
+    ],
+    "document": "ar__development.html"
+  },
+  {
+    "locale": "ar",
+    "slug": [
+      "dx-ai"
+    ],
+    "document": "ar__dx-ai.html"
+  },
+  {
+    "locale": "ar",
+    "slug": [],
+    "document": "ar.html"
+  },
+  {
+    "locale": "ar",
+    "slug": [
+      "members"
+    ],
+    "document": "ar__members.html"
+  },
+  {
+    "locale": "ar",
+    "slug": [
+      "news",
+      "article"
+    ],
+    "document": "ar__news__article.html"
+  },
+  {
+    "locale": "ar",
+    "slug": [
+      "news"
+    ],
+    "document": "ar__news.html"
+  },
+  {
+    "locale": "ar",
+    "slug": [
+      "polariss"
+    ],
+    "document": "ar__polariss.html"
+  },
+  {
+    "locale": "ar",
+    "slug": [
+      "recruit"
+    ],
+    "document": "ar__recruit.html"
+  },
+  {
+    "locale": "ar",
+    "slug": [
+      "recruit",
+      "position"
+    ],
+    "document": "ar__recruit__position.html"
+  },
+  {
+    "locale": "ar",
+    "slug": [
+      "satellite"
+    ],
+    "document": "ar__satellite.html"
+  },
+  {
+    "locale": "ar",
+    "slug": [
+      "services"
+    ],
+    "document": "ar__services.html"
+  },
+  {
+    "locale": "ar",
+    "slug": [
+      "story"
+    ],
+    "document": "ar__story.html"
+  },
+  {
+    "locale": "en",
+    "slug": [
+      "akarel"
+    ],
+    "document": "en__akarel.html"
+  },
+  {
+    "locale": "en",
+    "slug": [
+      "company"
+    ],
+    "document": "en__company.html"
+  },
+  {
+    "locale": "en",
+    "slug": [
+      "contact"
+    ],
+    "document": "en__contact.html"
+  },
+  {
+    "locale": "en",
+    "slug": [
+      "development"
+    ],
+    "document": "en__development.html"
+  },
+  {
+    "locale": "en",
+    "slug": [
+      "dx-ai"
+    ],
+    "document": "en__dx-ai.html"
+  },
+  {
+    "locale": "en",
+    "slug": [],
+    "document": "en.html"
+  },
+  {
+    "locale": "en",
+    "slug": [
+      "members"
+    ],
+    "document": "en__members.html"
+  },
+  {
+    "locale": "en",
+    "slug": [
+      "news",
+      "article"
+    ],
+    "document": "en__news__article.html"
+  },
+  {
+    "locale": "en",
+    "slug": [
+      "news"
+    ],
+    "document": "en__news.html"
+  },
+  {
+    "locale": "en",
+    "slug": [
+      "polariss"
+    ],
+    "document": "en__polariss.html"
+  },
+  {
+    "locale": "en",
+    "slug": [
+      "recruit"
+    ],
+    "document": "en__recruit.html"
+  },
+  {
+    "locale": "en",
+    "slug": [
+      "recruit",
+      "position"
+    ],
+    "document": "en__recruit__position.html"
+  },
+  {
+    "locale": "en",
+    "slug": [
+      "satellite"
+    ],
+    "document": "en__satellite.html"
+  },
+  {
+    "locale": "en",
+    "slug": [
+      "services"
+    ],
+    "document": "en__services.html"
+  },
+  {
+    "locale": "en",
+    "slug": [
+      "story"
+    ],
+    "document": "en__story.html"
+  },
+  {
+    "locale": "ja",
+    "slug": [
+      "akarel"
+    ],
+    "document": "ja__akarel.html"
+  },
+  {
+    "locale": "ja",
+    "slug": [
+      "company"
+    ],
+    "document": "ja__company.html"
+  },
+  {
+    "locale": "ja",
+    "slug": [
+      "contact"
+    ],
+    "document": "ja__contact.html"
+  },
+  {
+    "locale": "ja",
+    "slug": [
+      "development"
+    ],
+    "document": "ja__development.html"
+  },
+  {
+    "locale": "ja",
+    "slug": [
+      "dx-ai"
+    ],
+    "document": "ja__dx-ai.html"
+  },
+  {
+    "locale": "ja",
+    "slug": [],
+    "document": "ja.html"
+  },
+  {
+    "locale": "ja",
+    "slug": [
+      "members"
+    ],
+    "document": "ja__members.html"
+  },
+  {
+    "locale": "ja",
+    "slug": [
+      "news",
+      "article"
+    ],
+    "document": "ja__news__article.html"
+  },
+  {
+    "locale": "ja",
+    "slug": [
+      "news"
+    ],
+    "document": "ja__news.html"
+  },
+  {
+    "locale": "ja",
+    "slug": [
+      "polariss"
+    ],
+    "document": "ja__polariss.html"
+  },
+  {
+    "locale": "ja",
+    "slug": [
+      "privacy-policy"
+    ],
+    "document": "ja__privacy-policy.html"
+  },
+  {
+    "locale": "ja",
+    "slug": [
+      "recruit"
+    ],
+    "document": "ja__recruit.html"
+  },
+  {
+    "locale": "ja",
+    "slug": [
+      "recruit",
+      "position"
+    ],
+    "document": "ja__recruit__position.html"
+  },
+  {
+    "locale": "ja",
+    "slug": [
+      "satellite"
+    ],
+    "document": "ja__satellite.html"
+  },
+  {
+    "locale": "ja",
+    "slug": [
+      "services"
+    ],
+    "document": "ja__services.html"
+  },
+  {
+    "locale": "ja",
+    "slug": [
+      "story"
+    ],
+    "document": "ja__story.html"
+  }
+]
