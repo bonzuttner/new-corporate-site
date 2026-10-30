@@ -43,7 +43,7 @@
     <main id="main">
       <section class="mb-hero mb-section" aria-labelledby="mb-title">
         <p class="mb-welcome">${playCopy.welcome}</p>
-        <figure class="mb-hello"><img class="mb-team-image" src="/assets/members/team-pixel.png" alt="${lang === 'ja' ? '木々と街を背景に、ベンチで語り合うチームのドット絵' : lang === 'en' ? 'Pixel illustration of a team talking together on park benches, with trees and buildings behind them' : 'رسم بكسل لفريق يتحدث على مقاعد حديقة بين الأشجار والمباني'}" width="1774" height="887" fetchpriority="high" decoding="async"><figcaption><span dir="ltr">BonZuttner — ${t.label}</span></figcaption></figure>
+        <figure class="mb-hello"><img class="mb-team-image" src="/assets/members/team-pixel.png" alt="${lang === 'ja' ? '木々と街を背景に、ベンチで語り合うチームのドット絵' : lang === 'en' ? 'Pixel illustration of a team talking together on park benches, with trees and buildings behind them' : 'رسم بكسل لفريق يتحدث على مقاعد حديقة بين الأشجار والمباني'}" width="1774" height="887" fetchPriority="high" decoding="async"><figcaption><span dir="ltr">BonZuttner — ${t.label}</span></figcaption></figure>
         <div class="mb-playground" aria-label="${t.label}">
           <div class="mb-greeting-output" role="status" aria-live="polite" aria-atomic="true"></div>
           ${members.map((member, i) => `<div class="mb-play-lane" style="--delay:${-i * 1.7}s;--duration:${8 + i % 3}s;--direction:${i % 2 ? -1 : 1}"><div class="mb-wander"><button class="mb-avatar" type="button" aria-label="${member.name}${playCopy.play}" data-member="${member.id}"><span class="mb-spark" aria-hidden="true">${i % 2 ? '♪' : '!'}</span><img src="/assets/members/${member.image}" alt="" width="64" height="64" decoding="async"></button></div></div>`).join('')}

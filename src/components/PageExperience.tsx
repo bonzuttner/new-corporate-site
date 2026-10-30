@@ -40,7 +40,11 @@ export function PageExperience({page, dictionary}: {page: PageRecord; dictionary
     };
     void boot().catch(error=>console.error('BonZuttner interaction initialization failed',error));
   },[page,dictionary]);
-  return <div id="app" data-next-prerender="true">{parse(page.html,{replace(node){
+  return <div id="app" data-next-prerender="true">{parse(page.html.replace(/fetchpriority=/gi, 'fetchPriority='),{replace(node){
     if(node instanceof Element && node.name==='bz-next-header')return page.header?<SiteHeader page={page} dictionary={dictionary}/>:<></>;
+    if(node instanceof Element && node.attribs?.fetchpriority){
+      node.attribs.fetchPriority = node.attribs.fetchpriority;
+      delete node.attribs.fetchpriority;
+    }
   }})}<SiteFooter page={page} dictionary={dictionary}/></div>;
 }
