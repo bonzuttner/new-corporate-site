@@ -7,7 +7,7 @@
     "dev:next": "next dev --turbopack",
     "build": "next build",
     "start": "node scripts/run-frontend-with-cache.cjs start",
-    "start:next": "next start -p $PORT",
+    "start:next": "next start -p ${PORT:-3000}",
     "lint": "next lint",
     "prepare:pages": "node scripts/prepare-pages.mjs",
     "prebuild": "npm run prepare:pages",
