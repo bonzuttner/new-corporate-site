@@ -1,8 +1,10 @@
-import CreativePage from '@/all-pages/creativePage';
-export default function Creative() {
-  return (
-    <main>
-      <CreativePage />
-    </main>
-  );
+import { redirect } from 'next/navigation';
+
+export default async function CreativeRedirect({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  redirect(`/${locale}/services`);
 }

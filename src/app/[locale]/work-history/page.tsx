@@ -1,8 +1,10 @@
-import WorkHistory from "@/all-pages/work-history"
-export default function WorkHistoryPage() {
-  return (
-    <main>
-      <WorkHistory />
-    </main>
-  );
+import { redirect } from 'next/navigation';
+
+export default async function WorkHistoryRedirect({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  redirect(`/${locale}/development`);
 }

@@ -12,6 +12,8 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 
+import Script from "next/script";
+
 export const metadata: Metadata = {
   title: {
     template: '%s | BonZuttner',
@@ -35,21 +37,18 @@ export default async function RootLayout({
     notFound();
   }
 
-
   return (
-    <html lang={locale}>
+    <html lang={locale} dir={(locale as string) === 'ar' ? 'rtl' : 'ltr'} data-lang={locale} data-theme="business" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" type="image/png" href="/images/bonzuttner_fabicon.png" />
+        <Script src="/assets/display-state.js?v=7" strategy="beforeInteractive" />
       </head>
       <body>
         <NextIntlClientProvider locale={locale}>
           <Providers>
             <GTMInitializer />
-            {/* <TimezoneRedirect /> */}
-            <Header />
             {children}
-            <Footer />
           </Providers>
         </NextIntlClientProvider>
       </body>

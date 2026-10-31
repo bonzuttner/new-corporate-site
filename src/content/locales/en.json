@@ -1,0 +1,1973 @@
+{
+  "akarel.0": {
+    "nav": [
+      [
+        "/en/",
+        "TOP"
+      ],
+      [
+        "/en/services/",
+        "Services"
+      ],
+      [
+        "/en/story/",
+        "Our Story"
+      ],
+      [
+        "/en/members/",
+        "Members"
+      ]
+    ],
+    "skip": "Skip to content",
+    "navigation": "Main navigation",
+    "languages": "Language",
+    "consult": "Talk to us",
+    "hero": {
+      "label": "KNOWLEDGE & AI AGENTS",
+      "title": [
+        "Your knowledge.",
+        "Put to work."
+      ],
+      "body": "Less time searching. More time thinking. From knowledge search grounded in your documents to task-specific AI agents, Akarel connects organizational knowledge with everyday work.",
+      "action": "Talk about Akarel",
+      "more": "Explore the use cases"
+    },
+    "demo": {
+      "label": "A companion for everyday work.",
+      "knowledge": "Find knowledge",
+      "agent": "Move work forward",
+      "future": "",
+      "sources": [
+        "Work manuals",
+        "Company policies",
+        "Past documents"
+      ],
+      "note": "Illustrative use case. Documents and responses are fictional.",
+      "data": [
+        {
+          "badge": "KNOWLEDGE / RAG",
+          "question": "What do I need for this application?",
+          "answer": "Use internal documents to organize the information you need.",
+          "items": [
+            "Required documents",
+            "Application procedure",
+            "Rules to check"
+          ],
+          "finish": "Knowledge for better-informed decisions."
+        },
+        {
+          "badge": "AI AGENT",
+          "question": "Help me prepare the application.",
+          "answer": "Combine organizational knowledge with the workflow to support preparation.",
+          "items": [
+            "Identify required information",
+            "Prepare a draft",
+            "Check for missing details"
+          ],
+          "finish": "People review and make the final decision."
+        }
+      ]
+    },
+    "knowledge": {
+      "label": "START WITH YOUR KNOWLEDGE",
+      "title": [
+        "“Where was that file?”",
+        "Let’s move beyond that."
+      ],
+      "body": "The documents exist, but finding them takes time. Questions pile up with the person who knows. Akarel helps make organizational knowledge useful in everyday work.",
+      "rows": [
+        [
+          "Grounded in your information.",
+          "Internal documents, policies, manuals and past materials. RAG—retrieval-augmented generation—provides a foundation for using your own information, beyond generic answers."
+        ],
+        [
+          "Built around the language of work.",
+          "Which information matters? What questions come up? We understand the work and help organize the knowledge and how people use it."
+        ]
+      ]
+    },
+    "agents": {
+      "label": "AI AGENTS",
+      "status": "Task-specific AI agents",
+      "title": [
+        "Beyond search.",
+        "Towards the next action."
+      ],
+      "body": "Combine organizational knowledge with workflows and decision rules. Research, summarize, draft and check. AI agents with roles tailored to specific tasks support everyday work.",
+      "exampleLabel": "Use cases",
+      "rows": [
+        [
+          "HR & administration",
+          "Support enquiries and prepare procedures.",
+          "Use company rules to guide required information and help draft applications."
+        ],
+        [
+          "Sales",
+          "Bring past knowledge into the next proposal.",
+          "Use existing materials to prepare proposal drafts and organize questions to check."
+        ],
+        [
+          "Routine operations",
+          "Share the burden of checks and handovers.",
+          "Support checks based on procedures and organize handover information."
+        ]
+      ],
+      "human": "A useful companion. People stay in charge.",
+      "humanBody": "We design the scope of delegation, review points and approval rules around the work."
+    },
+    "security": {
+      "label": "SECURITY THAT FITS",
+      "title": [
+        "Designed around",
+        "your organization’s standards."
+      ],
+      "body": "Every organization handles information differently. We review your security standards and internal policies, then design and adapt Akarel’s environment, permissions and operations.",
+      "note": "We agree on the supported scope and architecture after reviewing your requirements.",
+      "rows": [
+        [
+          "Scope of information",
+          "Decide what AI can use and what must be excluded, based on confidentiality and operational needs."
+        ],
+        [
+          "Access and users",
+          "Review which people and departments may access which knowledge."
+        ],
+        [
+          "AI processing and environment",
+          "Consider where information is processed and which services are used, in line with your environment and constraints."
+        ],
+        [
+          "Review, approval and operations",
+          "Agree who reviews AI output and how knowledge is updated, with rules people can use in practice."
+        ]
+      ]
+    },
+    "approach": {
+      "label": "BUILT AROUND YOUR WORK",
+      "title": [
+        "Installing AI",
+        "is just the beginning."
+      ],
+      "body": "Understand the work first. Start small and improve how people use it. Together with BonZuttner’s hands-on support, we shape Akarel around daily operations.",
+      "rows": [
+        [
+          "Understand work and knowledge",
+          "Review the challenges, information and security requirements."
+        ],
+        [
+          "Try it on a small scale",
+          "Focus on a specific task and validate responses and use with the people doing the work."
+        ],
+        [
+          "Improve through use",
+          "Update knowledge and rules so the service remains useful."
+        ]
+      ],
+      "link": "Explore hands-on DX & AI support"
+    },
+    "cta": {
+      "label": "LET’S TALK ABOUT AKAREL",
+      "title": [
+        "Which task shall we",
+        "make lighter first?"
+      ],
+      "body": "“Finding documents takes too long.” “The same questions keep coming.” Tell us about that work. We can explore agent use and your security requirements together.",
+      "action": "Talk about Akarel",
+      "back": "All services"
+    }
+  },
+  "company-nav.0": "Company",
+  "company.0": {
+    "page": "Company",
+    "skip": "Skip to content",
+    "navigation": "Main navigation",
+    "language": "Language",
+    "nav": [
+      "TOP",
+      "Services",
+      "Our Story",
+      "Members",
+      "Company"
+    ],
+    "consult": "Talk to us",
+    "title": [
+      "Different perspectives.",
+      "Moving forward together."
+    ],
+    "intro": "We understand both business priorities and day-to-day operations, then bring in the right technology to support them. Our team brings together people with diverse expertise and backgrounds to work closely with our clients.",
+    "attitude": "Sincerity, with a dash of humor.",
+    "profile": "Company profile",
+    "profileNote": "The essential information.",
+    "rows": [
+      [
+        "Company name",
+        "BonZuttner Inc."
+      ],
+      [
+        "Established",
+        "July 8, 2019"
+      ],
+      [
+        "CEO",
+        "Yuki Sakashita"
+      ],
+      [
+        "Address",
+        "27F COEBI, Ebisu Garden Place Tower<br>4-20-3 Ebisu, Shibuya-ku, Tokyo, Japan"
+      ],
+      [
+        "Sales office",
+        "MI Building, 4F<br>2-17-73 Akasaka, Minato-ku, Tokyo 107-0052, Japan"
+      ],
+      [
+        "Business",
+        "Hands-on DX & AI support<br>System & app development<br>Our services & data applications"
+      ],
+      [
+        "Contact",
+        "<a href=\"mailto:info@bonzuttner.com\" dir=\"ltr\">info@bonzuttner.com</a>"
+      ]
+    ],
+    "explore": "Get to know BonZuttner.",
+    "destinations": [
+      [
+        "story",
+        "Our Story",
+        "Why we started and what we're working toward."
+      ],
+      [
+        "members",
+        "Members",
+        "Meet the people who make things happen."
+      ],
+      [
+        "services",
+        "Services",
+        "How we can help you tackle your business challenges."
+      ]
+    ],
+    "contact": [
+      "Start with",
+      "a conversation."
+    ],
+    "contactBody": "A business challenge, a collaboration idea, or a question about our services. You do not need a finished brief. Tell us what you are thinking about.",
+    "email": "Contact us by email",
+    "form": "Contact us via form",
+    "formNote": "The form opens on our existing official website.",
+    "privacy": "Privacy policy"
+  },
+  "contact.0": {
+    "nav": [
+      "TOP",
+      "Services",
+      "Our Story",
+      "Members",
+      "Company"
+    ],
+    "navigation": "Main navigation",
+    "skip": "Skip to content",
+    "language": "Language",
+    "title": [
+      "Tell us about",
+      "the work."
+    ],
+    "intro": "A business challenge, a service question, or an idea for collaboration. You do not need a finished brief. Tell us what you are thinking about.",
+    "emailIntro": "You can also contact us by email.",
+    "preparing": "The contact form is not accepting enquiries yet. Please email us for now.",
+    "emailAction": "Contact us by email",
+    "formTitle": "Contact us",
+    "requiredNote": "Please complete the required fields.",
+    "required": "Required",
+    "optional": "Optional",
+    "fields": {
+      "topic": "What would you like to discuss?",
+      "name": "Name",
+      "company": "Company / organization",
+      "email": "Email address",
+      "phone": "Phone number",
+      "message": "Your message"
+    },
+    "topicOptions": [
+      "Hands-on DX & AI",
+      "System & app development",
+      "Akarel",
+      "POLARISS",
+      "Satellite data & agriculture",
+      "Collaboration & partnership",
+      "Other"
+    ],
+    "select": "Please select",
+    "placeholders": {
+      "name": "Your name",
+      "company": "Company or organization",
+      "email": "name@example.com",
+      "phone": "Phone number",
+      "message": "Tell us about your work, your challenge, or what you would like to discuss."
+    },
+    "messageHint": "It is fine if the details are still taking shape.",
+    "consentBefore": "I agree to the ",
+    "policy": "privacy policy",
+    "consentAfter": ".",
+    "review": "Review your message",
+    "confirmation": "Review before sending.",
+    "confirmationBody": "Please check your name, email address and message.",
+    "edit": "Edit your message",
+    "send": "Send message",
+    "sending": "Sending…",
+    "unavailableSend": "Send message (not available yet)",
+    "errorsTitle": "Please check the following fields.",
+    "errors": {
+      "topic": "Please choose a topic.",
+      "name": "Please enter your name.",
+      "email": "Please enter a valid email address.",
+      "message": "Please enter your message.",
+      "consent": "Please agree to the privacy policy.",
+      "tooLong": "The character limit has been exceeded.",
+      "server": "We could not confirm reception. Please try again later or contact us by email.",
+      "network": "We could not connect. Please check your connection and try again.",
+      "timeout": "We could not confirm the result. Please try again later.",
+      "rate-limit": "There have been several submissions. Please wait before trying again.",
+      "unavailable": "The form is not accepting enquiries yet. Please contact us by email.",
+      "validation": "Please check your details and try again."
+    },
+    "complete": "Your enquiry has been received.",
+    "completeBody": "We will review your message and contact you at the email address you provided.",
+    "receipt": "Reference number",
+    "home": "Back to TOP",
+    "services": "Explore services",
+    "confirmedConsent": "Privacy policy accepted"
+  },
+  "development-cases.0": "Promotion, delivery & BtoB wholesale system",
+  "development-cases.1": "DX / AX · Business systems · Operational improvement",
+  "development-cases.2": "Improve the workflow before introducing a system.",
+  "development-cases.3": "Medicom Co., Ltd.",
+  "development-cases.4": "Database, Python framework and specific Cloudflare services are not listed because they are unconfirmed.",
+  "development-cases.5": "From promotional production, approvals and store deliveries to BtoB products and pricing, we understand workflows and continuously improve daily operations.",
+  "development-cases.6": "An ongoing partnership in POP production, store deliveries and BtoB wholesale. We examine who checks what and when, find duplicate entry and verification, and decide what to eliminate and what to implement, improving workflows and systems together.",
+  "development-cases.7": [
+    "Scattered information makes progress and ownership unclear.",
+    "Repeated manual checks across production, approval and delivery.",
+    "Complex store delivery information and time spent copying and searching.",
+    "Products, pricing and conditions must be managed per wholesale client."
+  ],
+  "development-cases.8": [],
+  "development-cases.9": "Promotional & POP operations",
+  "development-cases.10": [
+    "Project and POP production management",
+    "Production, review, progress, requests and approvals",
+    "Store management, destinations and delivery operations",
+    "Status management and administrator screens"
+  ],
+  "development-cases.11": "BtoB wholesale platform",
+  "development-cases.12": [
+    "Admin: products, clients and client-specific pricing",
+    "Admin: product publication and purchase/order information",
+    "Stores: contracted product catalogues and client-specific prices",
+    "Stores: product information, selection and purchase operations"
+  ],
+  "development-cases.13": "For POP, joint workflow and system improvements substantially reduce manual work, checks and searches. For wholesale, a unified web platform manages products, prices and conditions per client.",
+  "development-cases.14": [
+    [
+      "Information is scattered",
+      "Manage projects and progress together"
+    ],
+    [
+      "Production and delivery need repeated checks",
+      "Organize approvals and store delivery workflows"
+    ],
+    [
+      "Products and prices differ by client",
+      "Manage client-specific products and prices on the web"
+    ]
+  ],
+  "development-cases.15": "AI interview practice & evaluation system",
+  "development-cases.16": "Combines 3D avatars, speech recognition and generative AI into one web experience, from practice interviews to evaluation and feedback.",
+  "development-cases.17": "Recruitment / employment support provider (name undisclosed)",
+  "development-cases.18": "A recruitment and education web service for voice-based mock interviews with a 3D avatar, with AI analysis of responses and audio.",
+  "development-cases.19": [
+    "Limited staff for mock interviews",
+    "Inconsistent feedback across interviewers",
+    "Need for more interview practice opportunities",
+    "Need to retain results for objective evaluation"
+  ],
+  "development-cases.20": [
+    "AI avatar interview and speech recognition",
+    "AI-generated questions",
+    "Deep-dive questions and answer analysis",
+    "Evaluation reports and interview history",
+    "Management dashboard and candidate management"
+  ],
+  "development-cases.21": "AI / Generative AI / HRTech",
+  "development-cases.22": "AI interview practice without constant human supervision.",
+  "development-cases.23": "AI supports part of interview practice, expanding opportunities, standardizing evaluation and retaining history.",
+  "development-cases.24": [
+    [
+      "Every practice session needs human support",
+      "Practice by voice with an AI avatar"
+    ],
+    [
+      "Feedback varies by interviewer",
+      "Analyze answers and produce evaluation reports"
+    ],
+    [
+      "Results are hard to retain",
+      "Review interview histories in a dashboard"
+    ]
+  ],
+  "development-cases.25": "Public facility reservation & management system",
+  "development-cases.26": "Integrates booking, changes, administration and payment in one web system, including complex facility rules and pricing.",
+  "development-cases.27": "Municipal / public facility sector (name undisclosed)",
+  "development-cases.28": "A public-sector digital system for availability checks, booking, changes, group registration, fees and online payment.",
+  "development-cases.29": [
+    "Phone and counter booking workload",
+    "No reservations outside office hours",
+    "Complex lottery and pricing rules",
+    "Manual booking management and double-booking risk"
+  ],
+  "development-cases.30": [
+    "24-hour web booking and changes",
+    "Group registration and facility-specific rules",
+    "Fee management and usage statistics",
+    "Online payment and administration"
+  ],
+  "development-cases.31": "Business systems / Public-sector DX",
+  "development-cases.32": "From counter-only reservations to 24-hour web booking.",
+  "development-cases.33": "Web booking combines resident convenience with administrative efficiency.",
+  "development-cases.34": [
+    [
+      "Bookings stop when the office closes",
+      "Book and change reservations online, 24 hours a day"
+    ],
+    [
+      "Each facility has complex rules",
+      "Manage facility-specific rules and fees"
+    ],
+    [
+      "Manual booking administration takes effort",
+      "Unify reservations, statistics and payments"
+    ]
+  ],
+  "development-cases.35": "Facility guidance & serving robot operations system",
+  "development-cases.36": "Connects Android, cloud services and Robot SDK into a facility robot operations platform with remote control and status management.",
+  "development-cases.37": "Robot / facility service company (name undisclosed)",
+  "development-cases.38": "A system to manage and operate robots in hotels, commercial and care facilities from smartphones and dedicated terminals.",
+  "development-cases.39": [
+    "Staff shortages in guidance and serving",
+    "Need for simple on-site robot operation",
+    "Need to check operating status remotely",
+    "Integration with existing facility systems"
+  ],
+  "development-cases.40": [
+    "Robot control",
+    "Remote control and operating status",
+    "Facility guidance and serving management",
+    "Real-time notifications and management dashboard",
+    "Robot SDK integration"
+  ],
+  "development-cases.41": "Mobile / Robot / IoT / Cloud",
+  "development-cases.42": "Beyond installing robots: operations that work on the ground.",
+  "development-cases.43": "Integrates mobile, cloud and robots for sustained operation in real facilities.",
+  "development-cases.44": [
+    [
+      "Guidance and serving staff are limited",
+      "Operate robots for guidance and serving"
+    ],
+    [
+      "Operators need to check remotely",
+      "Remote control and operating status checks"
+    ],
+    [
+      "Standalone robots are hard to manage",
+      "Connect devices, cloud and robots"
+    ]
+  ],
+  "development-cases.45": "Interactive online training system",
+  "development-cases.46": "Designs and develops accessible online training with gamification and real-time aggregation.",
+  "development-cases.47": "OTD (general incorporated association)",
+  "development-cases.48": "A participatory corporate training service with gamification, including roulette, card selection and team competitions.",
+  "development-cases.49": [
+    "Operational burden of in-person training",
+    "Participants tend to remain passive",
+    "Limited visibility into progress and understanding",
+    "Difficulty quantifying training effectiveness"
+  ],
+  "development-cases.50": [
+    "Administrator, instructor and learner permissions",
+    "Course management",
+    "Roulette, card selection and team competitions",
+    "Real-time aggregation and progress visualization",
+    "Analytics dashboard"
+  ],
+  "development-cases.51": "Web Service / EdTech",
+  "development-cases.52": "From watching training to participating in it.",
+  "development-cases.53": "Turns one-way training into a participatory web service, improving management and learning together.",
+  "development-cases.54": [
+    [
+      "Training tends to be passive",
+      "Participate with cards and team competitions"
+    ],
+    [
+      "Progress is difficult to track",
+      "Check progress with real-time aggregation"
+    ],
+    [
+      "Training administration takes effort",
+      "Manage courses and role-based permissions"
+    ]
+  ],
+  "development-cases.55": "Generative AI platform for fashion e-commerce",
+  "development-cases.56": "Generative AI / RetailTech / E-commerce / Web Application",
+  "development-cases.57": "11 AI modules. One customer experience.",
+  "development-cases.58": "Integrates image generation, diagnosis, recommendations and trend analysis into a personalized fashion shopping experience.",
+  "development-cases.59": "Fashion e-commerce operator (name undisclosed)",
+  "development-cases.60": "A web platform integrating 11 generative AI modules, including face-type diagnosis, ideas for existing clothes, outfit generation, trend prediction and conversion trend analysis.",
+  "development-cases.61": [
+    "Rule-based recommendations limit personalization.",
+    "Product and outfit content is costly to produce.",
+    "More personalized suggestions are needed.",
+    "Recommendations should better support purchase conversion."
+  ],
+  "development-cases.62": [
+    "Face-type diagnosis",
+    "Styling and existing-clothes suggestions",
+    "Outfit generation",
+    "Trend prediction and market analysis",
+    "Conversion trend analysis",
+    "AI module integration"
+  ],
+  "development-cases.63": "Unifies image generation, diagnosis, recommendations and analysis for a personalized e-commerce experience.",
+  "development-cases.64": [
+    [
+      "Recommendations tend to be generic",
+      "Personalize using diagnosis and clothing information"
+    ],
+    [
+      "Image and outfit content is costly",
+      "Integrate image and outfit generation"
+    ],
+    [
+      "Suggestions need improvement",
+      "Analyze trends and conversion patterns"
+    ]
+  ],
+  "development-cases.65": "Cloud learning & training management system",
+  "development-cases.66": "SaaS / LMS / HRTech / Web Application",
+  "development-cases.67": "From distributing training to managing it.",
+  "development-cases.68": "Unifies content delivery, viewing controls, learning history and multi-company administration in a cloud LMS.",
+  "development-cases.69": "Corporate training and education provider (name undisclosed)",
+  "development-cases.70": "A cloud learning management system for corporate e-learning delivery, enrolment, viewing controls and progress visibility.",
+  "development-cases.71": [
+    "Training videos and PDFs are scattered.",
+    "It is difficult to know who completed what.",
+    "Compliance training requires strict tracking.",
+    "Viewing environments and access need controls.",
+    "Multiple companies and users need unified administration."
+  ],
+  "development-cases.72": [
+    "Video and PDF delivery",
+    "Viewing logs and progress tracking",
+    "IP restrictions",
+    "Viewing time and playback order controls",
+    "Multi-company and user management",
+    "Report output"
+  ],
+  "development-cases.73": "Unifies content, learners, progress and viewing history, reducing administration effort while supporting secure corporate training.",
+  "development-cases.74": [
+    [
+      "Training materials are scattered",
+      "Deliver videos and PDFs together"
+    ],
+    [
+      "Learning status is unclear",
+      "Check viewing logs and progress"
+    ],
+    [
+      "Companies have different conditions",
+      "Manage companies, users and access conditions"
+    ]
+  ],
+  "development-cases.75": "University department website",
+  "development-cases.76": "Web Design / Educational Website / UX / Information Architecture",
+  "development-cases.77": "Think together, starting with what to share.",
+  "development-cases.78": "Co-created the department website from planning and information design, organizing classes, students, alumni and faculty into a clear experience of its distinctive learning.",
+  "development-cases.79": "Tokyo Denki University, School of System Design and Technology, Department of Design Engineering",
+  "development-cases.80": "Co-created the official website from the planning stage, discussing what defines the department and what applicants and parents need to understand. Classes, students, alumni, faculty, news and resources were organized to communicate its learning and distinctive appeal.",
+  "development-cases.81": [
+    "Department websites can become information-heavy.",
+    "Curriculum, faculty, students and research information can be scattered.",
+    "Applicants need to understand the department quickly.",
+    "Its distinctive appeal needs an expression beyond the university-wide site."
+  ],
+  "development-cases.82": [
+    "Planning and concept design",
+    "Information architecture, site structure and UX",
+    "Web design and frontend implementation",
+    "Responsive layout",
+    "Content structure designed for updates",
+    "ABOUT US / NEWS / CURRICULUM / VOICES / FACULTY / DOWNLOAD"
+  ],
+  "development-cases.83": "Gives applicants, parents and current students easier access to relevant information, combining classes, student and alumni voices and faculty to show what learning is really like.",
+  "development-cases.84": [
+    [
+      "There is much to communicate",
+      "Plan what to share together from the start"
+    ],
+    [
+      "Class, faculty and student information is scattered",
+      "Organize access around visitors’ needs"
+    ],
+    [
+      "The department needs a distinct expression",
+      "Show learning through classes and people’s voices"
+    ]
+  ],
+  "development-cases.85": "The framework, CMS and hosting are unconfirmed; no technology stack is listed.",
+  "development.0": {
+    "nav": [
+      [
+        "/en/",
+        "TOP"
+      ],
+      [
+        "/en/services/",
+        "Services"
+      ],
+      [
+        "/en/story/",
+        "Our Story"
+      ],
+      [
+        "/en/members/",
+        "Members"
+      ]
+    ],
+    "consult": "Talk to us",
+    "skip": "Skip to content",
+    "languages": "Language",
+    "navigation": "Main navigation",
+    "hero": {
+      "eyebrow": "SYSTEM & APP DEVELOPMENT",
+      "title": "Build for the work.<br>Make it last.",
+      "body": "Business systems, web services and mobile apps. We understand the people and the work, then build together from requirements through design, development and operations.",
+      "note": "From requirements to operations."
+    },
+    "starting": {
+      "eyebrow": "START WITH THE WORK",
+      "title": "Start with<br>“What if we could…?”",
+      "body": "You do not need a finished specification. Tell us about the daily work, the problems and what you want to make possible. We clarify what to build together.",
+      "points": [
+        [
+          "Turn unclear needs into shared understanding.",
+          "Clarify the purpose, users and priorities in the language of the work. Use screens and prototypes to check that we are aligned."
+        ],
+        [
+          "Build something new or use what is already there.",
+          "Look at existing systems and operations, then choose an approach to improvement, integration or new development."
+        ]
+      ]
+    },
+    "scope": {
+      "eyebrow": "WHAT WE BUILD",
+      "title": "Choose the form<br>that fits the work.",
+      "items": [
+        {
+          "label": "BUSINESS SYSTEMS",
+          "title": "Business systems",
+          "body": "Orders, inventory, customer information and approvals. Design screens and data connections around everyday operations.",
+          "examples": "Operational management / Shared information / Integrations"
+        },
+        {
+          "label": "WEB APPLICATIONS",
+          "title": "Web services",
+          "body": "Membership sites, portals, booking and matching services. Build the experience and administration around how people use them.",
+          "examples": "Membership / Search / Administration"
+        },
+        {
+          "label": "MOBILE & TABLET APPLICATIONS",
+          "title": "Smartphone & tablet apps",
+          "body": "Apps designed for work on smartphones and tablets, including integration with cloud services, robots and web systems.",
+          "examples": "Mobile / Tablet / Cloud & robot integration"
+        },
+        {
+          "label": "AI · IoT · CLOUD",
+          "title": "AI, IoT and cloud",
+          "body": "Connect AI capabilities, sensors, location information and cloud data with existing work and systems when they are needed.",
+          "examples": "Embedded AI / Data integration / Cloud infrastructure"
+        }
+      ]
+    },
+    "expertise": {
+      "eyebrow": "AI & PROFESSIONALS",
+      "title": "Faster with AI.<br>Grounded in expertise.",
+      "body": "We use AI-assisted “vibe coding” to accelerate prototyping and implementation. Professional engineers review design, infrastructure, development and testing throughout the process, checking generated code and making corrections and refactoring as the work progresses.",
+      "items": [
+        [
+          "Design and build for the purpose",
+          "Professional engineers review architecture and design around users, data, permissions and existing systems."
+        ],
+        [
+          "Keep reviewing the code",
+          "AI-generated code receives continuous review, corrections and refactoring to support maintainability."
+        ],
+        [
+          "Testing, operations and handover",
+          "Validate behavior, permissions and security, and retain specifications, decision rationale and operating guidance for maintenance and improvement."
+        ]
+      ]
+    },
+    "process": {
+      "eyebrow": "HOW WE BUILD",
+      "title": "Build it.<br>Check it together.",
+      "body": "We align priorities and review manageable pieces of work, rather than trying to fix every detail at the start.",
+      "steps": [
+        [
+          "01",
+          "Purpose & requirements",
+          "Understand the work and users, then agree on scope and priorities."
+        ],
+        [
+          "02",
+          "Design & prototype",
+          "Make screens and data flows tangible and check them with users."
+        ],
+        [
+          "03",
+          "Build & validate",
+          "Review working software and test quality and operations."
+        ],
+        [
+          "04",
+          "Launch & operate",
+          "Support introduction and handover, and agree on maintenance and improvement."
+        ]
+      ]
+    },
+    "connection": {
+      "title": "Want to start with what needs to change?",
+      "body": "Our hands-on DX and AI service can help clarify business and operational problems before or alongside development.",
+      "link": "Explore hands-on DX & AI"
+    },
+    "cta": {
+      "eyebrow": "LET’S BUILD TOGETHER",
+      "title": "Tell us what<br>you want to build.",
+      "body": "A defined specification or an early idea: tell us about the work today and what you want to make possible.",
+      "action": "Talk to us"
+    }
+  },
+  "development.1": {
+    "heading": "WORKS",
+    "title": "Systems built<br>for real work.",
+    "view": "View Project",
+    "close": "Close",
+    "featured": "Field understanding → Workflow improvement → Implementation → Continuous improvement",
+    "labels": [
+      "Overview",
+      "Client",
+      "Challenge",
+      "Solution",
+      "Value",
+      "Technology",
+      "Our Role"
+    ],
+    "detail": "Read the full case study",
+    "diagram": "How it connects",
+    "technology": "Selected technology",
+    "role": "Our role"
+  },
+  "development.2": {
+    "hint": "Drag to rotate. Click a project to explore.",
+    "previous": "Previous project",
+    "next": "Next project",
+    "pause": "Pause rotation",
+    "play": "Resume rotation",
+    "all": "All projects",
+    "label": "Rotating project explorer",
+    "names": [
+      "Promotion & wholesale",
+      "AI interview evaluation",
+      "Public facility booking",
+      "Robot operations",
+      "Interactive training",
+      "Fashion AI",
+      "Learning management",
+      "University website"
+    ],
+    "summaries": [
+      "Improve the workflow",
+      "Dialogue to feedback",
+      "24-hour web booking",
+      "Robots on the ground",
+      "Participatory learning",
+      "11 AI modules, one experience",
+      "Delivery and learning records",
+      "Co-created from planning"
+    ]
+  },
+  "development.3": {
+    "before": "The challenge",
+    "after": "What we changed",
+    "details": "Read the challenges in detail",
+    "tech": "Explore the technology",
+    "techLead": "Interfaces, data processing and connections to other services. Each technology has a role in making the work run.",
+    "roles": "Our contribution to this project.",
+    "labels": {
+      "Frontend": "The interface",
+      "Backend": "Behind-the-scenes processing",
+      "Cloud": "Where the service runs",
+      "Infrastructure / Edge": "Where the service runs",
+      "Database": "Storing information",
+      "Realtime": "Updating information live",
+      "AI": "AI processing",
+      "Avatar": "The conversational avatar",
+      "Analysis": "Analyzing speech and answers",
+      "Mobile": "The mobile app",
+      "Robot": "Connecting the robot",
+      "Integration": "Connecting external services",
+      "Other": "Other capabilities",
+      "AI / ML": "AI generation and analysis",
+      "Infrastructure": "Where the service runs",
+      "Infrastructure / DevOps": "Supporting development and operations"
+    }
+  },
+  "dx-ai.0": {
+    "nav": [
+      [
+        "/en/",
+        "TOP"
+      ],
+      [
+        "/en/services/",
+        "Services"
+      ],
+      [
+        "/en/story/",
+        "Our Story"
+      ],
+      [
+        "/en/members/",
+        "Members"
+      ]
+    ],
+    "consult": "Talk to us",
+    "hero": {
+      "eyebrow": "HANDS-ON DX & AI",
+      "title": [
+        "Work alongside.",
+        "Get our hands dirty."
+      ],
+      "lead": "Building a system is not the goal. We learn the reality of management and frontline work, then stay close until the business and the work itself become stronger and easier to move forward.",
+      "note": "Hands-on DX & AI"
+    },
+    "reality": {
+      "eyebrow": "REALITY FIRST.",
+      "title": "Do not start with AI.<br>Do not start with a system.<br>Start with what is happening now.",
+      "body": [
+        "You cannot see operational waste from a meeting room alone.",
+        "Those who lead.<br>Those who manage.<br>Those who do the work.",
+        "We listen to each, watch the work itself, and decide what should change.",
+        "Use AI when it helps.<br>Build a system when it helps.<br>Connect IoT when it helps.",
+        "But we do not build when it is not needed."
+      ]
+    },
+    "principles": {
+      "eyebrow": "OUR PRINCIPLES",
+      "title": "Three principles for<br>changing reality.",
+      "items": [
+        {
+          "no": "01",
+          "title": "Remove before you build.",
+          "sub": "Do not digitize unnecessary work.",
+          "body": "Does this input need to exist? Why is this approval here? Why is the same information entered repeatedly?<br><br>We first organize the work itself. Remove what can disappear, change what can change, then implement AI or systems only where needed."
+        },
+        {
+          "no": "02",
+          "title": "See numbers and strain.",
+          "sub": "Operational KPIs alone do not change the frontline.",
+          "body": "We look beyond time, profit and cost to daily friction: searching, waiting, asking, transcribing and redoing.<br><br>Less overtime. Fewer questions. Less concentration on veteran staff. Better business numbers.",
+          "emphasis": "Do not reduce people.<br>Reduce friction in work."
+        },
+        {
+          "no": "03",
+          "title": "Look beyond the screen.",
+          "sub": "The frontline is not only inside a browser.",
+          "body": "Factories. Vehicles. Warehouses. Fields. Paper. Excel. LINE.<br><br>That is why we do not think in web or generative AI alone. We combine AI, business systems, IoT and location intelligence for the reality of the work."
+        }
+      ]
+    },
+    "technology": {
+      "eyebrow": "WHAT WE CAN HELP WITH",
+      "title": "Choose the means<br>for the problem.",
+      "body": "Sometimes changing a workflow or rule is enough. When technology is needed, we introduce it in a form the frontline can actually use.",
+      "items": [
+        [
+          "Entering the same information again and again.",
+          "Review whether each input and approval is needed, then reduce remaining re-entry with existing tools and automation.",
+          "Process design / Tool integration / Automation"
+        ],
+        [
+          "Asking someone whenever you need a document.",
+          "Organize where information lives and how it is shared, then use AI document search where it helps.",
+          "Knowledge organization / Search / AI"
+        ],
+        [
+          "Management cannot see what is happening on site.",
+          "Review recording and reporting, using sensors or location data when needed to share information for decisions.",
+          "Operational improvement / Data integration / IoT"
+        ]
+      ]
+    },
+    "fde": {
+      "eyebrow": "ABOUT FDE",
+      "title": "Sometimes it is called<br>an FDE approach.",
+      "body": [
+        "Forward Deployed Engineer.<br><br>It means entering a customer’s operation, understanding the challenge, implementing and staying involved until it is actually used. It is close to work we have long done.",
+        "But BonZuttner does not value an engineer visiting a site for its own sake.<br><br>Those who lead. Those who use. Those who build.<br>We help all three see the same problem. That is our accompaniment."
+      ],
+      "nodes": [
+        "Management",
+        "Field",
+        "Technology"
+      ]
+    },
+    "cases": {
+      "eyebrow": "SELECTED WORKS",
+      "title": "See the reality.<br>Then choose the technology.",
+      "note": "A selection of our work.",
+      "items": [
+        {
+          "client": "MEDICOM / Promotional materials & POP",
+          "title": "Untangle complex work<br>with the frontline.",
+          "kind": "Process design × Web / business systems",
+          "visual": "PHOTO / ILLUSTRATION",
+          "body": "We map production, review, approvals and store deliveries, then improve fragmented information, duplicate entry and manual checks. Workflow improvements and the system evolve together."
+        },
+        {
+          "client": "MEDICOM / WHOLESALE",
+          "title": "Make everyday operations<br>stronger and smoother.",
+          "kind": "Reducing operational friction",
+          "visual": "PHOTO / ILLUSTRATION",
+          "body": "A BtoB wholesale platform connects administrator and store screens. Products, client-specific pricing, publication and order information are managed on the web, with continuous improvements for real operations."
+        },
+        {
+          "client": "WORKFLOW AUTOMATION / RPA",
+          "title": "Free daily data entry<br>from manual work.",
+          "kind": "Excel integration × Browser automation",
+          "body": "Back-office work relied on manual input and checks because external websites did not provide an API. We automated transfers from Excel to the web and browser operations, combining AI input assistance with data integration to reduce repetitive input and checking."
+        }
+      ]
+    },
+    "process": {
+      "eyebrow": "HOW WE WORK",
+      "title": "Four moments<br>we move through together.",
+      "lead": "Not just in a meeting room. We work until daily work changes, choosing the means only after seeing the reality.",
+      "steps": [
+        [
+          "01",
+          "Listen",
+          "Hear the business aim and the voice of the frontline."
+        ],
+        [
+          "02",
+          "Observe",
+          "See the flow of work, information and friction together."
+        ],
+        [
+          "03",
+          "Untangle",
+          "Organize the challenge and decide what changes first."
+        ],
+        [
+          "04",
+          "Move",
+          "Combine AI, existing tools and operations until it sticks."
+        ]
+      ]
+    },
+    "graduation": {
+      "eyebrow": "A GOOD PARTNERSHIP ENDS WELL",
+      "title": "So that one day,<br>it runs without us.",
+      "body": [
+        "We do not think accompaniment means creating a state where improvement is impossible without us.",
+        "Workflows.<br>Decision rules.<br>Prompts.<br>Manuals.<br>Source code.<br>Improvement history.",
+        "We leave what we build together as assets the customer can operate.<br><br>Everyday improvement stays inside. For the difficult parts, we work together again."
+      ]
+    },
+    "cta": {
+      "eyebrow": "START WITH A CONVERSATION",
+      "title": "Tell us about<br>the work on the ground.",
+      "body": "“It is vaguely inconvenient, but we have always done it this way.”<br><br>That kind of work contains the seed of improvement. Whether to use AI comes later.",
+      "action": "Talk to us"
+    }
+  },
+  "members.0": {
+    "title": [
+      "The people",
+      "behind the work."
+    ],
+    "intro": "We listen, think, and build. We bring a wide range of skills and perspectives to the challenges our clients face. We work hard as a team, but always make room for a little laughter. Meet the BonZuttner team.",
+    "label": "MEET THE TEAM",
+    "roster": "Different people. One shared purpose.",
+    "rosterBody": "We each bring different backgrounds, strengths, and perspectives. Together, we achieve more.",
+    "skip": "Skip to content",
+    "nav": [
+      "TOP",
+      "Services",
+      "Our Story",
+      "Our Team"
+    ],
+    "navigation": "Main navigation",
+    "language": "Language",
+    "consult": "Talk to us",
+    "more": "Where we began",
+    "closing": [
+      "What could we",
+      "do together?"
+    ],
+    "closingBody": "From understanding your day-to-day challenges to building practical solutions, discover how our team can support your business.",
+    "service": "Explore services",
+    "story": "Read our story",
+    "caption": "Sincerity, with a little humor.",
+    "roles": [
+      "CEO",
+      "CIO · Development Manager · Frontend Engineer",
+      "CTO · AI Specialist",
+      "Project Manager",
+      "Strategy Consultant · Director",
+      "Backend Engineer",
+      "Frontend Engineer",
+      "Tech Lead"
+    ]
+  },
+  "members.1": [
+    "Yashio housing complex in Shinagawa, Tokyo",
+    "Making my geta sandals click",
+    "I want to live like Anpanman and Rei, the successor of Nanto Suichoken."
+  ],
+  "members.2": [
+    "Syria",
+    "Football and driving",
+    "I always give my best and never stop improving my skills."
+  ],
+  "members.3": [
+    "Yabroud, Syria",
+    "Drinking, socializing, and solving problems in my sleep.",
+    "Yes, we can."
+  ],
+  "members.4": [
+    "Shimonoseki, Yamaguchi, Japan",
+    "Backpacking, piano, and ball sports",
+    "Practicing Arabic and dreaming of the day I can visit Syria (haha)."
+  ],
+  "members.5": [
+    "Nagoya, Aichi, Japan",
+    "Strength training, travelling abroad, and watching sports",
+    "Our entire company is committed to working with sincerity so that we can share wonderful experiences and joy."
+  ],
+  "members.6": [
+    "Salamiyah, Hama Governorate, Syria",
+    "Football and driving",
+    "We are dedicated to providing solutions that meet our customers’ needs and support their success."
+  ],
+  "members.7": [
+    "Homs, Syria",
+    "Travel, chess, and puzzles",
+    "I look forward to working together and achieving great results!"
+  ],
+  "members.8": [
+    "Yabroud (Syria)",
+    "Table tennis champ, dreaming about traveling the world, and exploring new places whenever my code finally compiles.",
+    "I’m always looking for the next adventure, but if you challenge me to ping pong, prepare to lose in every time zone."
+  ],
+  "members.9": [
+    "Yabroud, Syria",
+    "Chess, sleeping, coding, and PES 🎮",
+    "Here to help the team achieve great results — one move at a time."
+  ],
+  "members.10": [
+    "—",
+    "—",
+    "—"
+  ],
+  "members.11": {
+    "title": "Profile book",
+    "open": "View profile +",
+    "close": "Close",
+    "fields": [
+      "Hometown",
+      "Hobbies",
+      "A few words"
+    ]
+  },
+  "members.12": {
+    "welcome": "★ Welcome to the BonZuttner team! ★",
+    "hint": "Take a little break—select a face to meet a team member.",
+    "pause": "Pause animation",
+    "resume": "Resume motion",
+    "roster": "Meet the team",
+    "play": ": say hello"
+  },
+  "news.0": {
+    "page": "News",
+    "nav": [
+      "TOP",
+      "Services",
+      "Our Story",
+      "Members",
+      "Company"
+    ],
+    "navigation": "Main navigation",
+    "skip": "Skip to content",
+    "language": "Language",
+    "consult": "Contact us",
+    "intro": "Updates from BonZuttner: our work, activities and services.",
+    "latest": "Latest updates",
+    "read": "Read article",
+    "more": "Load more",
+    "loading": "Loading updates.",
+    "empty": "Our next update starts here.",
+    "emptyBody": "There are no published updates at the moment.",
+    "unavailable": "Updates are being prepared.",
+    "unavailableBody": "Please check back once they are published.",
+    "error": "We could not load the updates.",
+    "errorBody": "Please try again in a little while.",
+    "retry": "Try again",
+    "back": "Back to news",
+    "notFound": "This article could not be found.",
+    "notFoundBody": "It may no longer be published, or may not be available yet.",
+    "previewLabel": "Layout samples only. These are not actual announcements.",
+    "leavePreview": "View the regular page",
+    "sampleTitles": [
+      "An article title goes here.",
+      "An update about an event or talk.",
+      "An update about media coverage."
+    ],
+    "sampleCategories": [
+      "Company",
+      "Events",
+      "Media"
+    ],
+    "sampleExcerpt": "A brief article summary goes here, giving readers an introduction to the update.",
+    "sampleHeading": "An article heading",
+    "sampleBody": "The article text goes here. Paragraphs, headings, photographs and links can be combined into a clear and readable announcement.",
+    "sampleList": [
+      "Keep the main points concise.",
+      "Images can be added to each article."
+    ],
+    "caption": "Image caption",
+    "datePlaceholder": "YYYY.MM.DD"
+  },
+  "polariss.0": {
+    "nav": [
+      [
+        "/en/",
+        "TOP"
+      ],
+      [
+        "/en/services/",
+        "Services"
+      ],
+      [
+        "/en/story/",
+        "Our Story"
+      ],
+      [
+        "/en/members/",
+        "Members"
+      ]
+    ],
+    "skip": "Skip to content",
+    "navigation": "Main navigation",
+    "languages": "Language",
+    "title": [
+      "A digital roof.",
+      "For your ride."
+    ],
+    "body": "More than theft protection. Location tracking, mutual monitoring and weather-risk alerts help look after the vehicles you value.",
+    "official": "Visit the POLARISS website",
+    "detail": "Explore features and service details on the official website.",
+    "back": "All services",
+    "partner": "Joint business & development with OWL-TY",
+    "alt": "A rider seated on a stationary motorcycle, checking a smartphone",
+    "messages": [
+      [
+        "Location",
+        "Where is your ride?"
+      ],
+      [
+        "Mutual monitoring",
+        "Look out for each other."
+      ],
+      [
+        "Weather-risk alerts",
+        "Be ready for changing weather."
+      ]
+    ],
+    "note": "Feature illustration",
+    "pause": "Pause animation",
+    "play": "Resume animation"
+  },
+  "recruit.0": {
+    "page": "Careers",
+    "nav": [
+      "TOP",
+      "Services",
+      "Our Story",
+      "Members",
+      "Company"
+    ],
+    "navigation": "Main navigation",
+    "language": "Language",
+    "skip": "Skip to content",
+    "consult": "Contact us",
+    "title": [
+      "Different strengths.",
+      "One shared purpose."
+    ],
+    "intro": "People who understand day-to-day operations. People with deep technical expertise. People who bring others together. We combine our strengths to make meaningful progress.",
+    "positions": "Explore career opportunities",
+    "teamAlt": "Pixel illustration of a team talking on benches with laptops and books",
+    "way": [
+      "Take our work seriously.",
+      "Keep our sense of humor."
+    ],
+    "wayBody": [
+      "We start by observing how people work and listening to their needs. We use technology where it adds value and stay involved until the solution works in practice. We approach each challenge with sincerity and care.",
+      "Our backgrounds and strengths may differ, but we value open communication, thoughtful collaboration, and taking action together as one team."
+    ],
+    "members": "Meet the team",
+    "story": "Read our story",
+    "jobs": "Work with us.",
+    "jobsBody": "Each job listing provides details about the role and working conditions.",
+    "details": "View opening",
+    "loading": "Loading openings.",
+    "preparing": "We're currently preparing our job postings.",
+    "preparingBody": "Please check back soon for updates.",
+    "empty": "There are no published openings at the moment.",
+    "emptyBody": "New openings will be listed here.",
+    "error": "We could not load the openings.",
+    "errorBody": "Please try again in a little while.",
+    "retry": "Try again",
+    "more": "Load more",
+    "back": "Back to careers",
+    "notFound": "This opening could not be found.",
+    "notFoundBody": "It may have closed, or may not be published yet.",
+    "facts": "Role details",
+    "apply": "Apply",
+    "inquiry": "Ask about this opening",
+    "noApply": "Application details are provided for each opening.",
+    "talk": "Start with a conversation.",
+    "talkBody": "Have questions about working at BonZuttner? We'd love to hear from you.",
+    "talkAction": "Contact us about careers",
+    "preview": "Layout samples only. These are not actual job openings.",
+    "normal": "View the regular page",
+    "sampleTitles": [
+      "A role title goes here.",
+      "Another role listing."
+    ],
+    "sampleSummary": "A short summary of the work goes here. The full description and conditions appear in the opening.",
+    "sampleMeta": [
+      "Employment type",
+      "Work location"
+    ],
+    "sampleFactLabels": [
+      "Employment type",
+      "Work location",
+      "Compensation",
+      "Working hours"
+    ],
+    "sampleFact": "Conditions registered in the CMS go here.",
+    "sampleSectionLabels": [
+      "The work",
+      "Experience and skills",
+      "Selection process"
+    ],
+    "sampleText": "Information for this opening is supplied by the CMS. This text is only for checking the layout.",
+    "previewApply": "Layout sample — applications unavailable"
+  },
+  "satellite-agri.0": {
+    "nav": [
+      [
+        "/en/",
+        "TOP"
+      ],
+      [
+        "/en/services/",
+        "Services"
+      ],
+      [
+        "/en/story/",
+        "Our Story"
+      ],
+      [
+        "/en/members/",
+        "Members"
+      ]
+    ],
+    "skip": "Skip to content",
+    "navigation": "Main navigation",
+    "language": "Language",
+    "consult": "Talk to us",
+    "logo": "Satellite Data × AI Analysis",
+    "title": [
+      "A view from space.",
+      "Decisions for agriculture."
+    ],
+    "lead": "What should grow here? How is the field doing? We combine satellite imagery, climate and soil information with AI to inform agricultural decisions.",
+    "action": "Discuss agricultural use",
+    "explore": "Questions for your field",
+    "sceneLabel": "A meeting between space and soil.",
+    "sceneNote": "The observation and vegetables are illustrative, not measured data.",
+    "pause": "Pause animation",
+    "play": "Resume animation",
+    "field": {
+      "label": "ASK YOUR FIELD",
+      "title": [
+        "What would you ask",
+        "your field?"
+      ],
+      "intro": "Choose a question to explore where analysis could help.",
+      "tabs": [
+        "What to grow?",
+        "How is the field?",
+        "What lies ahead?"
+      ],
+      "visual": [
+        "Explore crop suitability",
+        "Understand crop and soil conditions",
+        "Consider yield and climate risks"
+      ],
+      "topics": [
+        {
+          "label": "CROP SUITABILITY",
+          "title": "What to grow, and where.",
+          "body": "Compare climate and soil conditions with crop characteristics. Use data across larger areas to explore crop suitability and planting decisions.",
+          "data": [
+            "Satellite imagery",
+            "Climate",
+            "Soil"
+          ],
+          "decision": "Inputs to planting and land selection."
+        },
+        {
+          "label": "FIELD CONDITIONS",
+          "title": "A fresh look at a familiar field.",
+          "body": "Analyze crop growth and soil moisture from satellite imagery to explore differences across places and time. Combine the results with on-site observation.",
+          "data": [
+            "Satellite imagery",
+            "Crop growth",
+            "Soil moisture"
+          ],
+          "decision": "Consider where to take a closer look."
+        },
+        {
+          "label": "YIELD & CLIMATE",
+          "title": "Keep an eye on what lies ahead.",
+          "body": "Explore yield estimates and climate-related variability to inform cultivation, procurement and business plans. Share the uncertainty that comes with estimates.",
+          "data": [
+            "Satellite imagery",
+            "Climate",
+            "Field information"
+          ],
+          "decision": "Inputs to agricultural planning and risk preparation."
+        }
+      ],
+      "note": "Illustrative applications. The scope and accuracy of analysis depend on the region, observation conditions and available data."
+    },
+    "partnership": {
+      "label": "SPACE DATA, EARTH KNOW-HOW",
+      "title": [
+        "Data from space.",
+        "Knowledge from the field."
+      ],
+      "punch": "Agriculture needs both.",
+      "body": "We do not let data alone decide the answer. On-site information and expert knowledge help interpret results, including their limits.",
+      "sub": "Start small. Check it in the field.",
+      "detail": "Define the location and question together, then test how the analysis can be used through a proof of concept. Where needed, connect it to visualization, production systems and operation."
+    },
+    "cta": {
+      "label": "LET’S TALK ABOUT YOUR FIELD",
+      "title": [
+        "Tell us about",
+        "your field."
+      ],
+      "body": "Crops, land and everyday concerns. You do not need to know exactly what to analyze yet. Start with what you want to understand in the field.",
+      "action": "Talk about agriculture and satellite data",
+      "back": "All services"
+    }
+  },
+  "satellite.0": {
+    "nav": [
+      [
+        "/en/",
+        "TOP"
+      ],
+      [
+        "/en/services/",
+        "Services"
+      ],
+      [
+        "/en/story/",
+        "Our Story"
+      ],
+      [
+        "/en/members/",
+        "Members"
+      ]
+    ],
+    "skip": "Skip to content",
+    "navigation": "Main navigation",
+    "language": "Language",
+    "consult": "Talk to us",
+    "logo": "Satellite Data × AI Analysis",
+    "title": [
+      "A view from space.",
+      "Decisions on the ground."
+    ],
+    "lead": "Farmland conditions, climate changes, logistics and assets. We combine satellite data with AI and field information to turn hard-to-see risks and changes into inputs for business decisions.",
+    "action": "Discuss a use case",
+    "explore": "Two areas of application",
+    "tabs": [
+      "Agriculture",
+      "Business & environment"
+    ],
+    "labels": [
+      [
+        "Read the farmland",
+        "What should grow, and where?"
+      ],
+      [
+        "See wider changes",
+        "Understand risks to your business."
+      ]
+    ],
+    "sceneNote": "Illustrative concept, not measured data.",
+    "pause": "Pause animation",
+    "play": "Resume animation",
+    "applications": {
+      "label": "TWO WAYS TO SEE",
+      "title": [
+        "From places to observe,",
+        "to decisions that matter."
+      ],
+      "examples": "Example applications",
+      "note": "These are example applications. The scope of analysis is designed around the region, observation conditions and available data.",
+      "rows": [
+        [
+          "AGRICULTURE",
+          "For agricultural decisions.",
+          "Which crops suit this land? How are the fields doing? Combining satellite imagery with climate and soil information supports crop planning and risk assessment for agricultural and resource businesses.",
+          [
+            [
+              "Crop suitability",
+              "Compare land conditions with crop characteristics to explore what to grow and where."
+            ],
+            [
+              "Growth and soil moisture",
+              "Analyze crop and soil conditions from satellite imagery to understand farmland."
+            ],
+            [
+              "Yield and climate risks",
+              "Use yield estimates and climate-related variability as inputs to procurement and business planning."
+            ]
+          ]
+        ],
+        [
+          "BUSINESS & ENVIRONMENT",
+          "For business and environmental decisions.",
+          "Observe changes across large areas, including places that are difficult to visit. Satellite data can inform logistics, asset and environmental decisions for trading companies and global businesses.",
+          [
+            [
+              "Logistics and ports",
+              "Study vessel movements and port congestion to consider bottlenecks and alternative routes."
+            ],
+            [
+              "Forests and ESG monitoring",
+              "Observe forest loss and land changes over time to understand environmental conditions."
+            ],
+            [
+              "Infrastructure and assets",
+              "Monitor conditions at overseas plants and mines to inform asset management and investment decisions."
+            ]
+          ]
+        ]
+      ]
+    },
+    "implementation": {
+      "label": "SATELLITE × AI × IMPLEMENTATION",
+      "title": [
+        "From analysis",
+        "to a useful system."
+      ],
+      "body": "Define the question, analyze satellite data with AI and make the results easy to understand. Where needed, connect that insight to systems used in daily work.",
+      "rows": [
+        [
+          "Combine relevant data.",
+          "Select satellite imagery, climate, soil and other information for the purpose, then design the AI analysis."
+        ],
+        [
+          "Test before scaling.",
+          "Use a proof of concept to assess results and field use, then decide on the next stage."
+        ],
+        [
+          "Build and operate together.",
+          "From visualization and interface design to production systems and operation, implement in stages based on what the validation shows."
+        ]
+      ]
+    },
+    "approach": {
+      "label": "FROM DATA TO DECISIONS",
+      "title": [
+        "Not just data",
+        "on a screen."
+      ],
+      "body": "What do you need to know? Which decision will it inform? We define the analysis around that purpose. We do not treat satellite data as definitive on its own; on-site information and expert knowledge also matter.",
+      "rows": [
+        [
+          "Start with the question.",
+          "Agree on the location, period and use, then define what the analysis needs to answer."
+        ],
+        [
+          "Organize useful information.",
+          "Combine the data needed for comparison, analysis and visualization."
+        ],
+        [
+          "Support decisions in the field.",
+          "Share how to interpret results and their limits, so people can consider the next action."
+        ]
+      ]
+    },
+    "cta": {
+      "label": "LET’S LOOK FROM ABOVE",
+      "title": [
+        "Start with a place",
+        "you want to understand."
+      ],
+      "body": "Farmland, land or the environment. Tell us what you want to know about a place, and we will explore the data and analysis your use case needs.",
+      "action": "Talk about satellite data",
+      "back": "All services"
+    }
+  },
+  "services.0": {
+    "nav": [
+      [
+        "/en/",
+        "TOP"
+      ],
+      [
+        "/en/services/",
+        "Services"
+      ],
+      [
+        "/en/story/",
+        "Our Story"
+      ],
+      [
+        "/en/members/",
+        "Members"
+      ]
+    ],
+    "consult": "Talk to us",
+    "details": "Learn more",
+    "eyebrow": "SERVICES",
+    "title": "Explore our services",
+    "lead": "We work with frontline teams and management to identify what needs to change, then bring together hands-on support, technology development, products, and data to meet each challenge.",
+    "route": "From the first conversation to change in motion.",
+    "groups": [
+      {
+        "no": "01",
+        "kind": "CLIENT SOLUTIONS",
+        "title": "Making change happen, together.",
+        "desc": "Practical services grounded in real-world operations that deliver meaningful business improvements.",
+        "items": [
+          {
+            "id": "dx-ai",
+            "no": "01",
+            "name": "Hands-on DX & AI",
+            "sub": "Hands-on DX & AI",
+            "text": "We don't build systems just for the sake of it. We work closely with frontline teams to improve processes and performance—from understanding current workflows and applying AI to making improvements that last.",
+            "tags": [
+              "Process analysis",
+              "AI adoption and integration",
+              "Hands-on support"
+            ]
+          },
+          {
+            "id": "development",
+            "no": "02",
+            "name": "System & app development",
+            "sub": "System & App Development",
+            "text": "We clarify business needs, align stakeholders, and support every stage from design and development to ongoing operations. We use AI to speed up delivery without compromising quality, security, or long-term usability.",
+            "tags": [
+              "Requirements planning",
+              "Development",
+              "Ongoing support"
+            ]
+          }
+        ]
+      },
+      {
+        "no": "02",
+        "kind": "OUR PRODUCTS & DATA",
+        "title": "Build and grow.",
+        "desc": "We transform firsthand operational insights into products and data services built by our team.",
+        "items": [
+          {
+            "id": "akarel",
+            "no": "03",
+            "name": "Akarel",
+            "sub": "Knowledge & AI Agents",
+            "text": "We turn organizational knowledge into AI agents designed for specific tasks. Beyond retrieval-augmented generation (RAG), we tailor workflows, access controls, and security measures to each organization's needs.",
+            "tags": [
+              "RAG",
+              "AI agents",
+              "Security and access controls"
+            ]
+          },
+          {
+            "id": "polariss",
+            "no": "04",
+            "name": "POLARISS",
+            "sub": "Vehicle Tracking & Protection",
+            "text": "Our location intelligence service combines vehicle tracking, collaborative monitoring, and weather-related alerts to help protect valuable vehicles before potential threats cause damage.",
+            "tags": [
+              "Location",
+              "Collaborative monitoring",
+              "Weather alerts"
+            ]
+          },
+          {
+            "id": "satellite",
+            "no": "05",
+            "name": "Satellite Data Intelligence",
+            "sub": "Satellite Data Intelligence",
+            "text": "We use satellite data and AI to support smarter agricultural decisions. By combining climate, soil, and field information, we help assess crop suitability, understand farmland conditions, and improve planning.",
+            "tags": [
+              "Agriculture",
+              "Crop suitability",
+              "Satellite data"
+            ]
+          }
+        ]
+      }
+    ],
+    "cta": {
+      "eyebrow": "START WITH A CONVERSATION",
+      "title": "Start with a challenge, even if it's not fully defined.",
+      "body": "You don't need to have a solution in mind. Start by telling us about your business and the challenges you're facing.",
+      "action": "Talk to us"
+    }
+  },
+  "site-shell.0": {
+    "company": "Company",
+    "nav": "Site navigation",
+    "about": "BonZuttner",
+    "links": [
+      "TOP",
+      "Our Story",
+      "Our Team",
+      "Company"
+    ],
+    "services": "Services",
+    "serviceLinks": [
+      "Hands-on DX & AI",
+      "System & app development",
+      "Akarel",
+      "POLARISS",
+      "Satellite data & agriculture"
+    ],
+    "contact": "Contact",
+    "talk": "Start with a conversation.",
+    "action": "Contact us",
+    "address": "Head office",
+    "office": "Sales office",
+    "privacy": "Privacy policy",
+    "language": "Language",
+    "addressText": "COEBI, 27F, Yebisu Garden Place Tower\n4-20-3 Ebisu, Shibuya-ku, Tokyo, Japan",
+    "officeText": "4F, MI Building, 2-17-73 Akasaka\nMinato-ku, Tokyo 107-0052, Japan"
+  },
+  "site-shell.1": "News",
+  "site-shell.2": "Careers",
+  "site.0": {
+    "nav": [
+      "Services",
+      "Our Story",
+      "Our Team",
+      "Company",
+      "News"
+    ],
+    "consult": "Talk to us",
+    "label": "DX & AI / System development / Our services",
+    "title": "Understand the work.<br>Change it with technology.",
+    "desc": "We start with the “why” behind your operations, combining AI with expert judgment to build systems people actually use. BonZuttner works alongside you from process discovery through development and operations.",
+    "services": "Explore services",
+    "note": "Challenges that are still hard to put into words are welcome.",
+    "attitude": "Sincerity, with a spoonful of humor.",
+    "alt": "An illustration of a diverse team having a natural conversation with a city and trees in the background",
+    "section": "Real-world challenges don't fit neatly into service categories.",
+    "intro": "We start by understanding both business priorities and day-to-day operations, then tailor our approach accordingly. By combining hands-on business support with technology development, we help businesses move forward.",
+    "groups": [
+      {
+        "name": "CLIENT SOLUTIONS",
+        "label": "Making change happen, together",
+        "summary": "We bridge the gap between frontline teams and management to improve daily operations, building sustainable systems where technology adds real value.",
+        "items": [
+          [
+            "Hands-on DX & AI",
+            "Drive meaningful improvements in business performance and operations."
+          ],
+          [
+            "System & app development",
+            "From planning and development to launch and ongoing support."
+          ]
+        ]
+      },
+      {
+        "name": "PRODUCTS & DATA",
+        "label": "Build and grow",
+        "summary": "We turn firsthand operational knowledge into innovative products and data services, combining product expertise, technology, and operations within one team.",
+        "items": [
+          [
+            "Akarel",
+            "AI agents powered by organizational knowledge and designed for specific tasks."
+          ],
+          [
+            "POLARISS",
+            "Location intelligence to help protect your valuable vehicles."
+          ],
+          [
+            "Satellite Data Intelligence",
+            "Smarter agricultural decisions powered by satellite data and AI."
+          ]
+        ]
+      }
+    ],
+    "difference": {
+      "kicker": "OUR DIFFERENCE",
+      "title": "We do not stop at a polished proposal.",
+      "desc": "Rather than delivering solutions developed behind a desk, we work alongside your team to find practical answers together.",
+      "points": [
+        [
+          "01",
+          "Start on the ground",
+          "We observe how work really gets done, listen to the people involved, and uncover challenges that documents alone cannot reveal."
+        ],
+        [
+          "02",
+          "Build only when needed",
+          "We don't develop new systems by default. If existing tools or improved processes can solve the problem, we start there."
+        ],
+        [
+          "03",
+          "Stay until it works",
+          "Our commitment doesn't end with a proposal or launch. We continue supporting your team until the changes become part of everyday operations."
+        ]
+      ]
+    },
+    "story": {
+      "kicker": "OUR STORY",
+      "title": "Build the future<br>through what we do.",
+      "body": "We believe everyone deserves a fair opportunity to turn their knowledge and aspirations into meaningful work, and that everyday dialogue and collaboration can help create a more peaceful world. BonZuttner was founded in 2019 to bring this vision to life through business."
+    },
+    "members": {
+      "kicker": "MEET THE TEAM",
+      "title": "The people who make things happen.",
+      "body": "We listen, plan, work alongside our clients, and turn ideas into practical solutions. Our team brings together diverse expertise and backgrounds to achieve shared goals.",
+      "action": "Meet the team",
+      "speech": "Listen. Plan.<br>Get to work.",
+      "voice": "CUSTOMER VOICE",
+      "plan": "PLAN / IDEA"
+    },
+    "field": {
+      "kicker": "IN THE FIELD",
+      "title": "Work we have<br>set in motion.",
+      "cases": [
+        [
+          "HANDS-ON DX & AI",
+          "Improving healthcare operations",
+          "We untangle complex frontline work and support the launch of the systems that follow."
+        ],
+        [
+          "OWN PRODUCT",
+          "POLARISS",
+          "Location intelligence and weather-risk alerts help protect valued vehicles."
+        ],
+        [
+          "SATELLITE DATA",
+          "Reading land from space",
+          "We turn satellite data into practical insight for land analysis and decisions."
+        ]
+      ]
+    },
+    "contact": {
+      "kicker": "START WITH A CONVERSATION",
+      "title": "Start with a challenge, even if it's not fully defined.",
+      "body": "It's okay if you're not sure where to start. We work with both frontline teams and management to identify challenges and find the best way forward together.",
+      "action": "Talk to us"
+    }
+  },
+  "site.1": "Continue to services",
+  "site.2": "Language",
+  "site.3": "Careers",
+  "site.4": "Read our story",
+  "story.0": {
+    "nav": [
+      [
+        "/en/",
+        "TOP"
+      ],
+      [
+        "/en/services/",
+        "Services"
+      ],
+      [
+        "/en/story/",
+        "Our Story"
+      ],
+      [
+        "/en/members/",
+        "Members"
+      ]
+    ],
+    "skip": "Skip to content",
+    "navigation": "Main navigation",
+    "language": "Language",
+    "consult": "Talk to us",
+    "hero": {
+      "label": "OUR STORY / WHY WE EXIST",
+      "title": [
+        "Through work,",
+        "toward peace."
+      ],
+      "body": "We connect people’s skills, experience, and aspirations with meaningful work and opportunities to contribute to society. Through dialogue, understanding, and creating value together, we believe we can move closer to peace.",
+      "read": "Where we began",
+      "aside": "Rebuild. Recreate. Restart."
+    },
+    "beginning": {
+      "label": "OUR BEGINNING",
+      "title": [
+        "Bridging talent",
+        "and opportunity."
+      ],
+      "body": [
+        "Our journey began when we met skilled Syrian IT professionals who faced barriers to employment and fair compensation because of displacement or where they lived.",
+        "At the same time, businesses in Japan and beyond needed specialized technology expertise. We saw an opportunity to connect skilled professionals with those needs while delivering value to customers. BonZuttner was founded in 2019 as a systems development company."
+      ],
+      "note": "Work together. Create value together.",
+      "source": "Read the story behind our founding"
+    },
+    "name": {
+      "label": "THE NAME BONZUTTNER",
+      "title": [
+        "Keep striving",
+        "to do good."
+      ],
+      "body": "Our name honors Bertha von Suttner, a peace activist and Nobel Peace Prize laureate. Her commitment to peace inspires how we act every day. Our name also draws on three linguistic elements.",
+      "person": "Bertha von Suttner",
+      "personEnglish": "Bertha von Suttner",
+      "parts": [
+        [
+          "Bon",
+          "Good, excellent",
+          "French"
+        ],
+        [
+          "Zutt",
+          "Continuously",
+          "Japanese"
+        ],
+        [
+          "Er",
+          "Someone who takes action",
+          "English"
+        ]
+      ],
+      "meaning": "Someone who continually strives to do good—and follows through with action."
+    },
+    "technology": {
+      "label": "WHY TECHNOLOGY",
+      "title": [
+        "Working together",
+        "across borders."
+      ],
+      "body": [
+        "Technology enables people in different places to bring their expertise together and deliver meaningful results. We chose this field to connect the skills of the people we met with work that addresses real needs in society.",
+        "AI can accelerate work and software development. But understanding business needs, designing reliable systems, and taking responsibility for quality, security, and ongoing operations still require professional expertise. We believe these skills will remain essential."
+      ],
+      "note": "Who does this technology serve, and how can we use it responsibly?",
+      "link": "What we work on today"
+    },
+    "re": {
+      "label": "OUR THREE “RE” PRINCIPLES",
+      "title": [
+        "A new beginning",
+        "for each person."
+      ],
+      "body": "No one should be defined solely by displacement or nationality. Every person has a name, skills, character, and aspirations. Through meaningful work, we aim to create more opportunities for people to shape their own futures.",
+      "tabLabel": "The meaning of our three Re. words",
+      "items": [
+        [
+          "Rebuild",
+          "Rebuild connections",
+          "Build a new life in a new environment and reconnect with others."
+        ],
+        [
+          "Recreate",
+          "Create anew",
+          "Bring skills and experience to creating new value and a shared future."
+        ],
+        [
+          "Restart",
+          "Begin again",
+          "With those renewed connections and possibilities, find a starting point to move forward."
+        ]
+      ]
+    },
+    "future": {
+      "label": "THE FUTURE",
+      "title": [
+        "Peace, through",
+        "everyday work."
+      ],
+      "body": [
+        "Talk. Understand another person’s circumstances and efforts. Find grounds for empathy across differences, and build relationships. We want our business to help those relationships grow.",
+        "Keep a promise to a customer. Talk things through as a team. Help people find pride and choices through work. We hope these small, repeated acts contribute to peace in society."
+      ],
+      "value": [
+        "A sincere approach,",
+        "with a dash of humor."
+      ],
+      "closing": "To hold hands, look forward, and gaze into the light."
+    },
+    "next": {
+      "label": "MEET BONZUTTNER",
+      "title": [
+        "Putting our beliefs",
+        "into action."
+      ],
+      "body": "What could we achieve together, and who would you work alongside? Explore our services and meet the people behind BonZuttner.",
+      "services": "Explore services",
+      "members": "Meet our team",
+      "contact": "Start a conversation"
+    }
+  },
+  "top-news.0": {
+    "heading": "Latest news",
+    "all": "All news",
+    "preparing": "News and updates are coming soon.",
+    "empty": "There are no published updates at the moment.",
+    "error": "We could not load the updates.",
+    "retry": "Try again",
+    "loading": "Loading updates.",
+    "preview": "Layout samples only. These are not actual announcements.",
+    "titles": [
+      "An article title goes here.",
+      "An update about an event or talk.",
+      "An update about media coverage."
+    ],
+    "categories": [
+      "Company",
+      "Events",
+      "Media"
+    ]
+  }
+}

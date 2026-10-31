@@ -1,9 +1,14 @@
-import Company from '@/all-pages/company';
+import { Render2026Page, get2026PageMetadata } from '@/components/Render2026Page';
+import type { Metadata } from 'next';
 
-export default function CompanyPage() {
-  return (
-    <main>
-      <Company />
-    </main>
-  );
+type Params = { locale: string };
+
+export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
+  const { locale } = await params;
+  return get2026PageMetadata(locale, 'company');
+}
+
+export default async function CompanyPage({ params }: { params: Promise<Params> }) {
+  const { locale } = await params;
+  return <Render2026Page locale={locale} routeKey="company" />;
 }

@@ -1,0 +1,24 @@
+html[data-theme="retro"] body{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='110'%3E%3Ctext x='9' y='67' fill='%23fff0db' font-family='Georgia,serif' font-style='italic' font-size='35'%3EBonZuttner%3C/text%3E%3C/svg%3E");}
+html[data-theme="retro"] .header,html[data-theme="retro"] .services,html[data-theme="retro"] .section-head{background:transparent}
+.modern-note{grid-column:1/-1;text-align:right;font-size:12px;color:#555}
+.blue-caption{display:inline;background:#0000ff;color:#fff;font-size:17px;padding:1px 5px;text-decoration:none}
+html[data-theme="retro"] .team-figure figcaption{text-decoration:none;line-height:1.9}
+.face-parade{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:3px;width:100%;margin:15px auto 0}
+.face-window{display:inline-block;width:24px;height:30px;background-image:url('/assets/team.png');background-size:480px auto;background-position:var(--face-x) var(--face-y);border-radius:50%;}
+.parade-symbol{color:#28bce9;font-size:22px;line-height:1}
+html[data-theme="retro"] .section-head{border:1px solid #333;padding:3px;margin:0 0 18px}
+html[data-theme="retro"] .section-head h2{background:#fff;color:#111;border:1px solid #333;margin:0 0 3px;padding:15px 5px;font-size:20px}
+html[data-theme="retro"] .section-head h2::before,html[data-theme="retro"] .section-head h2::after{content:' ★★★ ';}
+html[data-theme="retro"] .section-head>p:last-child{background:#fff;border:1px solid #333;padding:20px;font-size:16px}
+html[data-theme="retro"] .service-group{border:1px solid #333;padding:3px;margin-bottom:22px;background:#fff}
+html[data-theme="retro"] .group-label{justify-content:center;background:#fff;border:1px solid #333;padding:12px 5px;margin-bottom:3px}
+html[data-theme="retro"] .group-label span{display:none}
+html[data-theme="retro"] .group-label h3::before,html[data-theme="retro"] .group-label h3::after{content:' ★★★ ';}
+html[data-theme="retro"] .cards{border:0;display:block}
+html[data-theme="retro"] .service-card,html[data-theme="retro"] .service-group:first-child .service-card,html[data-theme="retro"] .service-group:nth-child(2) .service-card{display:grid;grid-template-columns:185px 1fr;gap:3px;border:0;padding:0;margin:0 0 3px;box-shadow:none;background:#fff}
+html[data-theme="retro"] .card-no{display:none}
+html[data-theme="retro"] .service-card h4{grid-row:1/3;border:1px solid #333;padding:8px;margin:0;font-size:16px;background:#fff}
+html[data-theme="retro"] .service-card p{border:1px solid #333;border-bottom:0;padding:8px 8px 0;font-size:16px;background:#fff}
+html[data-theme="retro"] .service-card .text-link{border:1px solid #333;border-top:0;margin:-3px 0 0;padding:5px 8px;text-align:left;background:#fff;font-size:14px}
+html[data-theme="retro"] .lead{font-size:16px}
+@media(max-width:650px){.modern-note{display:block;text-align:center;margin:7px 0 0}.face-parade{gap:2px}.face-window{width:20px;height:26px}.parade-symbol{font-size:17px}html[data-theme="retro"] .service-card,html[data-theme="retro"] .service-group:first-child .service-card,html[data-theme="retro"] .service-group:nth-child(2) .service-card{grid-template-columns:1fr}html[data-theme="retro"] .service-card h4{grid-row:auto}html[data-theme="retro"] .section-head h2{font-size:18px}html[data-theme="retro"] .group-label h3{font-size:15px}}
