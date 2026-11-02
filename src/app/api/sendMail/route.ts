@@ -22,18 +22,22 @@ export async function POST(request: Request) {
       );
     }
     const transporter = nodemailer.createTransport({
-        host: "sv10880.xserver.jp",
-        port: 465,
-        secure: true,
+        host: process.env.EMAIL_HOST || "sv10880.xserver.jp",
+        port: Number(process.env.EMAIL_PORT) || 465,
+        secure: process.env.EMAIL_SECURE ? process.env.EMAIL_SECURE === "true" : true,
         auth: {
-          user: "info@bonzuttner.jp",
-          pass: "Zoho$2025"
+          user: process.env.EMAIL_USER || "info@bonzuttner.jp",
+          pass: process.env.EMAIL_PASSWORD || "Zoho$2025"
         }
       });
 
     const mailOptions = {
-      from: "info@bonzuttner.jp",
-      to: ["maher91syr@gmail.com", "info@bonzuttner.com", "maher91syr@bonzuttner.com"],
+      from: process.env.EMAIL_FROM || "info@bonzuttner.jp",
+      to: [
+        "maher91syr@gmail.com",
+        "info@bonzuttner.com",
+        "maher91syr@bonzuttner.com"
+      ],
       subject: "【お問い合わせフォーム】新規メッセージ",
       text: `
         ■種類: ${typeOfInquiry}
@@ -49,6 +53,7 @@ export async function POST(request: Request) {
     };
 
     try {
+      await transporter.sendMail(mailOptions);
       const receiptId = "BZ-" + Math.random().toString(36).substring(2, 8).toUpperCase() + "-" + Date.now().toString(36).toUpperCase();
       return NextResponse.json({ message: "送信成功", ok: true, receiptId }, { status: 200 });
     } catch (emailError) {
