@@ -21,23 +21,47 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
-    const transporter = nodemailer.createTransport({
+    const emailUser = process.env.EMAIL_USER || "info@bonzuttner.jp";
+    const clientId = process.env.CLIENT_ID || "144250206382-nkbg67php77ok8t3q31vbsd6mcvkhobe.apps.googleusercontent.com";
+    const clientSecret = process.env.CLIENT_SECRET;
+    const refreshToken = process.env.REFRESH_TOKEN;
+
+    let transporter;
+
+    if (clientSecret && refreshToken) {
+      // Google Workspace OAuth 2.0
+      transporter = nodemailer.createTransport({
+        service: "gmail",
+        auth: {
+          type: "OAuth2",
+          user: emailUser,
+          clientId: clientId,
+          clientSecret: clientSecret,
+          refreshToken: refreshToken,
+        },
+      });
+    } else {
+      // Fallback to standard SMTP
+      transporter = nodemailer.createTransport({
         host: process.env.EMAIL_HOST || "sv10880.xserver.jp",
         port: Number(process.env.EMAIL_PORT) || 465,
         secure: process.env.EMAIL_SECURE ? process.env.EMAIL_SECURE === "true" : true,
         auth: {
-          user: process.env.EMAIL_USER || "info@bonzuttner.jp",
+          user: emailUser,
           pass: process.env.EMAIL_PASSWORD || "Zoho$2025"
         }
       });
+    }
+
+    const recipients = (process.env.EMAIL_TO || "maher91syr@gmail.com,info@bonzuttner.com,maher91syr@bonzuttner.com")
+      .split(",")
+      .map(s => s.trim())
+      .filter(Boolean);
 
     const mailOptions = {
-      from: process.env.EMAIL_FROM || "info@bonzuttner.jp",
-      to: [
-        "maher91syr@gmail.com",
-        "info@bonzuttner.com",
-        "maher91syr@bonzuttner.com"
-      ],
+      from: process.env.EMAIL_FROM || emailUser,
+      to: recipients,
+      replyTo: email,
       subject: "【お問い合わせフォーム】新規メッセージ",
       text: `
         ■種類: ${typeOfInquiry}

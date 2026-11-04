@@ -7,19 +7,24 @@ import { Button } from "@nextui-org/react";
 import Link from "next/link";
 import { useTranslations, useLocale } from 'next-intl';
 
+const initialInquiryData: InquiryDataType = {
+    typeOfInquiry: "",
+    name: "",
+    furigana: "",
+    email: "",
+    number: "",
+    companyName: "",
+    address: "",
+    agree: false,
+    inquiryDetails: ""
+};
+
 const Inquiry = () => {
     const t = useTranslations('contact.inquiry');
     const footerT = useTranslations('footer');
     const locale = useLocale();
 
-    const [inquiryData, setInquiryData] = useState<InquiryDataType>({
-        typeOfInquiry: "",
-        name: "",
-        furigana: "",
-        email: "",
-        agree: false,
-        inquiryDetails: ""
-    });
+    const [inquiryData, setInquiryData] = useState<InquiryDataType>(initialInquiryData);
 
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         const target = e.target as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement;
@@ -55,14 +60,7 @@ const Inquiry = () => {
             if (res.ok) {
                 alert(t('successMessage'));
                 // Reset form
-                setInquiryData({
-                    typeOfInquiry: "",
-                    name: "",
-                    furigana: "",
-                    email: "",
-                    agree: false,
-                    inquiryDetails: ""
-                });
+                setInquiryData(initialInquiryData);
             } else {
                 console.error("API Error:", data);
                 alert(`${t('errorMessage')}: ${data.error || t('validation.unknownError')}`);

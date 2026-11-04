@@ -13,7 +13,8 @@
     "prebuild": "npm run prepare:pages",
     "db:init": "node scripts/init-sqlite.cjs",
     "db:sync": "node scripts/sync-strapi-to-sqlite.cjs",
-    "db:refresh": "npm run db:init && npm run db:sync"
+    "db:refresh": "npm run db:init && npm run db:sync",
+    "oauth:init": "node scripts/get-google-refresh-token.mjs"
   },
   "dependencies": {
     "@heroui/react": "^2.7.11",

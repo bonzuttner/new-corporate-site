@@ -29,12 +29,11 @@ type InquiryDataType = {
     name: string
     furigana: string
     email: string
-    number?: number
-    companyName?: number
-    address?: number
+    number?: string
+    companyName?: string
+    address?: string
     inquiryDetails: string
     agree: boolean
-
 }
 
 type Article = {
