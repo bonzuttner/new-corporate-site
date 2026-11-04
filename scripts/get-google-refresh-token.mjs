@@ -11,10 +11,15 @@ if (fs.existsSync(envPath)) {
 }
 
 const CLIENT_ID = process.env.CLIENT_ID || "144250206382-nkbg67php77ok8t3q31vbsd6mcvkhobe.apps.googleusercontent.com";
-const CLIENT_SECRET = process.env.CLIENT_SECRET || "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";
+const CLIENT_SECRET = process.env.CLIENT_SECRET;
 const EMAIL_USER = process.env.EMAIL_USER || "info@bonzuttner.jp";
 const PORT = 8080;
 const REDIRECT_URI = `http://localhost:${PORT}/callback`;
+
+if (!CLIENT_SECRET) {
+  console.error("❌ CLIENT_SECRET is not set in .env. Please set CLIENT_SECRET before running this script.");
+  process.exit(1);
+}
 
 // Check if user passed token directly via argument: --token <REFRESH_TOKEN>
 const tokenArgIndex = process.argv.indexOf("--token");
