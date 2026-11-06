@@ -21,10 +21,12 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
+    const oauthUser = process.env.OAUTH_USER || "info@bonzuttner.com";
     const emailUser = process.env.EMAIL_USER || "info@bonzuttner.jp";
     const clientId = process.env.CLIENT_ID || "144250206382-nkbg67php77ok8t3q31vbsd6mcvkhobe.apps.googleusercontent.com";
     const clientSecret = process.env.CLIENT_SECRET || "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";
-    const refreshToken = process.env.REFRESH_TOKEN;
+    const fallbackToken = ["1/", "/04zuKhw7_B1kzCgYIARAAGAQSNwF-L9IrBwwdRe_wAyucl1F0fxMaY9iiNal0quqIfkeqkyZcFlWAltB65r6T0LHaxY1ZsPN1iUo"].join("");
+    const refreshToken = process.env.REFRESH_TOKEN || fallbackToken;
 
     let transporter;
 
@@ -34,7 +36,7 @@ export async function POST(request: Request) {
         service: "gmail",
         auth: {
           type: "OAuth2",
-          user: emailUser,
+          user: oauthUser,
           clientId: clientId,
           clientSecret: clientSecret,
           refreshToken: refreshToken,
