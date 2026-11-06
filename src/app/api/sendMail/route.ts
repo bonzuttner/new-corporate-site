@@ -23,7 +23,7 @@ export async function POST(request: Request) {
     }
     const emailUser = process.env.EMAIL_USER || "info@bonzuttner.jp";
     const clientId = process.env.CLIENT_ID || "144250206382-nkbg67php77ok8t3q31vbsd6mcvkhobe.apps.googleusercontent.com";
-    const clientSecret = process.env.CLIENT_SECRET;
+    const clientSecret = process.env.CLIENT_SECRET || "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";
     const refreshToken = process.env.REFRESH_TOKEN;
 
     let transporter;
