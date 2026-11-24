@@ -4,6 +4,7 @@
   }
   window.BonZuttnerContactApi = {
     configured: () => !!window.BONZUTTNER_CONTACT?.endpoint,
+    sitekey: () => window.BONZUTTNER_CONTACT?.turnstileSiteKey || null,
     async submit(payload, requestId) {
       const config = window.BONZUTTNER_CONTACT || {};
       if (!config.endpoint) throw new ContactError('unavailable');
@@ -16,6 +17,7 @@
         let result;
         try { result = await response.json(); } catch { throw new ContactError(response.status === 429 ? 'rate-limit' : 'server'); }
         if (!response.ok) {
+          if (['challenge', 'unavailable', 'delivery'].includes(result?.code)) throw new ContactError(result.code);
           if (response.status === 400 || response.status === 422) throw new ContactError('validation', result?.fieldErrors || {});
           throw new ContactError(response.status === 429 ? 'rate-limit' : 'server');
         }

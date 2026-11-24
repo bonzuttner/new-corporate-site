@@ -1,3 +1,4 @@
+import { CookieSettingsLink } from './CookiePreferences';
 import publishedLocales from '@/content/published-locales.json';
 import type { PageRecord, Locale, JsonValue } from '@/lib/types';
 interface ShellCopy {company:string;nav:string;about:string;links:string[];services:string;serviceLinks:string[];contact:string;talk:string;action:string;privacy:string;language:string}
@@ -25,6 +26,6 @@ export function SiteFooter({page,dictionary}:{page:PageRecord;dictionary:Diction
  return <footer className="site-footer">
   <div className="sf-top"><a className="sf-brand" href={`/${page.locale}/`} dir="ltr">BonZuttner</a><div className="sf-contact"><p>{t.talk}</p><a className="sf-contact-action" href={contact}>{t.action}</a></div></div>
   <nav className="sf-navigation" aria-label={t.nav}><div className="sf-link-group"><h2>{t.about}</h2><ul>{links(['','story/','members/','company/','news/','recruit/'],[...t.links,news,recruit])}</ul></div><div className="sf-link-group"><h2>{t.services}</h2><ul>{links(['dx-ai/','development/','akarel/','polariss/','satellite/'],t.serviceLinks)}</ul></div><div className="sf-link-group sf-email"><h2>{t.contact}</h2><a href={contact}>{t.contact}</a></div></nav>
-  <div className="sf-bottom"><small dir="ltr">© {new Date().getFullYear()} BonZuttner Inc.</small><a href="/ja/privacy-policy/" target="_blank" rel="noopener noreferrer">{t.privacy}</a><div className="sf-languages" aria-label={t.language}>{publishedLocales.map(locale=><a key={locale} href={`/${locale}/${route}`} lang={locale} aria-current={locale===page.locale?'page':undefined}>{locale.toUpperCase()}</a>)}</div></div>
+  <div className="sf-bottom"><small dir="ltr">© {new Date().getFullYear()} BonZuttner Inc.</small><a href="/ja/privacy-policy/" target="_blank" rel="noopener noreferrer">{t.privacy}</a><CookieSettingsLink locale={page.locale}/><div className="sf-languages" aria-label={t.language}>{publishedLocales.map(locale=><a key={locale} href={`/${locale}/${route}`} lang={locale} aria-current={locale===page.locale?'page':undefined}>{locale.toUpperCase()}</a>)}</div></div>
  </footer>;
 }

@@ -4,7 +4,7 @@ import vm from 'node:vm';
 import {JSDOM,VirtualConsole} from 'jsdom';
 const publishedLocales=JSON.parse(fs.readFileSync('src/content/published-locales.json','utf8'));
 const routes=JSON.parse(fs.readFileSync('src/content/routes.json','utf8')).filter(route=>publishedLocales.includes(route.locale));
-// Remove exports for languages that are temporarily unpublished. Keep their source copy.
+// Remove stale static exports, retaining the original unpublished translations.
 for(const lang of ['ja','en','ar'])if(!publishedLocales.includes(lang))fs.rmSync(`out/${lang}`,{recursive:true,force:true});
 const dictionaries=Object.fromEntries(['ja','en','ar'].map(lang=>[lang,JSON.parse(fs.readFileSync(`src/content/locales/${lang}.json`,'utf8'))]));
 const translations={};for(const key of Object.keys(dictionaries.ja))translations[key]=Object.fromEntries(['ja','en','ar'].map(lang=>[lang,dictionaries[lang][key]]));
@@ -45,7 +45,7 @@ for(const route of routes){
  const header=shell?{tag:shell.tagName.toLowerCase(),className:shell.className,hasConsult:!!shell.querySelector('.service-consult'),brandClass:shell.querySelector('.service-brand')?.className||'service-brand',navLabel:shell.querySelector('nav')?.getAttribute('aria-label')||'',languageClass:shell.querySelector('.service-languages')?.className||'service-languages',languages:[...shell.querySelectorAll('.service-languages a')].map(a=>({locale:a.lang,label:a.textContent,href:a.getAttribute('href'),dataLanguage:a.getAttribute('data-language')})),retro:shell.querySelector('#show-retro')?.textContent||null}:null;
  if(shell)shell.replaceWith(w.document.createElement('bz-next-header'));
  const footer=w.document.querySelector('.site-footer');const footerHTML=footer?.innerHTML||'';footer?.remove();
- output[`${route.locale}/${route.slug.join('/')}`]={locale:route.locale,slug:route.slug,title:w.document.title,description:w.document.querySelector('meta[name="description"]')?.content||'',bodyAttributes:Object.fromEntries([...w.document.body.attributes].map(a=>[a.name,a.value])),styles:[...w.document.querySelectorAll('link[rel="stylesheet"]')].map(n=>n.href.replace('https://bonzuttner.example','')),html:app.innerHTML,header,footer:footerHTML,scripts:scripts.filter(s=>!['site-shell.js','display-state.js'].includes(path.basename(s.src.split('?')[0]))).map(s=>({...s,src:s.src.split('?')[0]+'?v='+(route.locale==='ja'&&(!route.slug.length||route.slug[0]==='dx-ai')?'next-20261124-design':route.locale==='en'?'next-20261028':'next-20261028-ja-copy2')}))};
+ output[`${route.locale}/${route.slug.join('/')}`]={locale:route.locale,slug:route.slug,title:w.document.title,description:w.document.querySelector('meta[name="description"]')?.content||'',bodyAttributes:Object.fromEntries([...w.document.body.attributes].map(a=>[a.name,a.value])),styles:[...w.document.querySelectorAll('link[rel="stylesheet"]')].map(n=>n.href.replace('https://bonzuttner.example','')),html:app.innerHTML,header,footer:footerHTML,scripts:scripts.filter(s=>!['site-shell.js','display-state.js'].includes(path.basename(s.src.split('?')[0]))).map(s=>({...s,src:s.src.split('?')[0]+'?v='+(route.slug[0]==='contact'?'next-20261124-contact':route.locale==='ja'&&(!route.slug.length||route.slug[0]==='dx-ai')?'next-20261124-design':route.locale==='en'?'next-20261028':'next-20261028-ja-copy2')}))};
  dom.window.close();
 }
 fs.writeFileSync('src/generated/pages.json',JSON.stringify(output));console.log(`Prepared ${routes.length} localized pages with prerendered content.`);

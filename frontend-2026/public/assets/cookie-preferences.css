@@ -1,0 +1,12 @@
+.cookie-banner,.cookie-dialog{box-sizing:border-box;color:#10242f;background:#fff;font:15px/1.6 system-ui,sans-serif;border:1px solid #84a9bf;border-radius:8px}
+.cookie-banner{position:fixed;z-index:1000;inset:auto 16px 16px;width:min(640px,calc(100% - 32px));margin:0 auto;padding:18px 20px;box-shadow:0 9px 30px #10242f35}
+.cookie-banner h2,.cookie-dialog h2{font-size:18px;margin:0 0 6px}
+.cookie-banner p,.cookie-dialog p{margin:0 0 12px}
+.cookie-dialog{width:min(500px,calc(100% - 32px));padding:22px;max-height:80vh;overflow:auto}
+.cookie-dialog::backdrop{background:#10242f87}
+.cookie-actions{display:flex;gap:8px;flex-wrap:wrap}
+.cookie-actions button{color:#10242f;background:#fff;border:1px solid #5f8195;border-radius:4px;padding:7px 12px;min-height:42px;cursor:pointer;font:inherit;font-weight:650}
+.cookie-actions button.cookie-primary{background:#12394e;color:#fff;border-color:#12394e}
+.cookie-toggle{display:flex;align-items:center;gap:10px;margin:10px 0 18px}
+.cookie-toggle input{width:18px;height:18px;margin:0}
+.cookie-settings-link{border:0;padding:0;color:inherit;background:none;text-decoration:underline;cursor:pointer;font:inherit}

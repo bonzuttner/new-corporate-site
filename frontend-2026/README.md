@@ -17,9 +17,11 @@ Production and verification:
 npm run build
 npm run typecheck
 npm test
+node scripts/check-contact-security.mjs # mocked Turnstile verification
+node scripts/check-cookie-consent.mjs
 ```
 
-`out/` is the deployable website. For Netlify, use build command `npm run build` and publish directory `out`. A Node server is not required for the current static pages. API secrets must not be placed in client-side files.
+`out/` contains the static build for the existing production host. See [contact and analytics setup](docs/contact-security.md); the site uses a separately managed receiving API. Do not put API credentials in client-side files.
 
 ## Editing / translation review
 
@@ -35,7 +37,7 @@ npm test
 
 31 published Japanese/English routes, plus the root language chooser and generated 404. `/ja/privacy-policy/` remains Japanese-only. Current route URLs, CMS query-string detail routes and contact topic links are preserved.
 
-Page routing, metadata, language/RTL setup and static export use Next.js. Shared headers and footers are TypeScript React components. Existing page templates are rendered at build time, so meaningful page content is present in the exported HTML without JavaScript.
+Page routing, metadata, language/RTL setup and prerendering use Next.js. Shared headers and footers are TypeScript React components. Existing page templates are rendered at build time, so meaningful page content is present in the prerendered HTML without JavaScript.
 
 This is a progressive migration, not a claim that every existing script was rewritten into React. Existing interaction code is retained in a compatibility layer: the pixel hero, rotating project explorer, dialogs, tabs, forms and CMS views. The initial template write is skipped after Next hydration, and the established native event handlers attach to the prerendered markup. Ordinary anchors intentionally perform document navigation while this layer is retained, to avoid duplicate event handlers and cross-page animation state.
 
@@ -43,11 +45,11 @@ This is a progressive migration, not a claim that every existing script was rewr
 
 ## CMS / contact handoff
 
-The news CMS, recruiting CMS and contact submission backend remain disconnected and are to be implemented by the BonZuttner team. No inquiries are silently sent. Layout fixtures remain isolated behind `?preview=layout`.
+The news and recruiting feeds require their CMS endpoints. The contact form reuses the existing receiving API and can enable Turnstile after server-side verification is in place. Layout fixtures remain isolated behind `?preview=layout`.
 
-- Configure integrations in `src/legacy/scripts/news-config.js`, `recruit-config.js`, `contact-config.js`, then rebuild.
+- Configure integrations in `src/legacy/scripts/news-config.js`, `recruit-config.js`, then rebuild.
 - Existing adapters and schemas are documented in `docs/news-cms-integration.md`, `docs/recruit-cms-integration.md`, `docs/contact-and-cms-integration.md`.
-- Static export cannot host Next route handlers/server actions. To implement APIs inside this Next app later, remove `output: 'export'` and use a compatible server deployment. Otherwise retain external API endpoints.
+- Connect the contact frontend to the working API and configure the widget after integrating server-side verification. See [contact and analytics setup](docs/contact-security.md).
 
 ## Validation
 

@@ -21,16 +21,18 @@ npm ci
 npm run build
 npm run typecheck
 npm test
+node scripts/check-contact-security.mjs # Node 24
+node scripts/check-cookie-consent.mjs
 node scripts/check-published-languages.mjs
 ```
 
-For Vercel, use the `new-site-2026` branch, Root Directory `frontend-2026`, framework Next.js, install `npm ci`, build `npm run build`. The app currently uses Next static export (`output: 'export'`) and generates `out/`. For Netlify/static hosting, publish `frontend-2026/out` after building from `frontend-2026`.
+Deploy using the existing **production host** and its release process. Build the `frontend-2026` app with `npm ci` and `npm run build`, and publish its static `out/` directory. Vercel is a preview environment. See [contact and analytics setup](frontend-2026/docs/contact-security.md) for settings to apply in the working production API and the frontend build.
 
 Please deploy a preview for review before switching production. No hosting settings or production deployment have been changed by this source handoff.
 
 The frontend uses Next.js 16.4.6. Its Turbopack root is explicitly set to `frontend-2026` so the build does not resolve the previous root application's middleware or dependencies.
 
-The November 24 refresh updates the Japanese homepage and the featured Medicom case on the Japanese DX/AI service page. The existing hero and retro entry are preserved. Turnstile and cookie consent are not part of this change.
+The November 24 refresh updates the Japanese homepage and the featured Medicom case on the Japanese DX/AI service page. The existing hero and retro entry are preserved. The frontend includes Turnstile and optional GA4 consent. Coordinate Turnstile enforcement with the existing production API before enabling its widget.
 
 ## CMS integration: news/blog and careers
 
@@ -47,17 +49,16 @@ Configure endpoints in:
 
 - `frontend-2026/src/legacy/scripts/news-config.js`
 - `frontend-2026/src/legacy/scripts/recruit-config.js`
-- `frontend-2026/src/legacy/scripts/contact-config.js`
 
-Adapt API responses in the corresponding `news-api.js`, `recruit-api.js`, `contact-api.js`; rebuild after edits. `public/assets/*.js` files are generated compatibility scripts — edit `src/legacy/scripts/` instead.
+Adapt API responses in `news-api.js` and `recruit-api.js`; rebuild after edits. `public/assets/*.js` files are generated compatibility scripts — edit `src/legacy/scripts/` instead.
 
 See `frontend-2026/docs/news-cms-integration.md`, `recruit-cms-integration.md`, and `contact-and-cms-integration.md` for request/response schemas and validation. Only publish real approved content. Confirm job descriptions, employment conditions and application destination with Sakashita before publication.
 
-The new app is a static export: it cannot execute Next API handlers/server actions. Either retain external API services or deliberately migrate to server deployment before adding server-side handlers.
+The app builds to static HTML. Reuse the working contact API; add the bundled Turnstile verifier there without changing email delivery.
 
 ## What remains
 
-- Connect and verify news/blog CMS, careers CMS and contact submission.
+- Verify news/blog and careers CMS wiring, and test Turnstile and contact email delivery.
 - Check desktop/mobile layout, hydration, animations, dialogs, language switching and real CMS content in the deployment environment.
 - Share a preview URL for review, then deploy production.
 
