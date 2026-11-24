@@ -14,7 +14,23 @@ const caseUI = lang === 'ar'
   : lang === 'en'
   ? { read: 'Read the case', close: 'Close', previous: 'Previous', next: 'Next', label: 'Case studies' }
   : { read: '詳しく読む', close: '閉じる', previous: '前へ', next: '次へ', label: '伴走支援の実績' };
-const caseItem = (item, index) => `<article class="case-slide"><p class="case-index">CASE ${String(index + 1).padStart(2, '0')}</p><p class="case-client">${item.client}</p><h3>${item.title}</h3><p class="case-kind">${item.kind}</p><button type="button" class="case-open" data-case="${index}" aria-haspopup="dialog">${caseUI.read}<span class="case-plus" aria-hidden="true">＋</span></button></article>`;
+// The featured Japanese case is shown here, not on the corporate homepage.
+const medicom = {
+  title: 'POPが店舗に届くまで。<br>その仕事を、一つの流れに。',
+  body: '販促物の制作、確認・承認、店舗への配送。工程ごとに情報が分かれ、次に誰が動くかをその都度確かめる必要がありました。担当者と実際の手順をたどり、業務の流れとシステムを一緒に整えました。',
+  stages: ['制作', '確認・承認', '店舗配送'],
+  notes: [
+    ['課題', '確認のたびに、手が止まる。', '案件の情報や配送先が分散し、進み具合を知るために確認や転記が必要でした。'],
+    ['見直したこと', '仕事の順番から整える。', '誰が何を確認するかを整理し、案件管理・申請承認・店舗配送を同じ流れで追えるようにしました。'],
+    ['現場の変化', '探す・聞き直す手間を減らす。', '担当と次の作業がわかりやすくなり、情報を探したり、同じことを確認し直したりする手間を減らしました。']
+  ]
+};
+const caseTitle = (item, index) => lang === 'ja' && index === 0 ? medicom.title : item.title;
+const caseItem = (item, index) => `<article class="case-slide"><p class="case-index">CASE ${String(index + 1).padStart(2, '0')}</p><p class="case-client">${item.client}</p><h3>${caseTitle(item,index)}</h3><p class="case-kind">${item.kind}</p><button type="button" class="case-open" data-case="${index}" aria-haspopup="dialog">${caseUI.read}<span class="case-plus" aria-hidden="true">＋</span></button></article>`;
+const medicomDetail = lang === 'ja' ? `<div class="medicom-detail" hidden>
+  <figure class="medicom-flow"><figcaption>業務フローのイメージ</figcaption><ol>${medicom.stages.map(stage => `<li>${stage}</li>`).join('')}</ol><p>担当・進み具合・配送先がつながる</p></figure>
+  <div class="medicom-notes">${medicom.notes.map(([label,title,body]) => `<section><p class="medicom-label">${label}</p><h3>${title}</h3><p>${body}</p></section>`).join('')}</div>
+</div>` : '';
 
 if (!document.querySelector('#app').dataset.nextPrerender) document.querySelector('#app').innerHTML = `
   <a class="skip" href="#main">${lang === 'ar' ? 'انتقل إلى المحتوى' : lang === 'en' ? 'Skip to content' : '本文へ'}</a>
@@ -34,7 +50,7 @@ if (!document.querySelector('#app').dataset.nextPrerender) document.querySelecto
     <section class="graduation"><div><p class="service-eyebrow">${t.graduation.eyebrow}</p><h2>${t.graduation.title}</h2></div><div>${t.graduation.body.map((paragraph, index) => `<p class="graduation-p${index + 1}">${paragraph}</p>`).join('')}</div></section>
     <section id="contact" class="service-contact"><p>${t.cta.eyebrow}</p><h2>${t.cta.title}</h2><div><p>${t.cta.body}</p><a href="mailto:info@bonzuttner.com">${t.cta.action} <span aria-hidden="true">→</span></a></div></section>
   </main>
-  <dialog class="case-dialog" aria-labelledby="case-dialog-title" aria-describedby="case-dialog-body"><div class="case-dialog-bar"><span>CASE STUDY</span><button type="button" class="case-close" autofocus>${caseUI.close}<span aria-hidden="true">×</span></button></div><div class="case-dialog-content"><p class="case-client" id="case-dialog-client"></p><h2 id="case-dialog-title"></h2><p class="case-kind" id="case-dialog-kind"></p><p id="case-dialog-body"></p></div></dialog>
+  <dialog class="case-dialog" aria-labelledby="case-dialog-title" aria-describedby="case-dialog-body"><div class="case-dialog-bar"><span>CASE STUDY</span><button type="button" class="case-close" autofocus>${caseUI.close}<span aria-hidden="true">×</span></button></div><div class="case-dialog-content"><p class="case-client" id="case-dialog-client"></p><h2 id="case-dialog-title"></h2><p class="case-kind" id="case-dialog-kind"></p><p id="case-dialog-body"></p>${medicomDetail}</div></dialog>
 `;
 
 const caseTrack = document.querySelector('.case-track');
@@ -77,11 +93,15 @@ updateCasePosition();
 const caseDialog = document.querySelector('.case-dialog');
 let caseOpener;
 document.querySelectorAll('.case-open').forEach(button => button.addEventListener('click', () => {
-  const item = t.cases.items[Number(button.dataset.case)];
+  const index = Number(button.dataset.case);
+  const item = t.cases.items[index];
+  const featured = lang === 'ja' && index === 0;
+  const detail = caseDialog.querySelector('.medicom-detail');
+  if (detail) detail.hidden = !featured;
   document.querySelector('#case-dialog-client').textContent = item.client;
-  document.querySelector('#case-dialog-title').innerHTML = item.title;
+  document.querySelector('#case-dialog-title').innerHTML = caseTitle(item,index);
   document.querySelector('#case-dialog-kind').textContent = item.kind;
-  document.querySelector('#case-dialog-body').textContent = item.body;
+  document.querySelector('#case-dialog-body').textContent = featured ? medicom.body : item.body;
   caseOpener = button;
   caseDialog.showModal();
   caseDialog.scrollTop = 0;

@@ -28,7 +28,9 @@ For Vercel, use the `new-site-2026` branch, Root Directory `frontend-2026`, fram
 
 Please deploy a preview for review before switching production. No hosting settings or production deployment have been changed by this source handoff.
 
-The retained Next.js version is 16.4.0. The build environment flagged a known security vulnerability during previous checks. Review and apply the appropriate supported security update before production deployment; do not bypass a deployment platform's security checks.
+The frontend uses Next.js 16.4.6. Its Turbopack root is explicitly set to `frontend-2026` so the build does not resolve the previous root application's middleware or dependencies.
+
+The November 24 refresh updates the Japanese homepage and the featured Medicom case on the Japanese DX/AI service page. The existing hero and retro entry are preserved. Turnstile and cookie consent are not part of this change.
 
 ## CMS integration: news/blog and careers
 
@@ -56,7 +58,6 @@ The new app is a static export: it cannot execute Next API handlers/server actio
 ## What remains
 
 - Connect and verify news/blog CMS, careers CMS and contact submission.
-- Apply the necessary Next.js security update.
 - Check desktop/mobile layout, hydration, animations, dialogs, language switching and real CMS content in the deployment environment.
 - Share a preview URL for review, then deploy production.
 

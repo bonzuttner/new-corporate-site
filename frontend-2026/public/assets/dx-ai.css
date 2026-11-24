@@ -64,3 +64,18 @@ html[dir="rtl"] .case-slide h3,html[dir="rtl"] .case-dialog h2{letter-spacing:0}
 @keyframes dx-sweat-drip-small{0%,18%,48%,80%,100%{opacity:1;transform:translate(0,0) rotate(-45deg) scale(.68)}24%,55%{opacity:1;transform:translate(.04em,.18em) rotate(-45deg) scale(.85)}38%,69%{opacity:0;transform:translate(.16em,1em) rotate(-45deg) scale(.4)}39%,70%{opacity:0;transform:translate(0,0) rotate(-45deg) scale(.3)}}
 @keyframes dx-heading-drip{0%,12%,42%,74%,100%{opacity:0;transform:translate(0,0) rotate(-45deg) scale(.4)}18%,49%{opacity:1;transform:translate(0,.04em) rotate(-45deg) scale(1)}32%,63%{opacity:0;transform:translate(-.05em,.8em) rotate(-45deg) scale(.6)}}
 @media(prefers-reduced-motion:reduce){.dx-hero *,.dx-hero *::before,.dx-hero *::after{animation:none!important}}
+
+/* Japanese featured case inside the existing detail dialog. */
+.medicom-detail{margin-top:26px}
+.medicom-detail[hidden]{display:none}
+.medicom-flow{margin:0 0 25px;padding:18px;background:#eaf5fe;border:1px solid #bad6e7;color:#17394d}
+.medicom-flow figcaption,.medicom-flow>p{font-size:13px;font-weight:750;color:#17638e}
+.medicom-flow ol{padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;list-style:none;margin:12px 0}
+.medicom-flow li{display:grid;place-items:center;position:relative;min-height:45px;text-align:center;background:#fff;border:1px solid #a9c7d9;padding:6px;font-size:14px;font-weight:750}
+.medicom-flow li:not(:last-child)::after{content:'→';position:absolute;left:100%;width:16px;color:#17638e}
+.medicom-notes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.medicom-notes>section{border-top:1px solid #bad6e7;padding-top:10px}
+.medicom-notes h3{font-size:16px;margin:4px 0;line-height:1.6}
+.medicom-notes p{font-size:13px;line-height:1.7}
+.medicom-label{color:#17638e;font-weight:750}
+@media(max-width:620px){.medicom-notes{grid-template-columns:1fr}.medicom-flow{padding:12px}.medicom-flow li{font-size:12px}}
