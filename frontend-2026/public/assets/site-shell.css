@@ -20,3 +20,5 @@
 @media(max-width:620px){.bz-header.service-nav{padding:10px 16px;gap:7px 12px}.bz-header.service-nav .service-brand{font-size:20px}.bz-header.service-nav .service-actions{gap:7px}.bz-header.service-nav .service-languages{gap:2px}.bz-header.service-nav .service-languages a{padding:4px 3px}.bz-header.service-nav .service-consult{padding:9px 10px}.bz-header.service-nav nav{gap:20px}}
 
 .service-hero .services-overview-title{max-width:none;font-size:clamp(33px,4vw,60px);line-height:1.5;word-break:normal;overflow-wrap:break-word;line-break:strict;text-wrap:balance}
+.bz-wordmark{display:block;width:clamp(134px,13vw,190px);max-width:100%;height:auto}.sf-brand .bz-wordmark{width:clamp(180px,20vw,254px)}
+@media(max-width:620px){.bz-header.service-nav{grid-template-columns:minmax(0,1fr) auto}.bz-header.service-nav .service-brand{min-width:0}.bz-header .bz-wordmark{width:clamp(104px,30vw,155px)}}

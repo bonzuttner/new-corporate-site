@@ -13,7 +13,7 @@
 <path d="M374 141 L178 191 L248 249 Z" fill="#3ba1e8" opacity=".2"/>
 <path class="scan" d="M177 216 L254 216" /></svg>
 </div>
-<div class="field-bottom"><p id="field-caption">話を聞き、課題を整理して改善を試す。確認や引き継ぎなど、日々の仕事が変わり、組織がもっと素敵になります。</p><div class="field-controls" role="group" aria-label="イラストを切り替える"><button type="button" data-view="city" aria-pressed="true">現場</button><button type="button" data-view="ride" aria-pressed="false">POLARISS</button><button type="button" data-view="space" aria-pressed="false">衛星データ</button></div></div></div></div></section><div class="approach-stage"><svg class="sweat-art" viewBox="0 0 690 470" preserveAspectRatio="xMaxYMid slice" aria-hidden="true">
+<div class="field-bottom"><p id="field-caption">話を聞き、課題を整理して改善を試す。確認や引き継ぎなど、日々の仕事が変わり、組織がもっと素敵になります。</p><div class="field-controls" role="group" aria-label="イラストを切り替える"><button type="button" data-view="city" aria-pressed="true">現場</button><button type="button" data-view="ride" aria-pressed="false">POLARISS</button><button type="button" data-view="space" aria-pressed="false">衛星データ</button></div></div></div></div></section><div class="approach-stage"><svg class="sweat-art" viewBox="0 0 690 470" preserveAspectRatio="xMaxYMid meet" aria-hidden="true">
 <defs><pattern id="sweat-grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#73bded" stroke-opacity=".23"/></pattern>
 <linearGradient id="sweat-grad" x2="0" y2="1"><stop stop-color="#103141"/><stop offset="1" stop-color="#153e53"/></linearGradient></defs>
 <path d="M244 0H690V470H83V431H127V392H162V344H195V285H223V220H244Z" fill="url(#sweat-grad)"/>

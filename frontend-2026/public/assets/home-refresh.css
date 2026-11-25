@@ -228,3 +228,4 @@
 .home-refresh .actor-try{background-image:url("/assets/home-actor-try.webp")}
 .home-refresh .actor-improve{background-image:url("/assets/home-actor-improve.webp")}
 .home-refresh .work-scene .tokens span{overflow-wrap:anywhere}
+.home-refresh .approach-stage .difference::before,.home-refresh .approach-stage .difference::after{content:none}.home-refresh .approach-stage .sweat-art{right:2%}

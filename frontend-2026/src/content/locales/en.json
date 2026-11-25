@@ -930,29 +930,106 @@
       ]
     },
     "cases": {
-      "eyebrow": "SELECTED WORKS",
+      "eyebrow": "Selected work",
       "title": "See the reality.<br>Then choose the technology.",
-      "note": "A selection of our work.",
+      "note": "Six projects spanning operations, training and website planning.",
       "items": [
         {
-          "client": "MEDICOM / Promotional materials & POP",
-          "title": "Untangle complex work<br>with the frontline.",
-          "kind": "Process design × Web / business systems",
-          "visual": "PHOTO / ILLUSTRATION",
-          "body": "We map production, review, approvals and store deliveries, then improve fragmented information, duplicate entry and manual checks. Workflow improvements and the system evolve together."
+          "client": "MEDICOM / Promotional materials",
+          "title": "From the print desk<br>to the store.",
+          "kind": "Promotional production and delivery",
+          "body": "Production and delivery teams can follow the same job and see whose approval comes next.",
+          "stages": [
+            "Production",
+            "Approval",
+            "Store delivery"
+          ],
+          "notes": [
+            "Job details and delivery addresses were kept separately. Checking progress meant asking colleagues and copying information.",
+            "We traced the work with staff and connected job tracking, approvals and store destinations in one workflow.",
+            "Teams can see the next task and its owner, with less time spent searching or asking twice."
+          ]
         },
         {
-          "client": "MEDICOM / WHOLESALE",
-          "title": "Make everyday operations<br>stronger and smoother.",
-          "kind": "Reducing operational friction",
-          "visual": "PHOTO / ILLUSTRATION",
-          "body": "A BtoB wholesale platform connects administrator and store screens. Products, client-specific pricing, publication and order information are managed on the web, with continuous improvements for real operations."
+          "client": "MEDICOM / Wholesale",
+          "title": "One product.<br>A different price for each buyer.",
+          "kind": "B2B wholesale ordering",
+          "body": "We connected the supplier’s catalogue to a storefront that reflects each buyer’s purchasing terms.",
+          "stages": [
+            "Set terms",
+            "Select products",
+            "Manage orders"
+          ],
+          "notes": [
+            "Each buyer has different prices and access to different products. A single public catalogue could not reflect those terms.",
+            "We built an admin view for setting prices and product visibility, and a store view that applies each buyer’s terms.",
+            "Stores can order against their own terms. Administrators manage products, prices and orders together."
+          ]
         },
         {
-          "client": "WORKFLOW AUTOMATION / RPA",
-          "title": "Free daily data entry<br>from manual work.",
-          "kind": "Excel integration × Browser automation",
-          "body": "Back-office work relied on manual input and checks because external websites did not provide an API. We automated transfers from Excel to the web and browser operations, combining AI input assistance with data integration to reduce repetitive input and checking."
+          "client": "Back-office operations / Automation",
+          "title": "Enter it in Excel.<br>Skip typing it all again.",
+          "kind": "Spreadsheet and browser automation",
+          "body": "We used the existing browser interface to transfer spreadsheet data to a site without an API.",
+          "stages": [
+            "Read spreadsheet",
+            "Fill browser fields",
+            "Check entries"
+          ],
+          "notes": [
+            "Staff had to copy values from Excel and check them on an external site that offered no API.",
+            "We connected spreadsheet data to automated browser actions and assisted data entry.",
+            "Staff can avoid repeating the same keystrokes for routine entries."
+          ]
+        },
+        {
+          "client": "Public facilities / Client undisclosed",
+          "title": "Book a facility<br>after the counter closes.",
+          "kind": "Public facility reservation system",
+          "body": "Residents can check availability, book and pay online under the rules of each facility.",
+          "stages": [
+            "Check availability",
+            "Book or change",
+            "Pay"
+          ],
+          "notes": [
+            "Residents had to call or visit during office hours. Staff managed bookings by hand against facility-specific rules.",
+            "We built online bookings, group registration and payments around each facility’s rules and fees, with an administration screen for staff.",
+            "Residents can book around the clock. Staff can review reservations and usage statistics in the same system."
+          ]
+        },
+        {
+          "client": "OTD",
+          "title": "An online workshop<br>where everyone takes part.",
+          "kind": "Interactive training platform",
+          "body": "Card choices and team challenges give learners a way to participate and instructors a live view of results.",
+          "stages": [
+            "Make a choice",
+            "Play as a team",
+            "Share results"
+          ],
+          "notes": [
+            "Learners could become passive online, and instructors had little visibility into participation.",
+            "We designed instructor and learner views, with card selection, roulette and real-time scoring for team challenges.",
+            "Learners influence the session through their choices. Instructors can see results as they guide the group."
+          ]
+        },
+        {
+          "client": "Tokyo Denki University / Department of Design Engineering",
+          "title": "What would I study here?<br>Start with the applicant’s question.",
+          "kind": "Department website planning and information architecture",
+          "body": "Together with the university, we organised courses and student voices into two complementary ways to explore the department.",
+          "stages": [
+            "Define the message",
+            "Organise content",
+            "Build the site"
+          ],
+          "notes": [
+            "Prospective students and parents needed to understand the department quickly across a large collection of course, research and faculty information.",
+            "We worked with the university from the planning stage, mapped paths to curricula and student stories, and delivered the design and frontend.",
+            "Visitors can explore what is taught alongside accounts from students and graduates to find the learning that interests them."
+          ],
+          "url": "https://www.ad.dendai.ac.jp/"
         }
       ]
     },
@@ -1570,7 +1647,7 @@
     "details": "Learn more",
     "eyebrow": "SERVICES",
     "title": "Explore our services",
-    "lead": "We work with frontline teams and management to identify what needs to change, then bring together hands-on support, technology development, products, and data to meet each challenge.",
+    "lead": "We work with frontline teams and management to decide together what needs to change. Depending on your needs, we combine hands-on support, software development, our own products and data analysis.",
     "route": "From the first conversation to change in motion.",
     "groups": [
       {

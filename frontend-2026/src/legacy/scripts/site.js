@@ -21,7 +21,7 @@ let serviceIndex = 0;
 document.querySelector('#app').innerHTML = `
   <a class="skip" href="#main">${ui.skip}</a>
   <header class="header">
-    <a class="brand" href="/${lang}/" lang="en" dir="ltr">BonZuttner</a>
+    <a class="brand" href="/${lang}/" lang="en" dir="ltr"><img src="/assets/bonzuttner-logo.png" alt="BonZuttner" width="712" height="129" class="bz-wordmark" /></a>
     <nav aria-label="${ui.nav}">${topNav.map((item, i) => `<a href="${hrefs[i]}">${item}</a>`).join('')}</nav>
     <div class="header-actions">
       ${languageLinks}
@@ -30,7 +30,7 @@ document.querySelector('#app').innerHTML = `
   </header>
   <main id="main">
     ${lang==='ja'?`<section class="retro-entry" aria-label="BonZuttnerの入口"><div class="retro-inner"><p class="welcome">★ ようこそ、BonZuttnerのホームページへ ★</p><figure><img src="/assets/hero-monochrome.png" alt="${t.alt}" width="1755" height="896"><figcaption><span>BonZuttner（ボンズットナー）</span></figcaption></figure><h1 tabindex="-1">真摯な姿勢をひとさじのユーモアと共に。</h1><p>業務の「なぜ？」から一緒に考え、業務整理から開発・運用まで伴走します。</p><div class="entry-links" aria-label="入口のメニュー"><button type="button" id="enter-modern" class="retro-cta retro-cta-primary">ちょっと未来へ</button><a class="retro-cta retro-cta-secondary" href="${servicePage}">サービスを見る</a></div><p class="down-note">ボタンを押すと、この画面がちょっと未来へ。</p><p id="entry-status" role="status"></p></div></section>`:''}
-    <section id="modern" class="modern-section" aria-label="${t.label}" tabindex="-1"><header class="modern-bar service-nav"><a href="/${lang}/" class="modern-brand service-brand" dir="ltr">BonZuttner</a><nav aria-label="${ui.nav}"></nav><div class="service-actions">${languageLinks.replace('class="languages"','class="languages service-languages"').replace('>日本語</a>','>JA</a>').replace('>English</a>','>EN</a>').replace('>العربية</a>','>AR</a>')}<a class="service-consult" href="/${lang}/contact/">${t.consult}</a>${lang==='ja'?'<button type="button" id="show-retro">レトロ表示を見る</button>':''}</div></header><bonzuttner-hero lang="${lang}" id="bz-hero"></bonzuttner-hero>
+    <section id="modern" class="modern-section" aria-label="${t.label}" tabindex="-1"><header class="modern-bar service-nav"><a href="/${lang}/" class="modern-brand service-brand" dir="ltr"><img src="/assets/bonzuttner-logo.png" alt="BonZuttner" width="712" height="129" class="bz-wordmark" /></a><nav aria-label="${ui.nav}"></nav><div class="service-actions">${languageLinks.replace('class="languages"','class="languages service-languages"').replace('>日本語</a>','>JA</a>').replace('>English</a>','>EN</a>').replace('>العربية</a>','>AR</a>')}<a class="service-consult" href="/${lang}/contact/">${t.consult}</a>${lang==='ja'?'<button type="button" id="show-retro">レトロ表示を見る</button>':''}</div></header><bonzuttner-hero lang="${lang}" id="bz-hero"></bonzuttner-hero>
     ${lang === 'ja' && window.BZHomeRefresh ? `<div class="home-refresh">${topNewsMarkup(lang)}${window.BZHomeRefresh.markup}</div>` : `
     ${topNewsMarkup(lang)}
     <section id="services" class="services design-preview" aria-labelledby="services-title">
