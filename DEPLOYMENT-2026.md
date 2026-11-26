@@ -36,7 +36,7 @@ The November 24 refresh updates the Japanese homepage and the featured Medicom c
 
 ## CMS integration: news/blog and careers
 
-The new frontend has approved list/detail UIs, but its backend endpoints are not connected yet. Reuse the existing Strapi/cache integration where suitable and adapt its responses to these frontend contracts. Do not copy server tokens into browser scripts.
+The custom production CMS is now included in `frontend-2026/cms/`. Follow [the production runbook](frontend-2026/docs/cms-production.md) for staff OAuth, persistent storage, reverse proxy routes and the post-build public feed switch. Production admin: `/admin/`. The earlier `/cms-preview/` page is a browser-only prototype and is removed from the production export by that switch. No Strapi instance is needed.
 
 - News list: `/{ja,en}/news/`
 - Article: `/{ja,en}/news/article/?slug=...`
@@ -45,12 +45,7 @@ The new frontend has approved list/detail UIs, but its backend endpoints are not
 - Position: `/{ja,en}/recruit/position/?slug=...`
 - Layout fixtures only: add `?preview=layout` (these are not actual articles or jobs).
 
-Configure endpoints in:
-
-- `frontend-2026/src/legacy/scripts/news-config.js`
-- `frontend-2026/src/legacy/scripts/recruit-config.js`
-
-Adapt API responses in `news-api.js` and `recruit-api.js`; rebuild after edits. `public/assets/*.js` files are generated compatibility scripts — edit `src/legacy/scripts/` instead.
+After the server is provisioned, `node scripts/prepare-production-cms.mjs` configures both public feeds in the exported site.
 
 See `frontend-2026/docs/news-cms-integration.md`, `recruit-cms-integration.md`, and `contact-and-cms-integration.md` for request/response schemas and validation. Only publish real approved content. Confirm job descriptions, employment conditions and application destination with Sakashita before publication.
 

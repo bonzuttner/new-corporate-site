@@ -79,3 +79,8 @@ html[dir="rtl"] .case-slide h3,html[dir="rtl"] .case-dialog h2{letter-spacing:0}
 .medicom-notes p{font-size:13px;line-height:1.7}
 .medicom-label{color:#17638e;font-weight:750}
 @media(max-width:620px){.medicom-notes{grid-template-columns:1fr}.medicom-flow{padding:12px}.medicom-flow li{font-size:12px}}
+.case-summary{max-width:52ch;margin:0 0 1.25rem;line-height:1.8;color:#354e5b}.case-slide .case-open{margin-top:auto}.medicom-detail a{display:inline-block;margin-top:1em;text-underline-offset:.2em}
+html[lang=ja] .graduation>div:first-child{container-type:inline-size}
+html[lang=ja] .graduation h2{font-size:clamp(27px,9.4cqi,70px);line-height:1.2}
+.graduation .bz-phrase{display:inline-block}
+html[lang=ja] .graduation-p1{text-wrap:pretty;word-break:auto-phrase;line-break:strict}
